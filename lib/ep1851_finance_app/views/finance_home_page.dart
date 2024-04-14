@@ -45,7 +45,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         Text("Transter Limit"),
                         Text("\$12,000"),
                       ],
-                    )
+                    ),
+                    LinearProgressIndicator(
+                      value: .3,
+                    ),
+                    Text("Spent \$1,244.65"),
+                    SizedBox(
+                      height: 42,
+                      child: Placeholder(),
+                    ),
                   ],
                 ),
               ),
