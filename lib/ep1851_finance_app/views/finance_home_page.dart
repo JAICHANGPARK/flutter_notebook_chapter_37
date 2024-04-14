@@ -17,7 +17,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
           children: [
             Expanded(
                 child: Container(
-                  margin: EdgeInsets.only(bottom: 16),
+              margin: EdgeInsets.only(bottom: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
@@ -25,7 +25,18 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
               child: Column(
                 children: [
                   Row(
-                    children: [],
+                    children: [
+                      CircleAvatar(),
+                      Text("Unknown User"),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Icon(Icons.settings_outlined),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Icon(Icons.notifications_none),
+                      )
+                    ],
                   )
                 ],
               ),
@@ -36,6 +47,8 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
