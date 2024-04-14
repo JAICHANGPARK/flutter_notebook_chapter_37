@@ -59,6 +59,29 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 6,
+                            width: 72,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Operations"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "View All",
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ))
                   ],
                 ),
