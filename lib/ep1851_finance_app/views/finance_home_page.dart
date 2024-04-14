@@ -24,36 +24,44 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                 ),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        CircleAvatar(),
-                        Text("Unknown User"),
-                        Container(
-                          decoration: BoxDecoration(color: Colors.white),
-                          child: Icon(Icons.settings_outlined),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(color: Colors.white),
-                          child: Icon(Icons.notifications_none),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Text("Unknown User"),
+                              Container(
+                                decoration: BoxDecoration(color: Colors.white),
+                                child: Icon(Icons.settings_outlined),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(color: Colors.white),
+                                child: Icon(Icons.notifications_none),
+                              )
+                            ],
+                          ),
+                          Text("Available on card"),
+                          Text("\$13,528.31"),
+                          Row(
+                            children: [
+                              Text("Transter Limit"),
+                              Text("\$12,000"),
+                            ],
+                          ),
+                          LinearProgressIndicator(
+                            value: .3,
+                          ),
+                          Text("Spent \$1,244.65"),
+                          SizedBox(
+                            height: 42,
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
                     ),
-                    Text("Available on card"),
-                    Text("\$13,528.31"),
-                    Row(
-                      children: [
-                        Text("Transter Limit"),
-                        Text("\$12,000"),
-                      ],
-                    ),
-                    LinearProgressIndicator(
-                      value: .3,
-                    ),
-                    Text("Spent \$1,244.65"),
-                    SizedBox(
-                      height: 42,
-                      child: Placeholder(),
-                    ),
+
                     Expanded(
                         child: Container(
                       decoration: BoxDecoration(
@@ -82,7 +90,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             ],
                           ),
                           Text("Today"),
-                          
+
                         ],
                       ),
                     ))
