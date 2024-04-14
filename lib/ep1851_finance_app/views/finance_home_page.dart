@@ -54,6 +54,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       height: 42,
                       child: Placeholder(),
                     ),
+                    Expanded(
+                        child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ))
                   ],
                 ),
               ),
