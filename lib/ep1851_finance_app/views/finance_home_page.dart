@@ -16,31 +16,40 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         child: Column(
           children: [
             Expanded(
-                child: Container(
-              margin: EdgeInsets.only(bottom: 16),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(32),
+              child: Container(
+                margin: EdgeInsets.only(bottom: 16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("Unknown User"),
+                        Container(
+                          decoration: BoxDecoration(color: Colors.white),
+                          child: Icon(Icons.settings_outlined),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(color: Colors.white),
+                          child: Icon(Icons.notifications_none),
+                        )
+                      ],
+                    ),
+                    Text("Available on card"),
+                    Text("\$13,528.31"),
+                    Row(
+                      children: [
+                        Text("Transter Limit"),
+                        Text("\$12,000"),
+                      ],
+                    )
+                  ],
+                ),
               ),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Text("Unknown User"),
-                      Container(
-                        decoration: BoxDecoration(color: Colors.white),
-                        child: Icon(Icons.settings_outlined),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(color: Colors.white),
-                        child: Icon(Icons.notifications_none),
-                      )
-                    ],
-                  )
-                ],
-              ),
-            ))
+            )
           ],
         ),
       ),
