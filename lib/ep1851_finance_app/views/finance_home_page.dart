@@ -59,11 +59,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Container(
-                            height: 6,
-                            width: 72,
+                            height: 4,
+                            width: 52,
                             decoration: BoxDecoration(
                               color: Colors.grey,
                             ),
