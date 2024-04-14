@@ -21,11 +21,46 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                 color: Colors.white,
               ),
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+
+                    ],
+                  )
+                ],
               ),
             ))
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.pie_chart_outline,
+            ),
+            label: "insights",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.wallet,
+            ),
+            label: "Wallet",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.more_outlined,
+            ),
+            label: "More",
+          )
+        ],
       ),
     );
   }
