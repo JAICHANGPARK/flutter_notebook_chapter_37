@@ -11,6 +11,15 @@ class FinanceHomePage extends StatefulWidget {
 class _FinanceHomePageState extends State<FinanceHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
