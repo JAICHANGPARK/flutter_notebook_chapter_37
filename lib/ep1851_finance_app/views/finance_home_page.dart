@@ -35,6 +35,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
