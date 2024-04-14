@@ -19,7 +19,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
               child: Container(
                 margin: EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.grey[100],
                   borderRadius: BorderRadius.circular(32),
                 ),
                 child: Column(
