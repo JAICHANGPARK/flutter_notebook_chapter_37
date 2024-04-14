@@ -80,7 +80,9 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          Text("Today"),
+                          
                         ],
                       ),
                     ))
