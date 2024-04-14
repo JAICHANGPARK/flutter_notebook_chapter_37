@@ -17,15 +17,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
           children: [
             Expanded(
                 child: Container(
+                  margin: EdgeInsets.only(bottom: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(32),
               ),
               child: Column(
                 children: [
                   Row(
-                    children: [
-
-                    ],
+                    children: [],
                   )
                 ],
               ),
