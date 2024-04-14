@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FinanceHomePage extends StatefulWidget {
   const FinanceHomePage({super.key});
 
@@ -16,7 +15,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              child: Column(
+                children: [],
+              ),
+            ))
           ],
         ),
       ),
