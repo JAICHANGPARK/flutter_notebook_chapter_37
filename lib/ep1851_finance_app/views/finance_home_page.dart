@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FinanceHomePage extends StatefulWidget {
   const FinanceHomePage({super.key});
@@ -17,7 +18,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
           children: [
             Expanded(
               child: Container(
-                margin: EdgeInsets.only(bottom: 16),
+                margin: const EdgeInsets.only(bottom: 16),
                 decoration: BoxDecoration(
                   color: Colors.grey[100],
                   borderRadius: BorderRadius.circular(32),
@@ -30,67 +31,70 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(),
-                              Text("Unknown User"),
+                              const CircleAvatar(),
+                              Gap(8),
+                              const Text("Unknown User"),
+                              Spacer(),
                               Container(
-                                decoration: BoxDecoration(color: Colors.white),
-                                child: Icon(Icons.settings_outlined),
+                                padding: EdgeInsets.all(4),
+                                decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                                child: const Icon(Icons.settings_outlined),
                               ),
                               Container(
-                                decoration: BoxDecoration(color: Colors.white),
-                                child: Icon(Icons.notifications_none),
+                                decoration: const BoxDecoration(color: Colors.white),
+                                child: const Icon(Icons.notifications_none),
                               )
                             ],
                           ),
-                          Text("Available on card"),
-                          Text("\$13,528.31"),
-                          Row(
+                          const Text("Available on card"),
+                          const Text("\$13,528.31"),
+                          const Row(
                             children: [
                               Text("Transter Limit"),
                               Text("\$12,000"),
                             ],
                           ),
-                          LinearProgressIndicator(
+                          const LinearProgressIndicator(
                             value: .3,
                           ),
-                          Text("Spent \$1,244.65"),
-                          SizedBox(
+                          const Text("Spent \$1,244.65"),
+                          const SizedBox(
                             height: 42,
                             child: Placeholder(),
                           ),
                         ],
                       ),
                     ),
-
                     Expanded(
                         child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Container(
                             height: 4,
                             width: 52,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.grey,
                             ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Operations"),
+                              const Text("Operations"),
                               TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   "View All",
                                 ),
                               )
                             ],
                           ),
-                          Text("Today"),
-
+                          const Text("Today"),
                         ],
                       ),
                     ))
@@ -107,25 +111,25 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.pie_chart_outline,
             ),
             label: "insights",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.wallet,
             ),
             label: "Wallet",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.more_outlined,
             ),
