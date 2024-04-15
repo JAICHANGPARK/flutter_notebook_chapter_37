@@ -75,15 +75,19 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               fontSize: 28,
                             ),
                           ),
+                          Gap(16),
                           const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Transter Limit"),
                               Text("\$12,000"),
                             ],
                           ),
+                          Gap(4),
                           const LinearProgressIndicator(
                             value: .3,
                           ),
+                          Gap(4),
                           const Text("Spent \$1,244.65"),
                           const SizedBox(
                             height: 42,
