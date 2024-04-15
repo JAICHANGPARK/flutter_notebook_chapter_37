@@ -92,7 +92,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             ),
                           ),
                           Gap(6),
-                          const Text("Spent \$1,244.65"),
+                          const Text(
+                            "Spent \$1,244.65",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
                           Gap(16),
                           const SizedBox(
                             height: 42,
