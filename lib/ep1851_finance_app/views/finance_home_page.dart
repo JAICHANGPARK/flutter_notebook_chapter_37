@@ -34,6 +34,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Gap(12),
                           Row(
                             children: [
                               const CircleAvatar(),
