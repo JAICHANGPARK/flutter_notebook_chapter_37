@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -176,17 +178,24 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            height: 4,
-                            width: 42,
-                            decoration: const BoxDecoration(
-                              color: Colors.grey,
+                          Center(
+                            child: Container(
+                              height: 4,
+                              width: 42,
+                              decoration: const BoxDecoration(
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const Text("Operations"),
+                              const Text(
+                                "Operations",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: const Text(
