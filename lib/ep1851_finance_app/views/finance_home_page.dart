@@ -61,8 +61,20 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               )
                             ],
                           ),
-                          const Text("Available on card"),
-                          const Text("\$13,528.31"),
+                          Gap(12),
+                          const Text(
+                            "Available on card",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
+                          const Text(
+                            "\$13,528.31",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 24,
+                            ),
+                          ),
                           const Row(
                             children: [
                               Text("Transter Limit"),
