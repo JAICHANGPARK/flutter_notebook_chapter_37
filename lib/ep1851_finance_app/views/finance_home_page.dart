@@ -36,14 +36,23 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               const Text("Unknown User"),
                               Spacer(),
                               Container(
+                                padding: EdgeInsets.all(6),
+                                decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: const Icon(
+                                  Icons.settings_outlined,
+                                  size: 20,
+                                ),
+                              ),
+                              Gap(8),
+                              Container(
                                 padding: EdgeInsets.all(4),
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
+                                  shape: BoxShape.circle,
                                 ),
-                                child: const Icon(Icons.settings_outlined),
-                              ),
-                              Container(
-                                decoration: const BoxDecoration(color: Colors.white),
                                 child: const Icon(Icons.notifications_none),
                               )
                             ],
