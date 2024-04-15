@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:gap/gap.dart';
 
 class FinanceHomePage extends StatefulWidget {
@@ -110,7 +111,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    padding: EdgeInsets.symmetric(vertical: 4),
+                                    padding: EdgeInsets.symmetric(vertical: 6),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -137,7 +138,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    padding: EdgeInsets.symmetric(vertical: 4),
+                                    padding: EdgeInsets.symmetric(vertical: 6),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -167,13 +168,17 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         child: Container(
                       decoration: const BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(24),
+                          topLeft: Radius.circular(24),
+                        )
                       ),
                       padding: const EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Container(
                             height: 4,
-                            width: 52,
+                            width: 42,
                             decoration: const BoxDecoration(
                               color: Colors.grey,
                             ),
