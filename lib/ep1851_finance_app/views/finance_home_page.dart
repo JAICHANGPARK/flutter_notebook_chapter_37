@@ -167,14 +167,14 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Expanded(
                         child: Container(
                       decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(24),
-                          topLeft: Radius.circular(24),
-                        )
-                      ),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(24),
+                            topLeft: Radius.circular(24),
+                          )),
                       padding: const EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 4,
@@ -196,6 +196,40 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             ],
                           ),
                           const Text("Today"),
+                          Gap(8),
+                          Container(
+                            height: 62,
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                          Gap(8),
+                          Container(
+                            height: 62,
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                          Gap(16),
+                          const Text("Today"),
+                          Gap(8),
+                          Container(
+                            height: 62,
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                          Gap(8),
+                          Container(
+                            height: 62,
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          )
                         ],
                       ),
                     ))
