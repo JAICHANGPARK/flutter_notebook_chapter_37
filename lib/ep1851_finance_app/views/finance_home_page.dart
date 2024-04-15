@@ -83,7 +83,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               Text("\$12,000"),
                             ],
                           ),
-                          Gap(4),
+                          Gap(6),
                           SizedBox(
                             height: 2,
                             child: const LinearProgressIndicator(
@@ -91,8 +91,9 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               color: Colors.black,
                             ),
                           ),
-                          Gap(4),
+                          Gap(6),
                           const Text("Spent \$1,244.65"),
+                          Gap(16),
                           const SizedBox(
                             height: 42,
                             child: Placeholder(),
