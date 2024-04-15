@@ -61,7 +61,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               )
                             ],
                           ),
-                          Gap(12),
+                          Gap(24),
                           const Text(
                             "Available on card",
                             style: TextStyle(
@@ -72,7 +72,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             "\$13,528.31",
                             style: TextStyle(
                               fontWeight: FontWeight.w900,
-                              fontSize: 24,
+                              fontSize: 28,
                             ),
                           ),
                           const Row(
