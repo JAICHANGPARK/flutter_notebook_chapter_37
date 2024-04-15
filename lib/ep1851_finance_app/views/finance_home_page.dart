@@ -28,6 +28,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
@@ -48,12 +49,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               ),
                               Gap(8),
                               Container(
-                                padding: EdgeInsets.all(4),
+                                padding: EdgeInsets.all(6),
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                   shape: BoxShape.circle,
                                 ),
-                                child: const Icon(Icons.notifications_none),
+                                child: const Icon(
+                                  Icons.notifications_none,
+                                  size: 20,
+                                ),
                               )
                             ],
                           ),
