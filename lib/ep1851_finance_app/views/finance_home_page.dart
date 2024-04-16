@@ -215,12 +215,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               ),
                               borderRadius: BorderRadius.circular(16),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 12),
                             child: Row(
                               children: [
                                 CircleAvatar(),
+                                Gap(8),
                                 Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "AT&T",
