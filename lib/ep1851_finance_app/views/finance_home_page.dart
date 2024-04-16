@@ -415,9 +415,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       borderRadius: BorderRadius.circular(24),
                       boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 8, spreadRadius: 2)],
                     ),
+                    padding: EdgeInsets.all(24),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Spending Categories"),
+                        Gap(16),
                         Expanded(
                           child: GridView.count(
                             crossAxisCount: 2,
