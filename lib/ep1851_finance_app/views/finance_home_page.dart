@@ -424,6 +424,8 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         Expanded(
                           child: GridView.count(
                             crossAxisCount: 2,
+                            mainAxisSpacing: 8,
+                            crossAxisSpacing: 8,
                             children: List.generate(
                                 5,
                                 (index) => Container(
