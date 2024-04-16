@@ -210,15 +210,30 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                           Container(
                             height: 62,
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: Row(
                               children: [
                                 CircleAvatar(),
-                                Expanded(child: Column(children: [
-                                  
-                                ],))
+                                Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "AT&T",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+
+                                      ),
+                                    ),
+                                    Text(
+                                      "Unlimited Family Plan",
+                                    )
+                                  ],
+                                ))
                               ],
                             ),
                           ),
