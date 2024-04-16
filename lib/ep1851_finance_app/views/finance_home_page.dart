@@ -409,7 +409,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     right: 0,
                     bottom: 0,
                     child: Container(
-                      height: 400,
+                      height: 360,
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
