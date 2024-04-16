@@ -107,7 +107,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                           ),
                           Gap(16),
                           SizedBox(
-                            height: 46,
+                            height: 52,
                             child: Row(
                               children: [
                                 Expanded(
@@ -116,7 +116,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    padding: EdgeInsets.symmetric(vertical: 6),
+                                    padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -143,7 +143,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                    padding: EdgeInsets.symmetric(vertical: 6),
+                                    padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -306,18 +306,82 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                           Container(
                             height: 62,
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
                               borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 12),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Gap(8),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "ABCD",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Unlimited Family Plan",
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Text(
+                                  "-\$34.99",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                           Gap(8),
                           Container(
                             height: 62,
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
                               borderRadius: BorderRadius.circular(16),
                             ),
-                          )
+                            padding: EdgeInsets.symmetric(horizontal: 12),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Gap(8),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "ABCD",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Unlimited Family Plan",
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Text(
+                                  "-\$34.99",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ))
