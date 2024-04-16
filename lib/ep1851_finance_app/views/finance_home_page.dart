@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class FinanceHomePage extends StatefulWidget {
@@ -258,12 +259,49 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                           Container(
                             height: 62,
                             decoration: BoxDecoration(
-                              border: Border.all(),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
                               borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 12),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Gap(8),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "ABCD",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Unlimited Family Plan",
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Text(
+                                  "-\$34.99",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                           Gap(16),
-                          const Text("Today"),
+                          const Text(
+                            "Yesterday",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
                           Gap(8),
                           Container(
                             height: 62,
