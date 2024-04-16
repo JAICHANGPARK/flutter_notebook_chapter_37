@@ -15,6 +15,8 @@ class FinanceHomePage extends StatefulWidget {
 }
 
 class _FinanceHomePageState extends State<FinanceHomePage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -397,6 +399,11 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: [
           const BottomNavigationBarItem(
             icon: Icon(
