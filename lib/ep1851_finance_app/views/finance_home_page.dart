@@ -184,11 +184,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             child: Container(
                               height: 4,
                               width: 42,
-                              decoration: const BoxDecoration(
-                                color: Colors.grey,
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300]!,
                               ),
                             ),
                           ),
+                          Gap(8),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -206,6 +207,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               )
                             ],
                           ),
+                          Gap(8),
                           const Text(
                             "Today",
                             style: TextStyle(
