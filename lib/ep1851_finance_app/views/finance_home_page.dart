@@ -221,22 +221,28 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                 CircleAvatar(),
                                 Gap(8),
                                 Expanded(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "AT&T",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "ATT&TT",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
-                                    ),
-                                    Text(
-                                      "Unlimited Family Plan",
-                                    )
-                                  ],
-                                ))
+                                      Text(
+                                        "Unlimited Family Plan",
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Text(
+                                  "-\$34.99",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
                               ],
                             ),
                           ),
