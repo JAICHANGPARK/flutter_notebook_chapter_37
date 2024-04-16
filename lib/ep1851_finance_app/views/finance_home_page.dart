@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:gap/gap.dart';
 
 class FinanceHomePage extends StatefulWidget {
@@ -205,7 +206,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               )
                             ],
                           ),
-                          const Text("Today"),
+                          const Text(
+                            "Today",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
                           Gap(8),
                           Container(
                             height: 62,
