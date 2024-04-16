@@ -406,16 +406,34 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                 )),
                 Positioned(
                   left: 0,
-                    right: 0,
-                    bottom: 0,
-                    child: Container(
-                      height: 360,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                        boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 8, spreadRadius: 2)],
-                      ),
-                    ))
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    height: 360,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 8, spreadRadius: 2)],
+                    ),
+                    child: Column(
+                      children: [
+                        Text("Spending Categories"),
+                        Expanded(
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            children: List.generate(
+                                5,
+                                (index) => Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[100]!,
+                                      ),
+                                    )),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
             Column(
