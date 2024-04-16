@@ -396,12 +396,41 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                 )
               ],
             ),
+            Stack(
+              children: [
+                Positioned.fill(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100]!,
+                  ),
+                )),
+                Positioned(
+                  left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: Container(
+                      height: 400,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ))
+              ],
+            ),
             Column(
               children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Container(decoration: BoxDecoration(
-                  color: Colors.white
-                ),))
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(color: Colors.grey[50]),
+                )),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 8, spreadRadius: 2)],
+                    ),
+                  ),
+                )
               ],
             )
           ],
