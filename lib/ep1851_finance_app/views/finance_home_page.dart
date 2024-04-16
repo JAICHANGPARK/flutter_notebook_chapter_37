@@ -412,6 +412,8 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       height: 360,
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        boxShadow: [BoxShadow(color: Colors.grey[300]!, blurRadius: 8, spreadRadius: 2)],
                       ),
                     ))
               ],
