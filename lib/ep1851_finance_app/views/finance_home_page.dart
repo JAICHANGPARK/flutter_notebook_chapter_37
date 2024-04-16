@@ -213,6 +213,14 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               border: Border.all(),
                               borderRadius: BorderRadius.circular(16),
                             ),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Expanded(child: Column(children: [
+                                  
+                                ],))
+                              ],
+                            ),
                           ),
                           Gap(8),
                           Container(
