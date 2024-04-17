@@ -39,7 +39,26 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                       children: [
                         Text(
                           "Discover your exciting\nadventure around the\nworld with Trovitatrip",
-                        )
+                        ),
+                        Text("Many attractive promos await you"),
+                        Container(
+                          child: Center(
+                            child: Text("Get Started",style: TextStyle(
+
+                            ),),
+                          ),
+                        ),
+                        SizedBox(height: 24,
+                        child: Stack(
+                          children: [
+                            Center(child: Divider()),
+                            Center(child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              child: Text("or Login with"),
+                            ))
+                          ],
+                        ),),
                       ],
                     ),
                   ),
