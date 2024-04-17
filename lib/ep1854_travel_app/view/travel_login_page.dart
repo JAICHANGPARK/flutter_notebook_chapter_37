@@ -33,8 +33,17 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(24),
                     ),
+                    width: double.infinity,
+                    padding: EdgeInsets.all(24),
+                    child: Column(
+                      children: [
+                        Text(
+                          "Discover your exciting\nadventure around the\nworld with Trovitatrip",
+                        )
+                      ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           )
