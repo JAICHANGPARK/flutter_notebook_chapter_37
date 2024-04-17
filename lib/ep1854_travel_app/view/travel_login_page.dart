@@ -1,5 +1,5 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 
 class TravelLoginPage extends StatefulWidget {
   const TravelLoginPage({super.key});
@@ -12,12 +12,15 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-
-          ],
-        ),
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.network(
+              "https://cdn.pixabay.com/photo/2023/04/16/09/49/waterfall-7929685_1280.jpg",
+              fit: BoxFit.cover,
+            ),
+          ),
+        ],
       ),
     );
   }
