@@ -43,22 +43,67 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         Text("Many attractive promos await you"),
                         Container(
                           child: Center(
-                            child: Text("Get Started",style: TextStyle(
-
-                            ),),
+                            child: Text(
+                              "Get Started",
+                              style: TextStyle(),
+                            ),
                           ),
                         ),
-                        SizedBox(height: 24,
-                        child: Stack(
+                        SizedBox(
+                          height: 24,
+                          child: Stack(
+                            children: [
+                              Center(child: Divider()),
+                              Center(
+                                  child: Container(
+                                color: Colors.white,
+                                padding: EdgeInsets.symmetric(horizontal: 8),
+                                child: Text("or Login with"),
+                              ))
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Center(child: Divider()),
-                            Center(child: Container(
-                              color: Colors.white,
-                              padding: EdgeInsets.symmetric(horizontal: 8),
-                              child: Text("or Login with"),
-                            ))
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                shape: BoxShape.circle,
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.flutter_dash),
+                                onPressed: () {},
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                shape: BoxShape.circle,
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.flutter_dash),
+                                onPressed: () {},
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                shape: BoxShape.circle,
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.flutter_dash),
+                                onPressed: () {},
+                              ),
+                            )
                           ],
-                        ),),
+                        )
                       ],
                     ),
                   ),
