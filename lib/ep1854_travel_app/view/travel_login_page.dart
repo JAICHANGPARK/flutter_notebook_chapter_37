@@ -20,6 +20,18 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+              child: Column(
+            children: [
+              Expanded(child: Container()),
+              Expanded(
+                  child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+              ))
+            ],
+          ))
         ],
       ),
     );
