@@ -21,20 +21,23 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
             ),
           ),
           Positioned.fill(
-              left: 24,
-              bottom: 24,
-              right: 24,
-              child: Column(
-                children: [
-                  Expanded(child: Container()),
-                  Expanded(
-                      child: Container(
+            left: 24,
+            bottom: 24,
+            right: 24,
+            child: Column(
+              children: [
+                Expanded(child: Container()),
+                Expanded(
+                  child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
                     ),
-                  ))
-                ],
-              ))
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
