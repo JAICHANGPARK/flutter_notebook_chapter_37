@@ -15,7 +15,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
