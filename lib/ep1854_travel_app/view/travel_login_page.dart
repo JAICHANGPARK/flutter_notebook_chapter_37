@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelLoginPage extends StatefulWidget {
   const TravelLoginPage({super.key});
@@ -78,6 +79,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 onPressed: () {},
                               ),
                             ),
+                            Gap(24),
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
@@ -85,6 +87,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 ),
                                 shape: BoxShape.circle,
                               ),
+                              Gap(24),
                               child: IconButton(
                                 icon: Icon(Icons.flutter_dash),
                                 onPressed: () {},
