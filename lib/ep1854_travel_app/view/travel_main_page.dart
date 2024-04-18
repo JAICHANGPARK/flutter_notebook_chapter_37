@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TravelMainPage extends StatefulWidget {
   const TravelMainPage({super.key});
 
@@ -13,8 +12,22 @@ class _TravelMainPageState extends State<TravelMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.map_outlined,
+            ),
+            label: "Maps",
+          ),
         ],
       ),
     );
