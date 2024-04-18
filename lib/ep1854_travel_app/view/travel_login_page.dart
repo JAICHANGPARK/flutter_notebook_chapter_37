@@ -51,8 +51,9 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         Text(
                           "Discover your exciting\nadventure around the\nworld with Trovitatrip",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
                             fontSize: 24,
+                            color: Theme.of(context).primaryColor,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         Gap(16),
@@ -83,10 +84,12 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 child: Container(
                                   color: Colors.white,
                                   padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Text("or Login with",
-                                  style: TextStyle(
-                                    color:
-                                  ),
+                                  child: Text(
+                                    "or Login with",
+                                    style: TextStyle(
+                                      color: Theme.of(context).primaryColor,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               )
