@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+
 class TravelLoginPage extends StatefulWidget {
   const TravelLoginPage({super.key});
 
@@ -27,7 +28,9 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
             right: 24,
             child: Column(
               children: [
-                Expanded(child: Container(),),
+                Expanded(
+                  child: Container(),
+                ),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
@@ -38,8 +41,19 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                     padding: EdgeInsets.all(24),
                     child: Column(
                       children: [
+                        Center(
+                          child: DotsIndicator(
+                            dotsCount: 5,
+                            position: 2,
+                          ),
+                        ),
+                        Gap(24),
                         Text(
+
                           "Discover your exciting\nadventure around the\nworld with Trovitatrip",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         Text("Many attractive promos await you"),
                         Container(
@@ -87,7 +101,6 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 ),
                                 shape: BoxShape.circle,
                               ),
-
                               child: IconButton(
                                 icon: Icon(Icons.flutter_dash),
                                 onPressed: () {},
