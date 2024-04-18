@@ -96,7 +96,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             ],
                           ),
                         ),
-                        Gap(16),
+                        Gap(24),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
