@@ -83,7 +83,11 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 child: Container(
                                   color: Colors.white,
                                   padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Text("or Login with"),
+                                  child: Text("or Login with",
+                                  style: TextStyle(
+                                    color:
+                                  ),
+                                  ),
                                 ),
                               )
                             ],
