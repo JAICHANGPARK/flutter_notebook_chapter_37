@@ -15,6 +15,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
