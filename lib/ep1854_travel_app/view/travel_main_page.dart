@@ -28,6 +28,24 @@ class _TravelMainPageState extends State<TravelMainPage> {
             ),
             label: "Maps",
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_outline,
+            ),
+            label: "Maps",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.chat_bubble_outline,
+            ),
+            label: "Maps",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_2_outlined,
+            ),
+            label: "Maps",
+          ),
         ],
       ),
     );
