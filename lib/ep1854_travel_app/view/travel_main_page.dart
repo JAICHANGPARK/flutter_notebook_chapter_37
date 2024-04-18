@@ -11,6 +11,12 @@ class TravelMainPage extends StatefulWidget {
 class _TravelMainPageState extends State<TravelMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
