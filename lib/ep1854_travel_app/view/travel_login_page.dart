@@ -60,27 +60,36 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         Gap(16),
                         Container(
                           padding: EdgeInsets.symmetric(vertical: 12),
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(124, 132, 100, 1),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
                           child: Center(
                             child: Text(
                               "Get Started",
-                              style: TextStyle(),
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
+                        Gap(16),
                         SizedBox(
                           height: 24,
                           child: Stack(
                             children: [
                               Center(child: Divider()),
                               Center(
-                                  child: Container(
-                                color: Colors.white,
-                                padding: EdgeInsets.symmetric(horizontal: 8),
-                                child: Text("or Login with"),
-                              ))
+                                child: Container(
+                                  color: Colors.white,
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Text("or Login with"),
+                                ),
+                              )
                             ],
                           ),
                         ),
+                        Gap(16),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
