@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+
+import 'travel_main_page.dart';
 
 class TravelLoginPage extends StatefulWidget {
   const TravelLoginPage({super.key});
@@ -59,17 +62,26 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         Gap(16),
                         Text("Many attractive promos await you"),
                         Gap(24),
-                        Container(
-                          padding: EdgeInsets.symmetric(vertical: 12),
-                          decoration: BoxDecoration(
-                            color: Color.fromRGBO(124, 132, 100, 1),
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Get Started",
-                              style: TextStyle(
-                                color: Colors.white,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => TravelMainPage(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            padding: EdgeInsets.symmetric(vertical: 12),
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(124, 132, 100, 1),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Get Started",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),
