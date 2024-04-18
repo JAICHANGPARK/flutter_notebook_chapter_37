@@ -58,7 +58,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         ),
                         Gap(16),
                         Text("Many attractive promos await you"),
-                        Gap(16),
+                        Gap(24),
                         Container(
                           padding: EdgeInsets.symmetric(vertical: 12),
                           decoration: BoxDecoration(
@@ -74,7 +74,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(16),
+                        Gap(24),
                         SizedBox(
                           height: 24,
                           child: Stack(
