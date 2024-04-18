@@ -49,14 +49,17 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                         ),
                         Gap(24),
                         Text(
-
                           "Discover your exciting\nadventure around the\nworld with Trovitatrip",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 24,
                           ),
                         ),
+                        Gap(16),
                         Text("Many attractive promos await you"),
+                        Gap(16),
                         Container(
+                          padding: EdgeInsets.symmetric(vertical: 12),
                           child: Center(
                             child: Text(
                               "Get Started",
