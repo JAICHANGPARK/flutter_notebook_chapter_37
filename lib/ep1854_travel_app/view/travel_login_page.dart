@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
+import 'package:dots_indicator/dots_indicator.dart';
 class TravelLoginPage extends StatefulWidget {
   const TravelLoginPage({super.key});
 
@@ -27,7 +27,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
             right: 24,
             child: Column(
               children: [
-                Expanded(child: Container()),
+                Expanded(child: Container(),),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
