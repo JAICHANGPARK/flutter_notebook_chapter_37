@@ -13,6 +13,9 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: TravelLoginPage(),
+      theme: ThemeData(
+        primaryColor: Color.fromRGBO(124, 132, 100, 1),
+      ),
     );
   }
 }
