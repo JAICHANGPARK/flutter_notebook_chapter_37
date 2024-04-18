@@ -41,7 +41,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                       borderRadius: BorderRadius.circular(24),
                     ),
                     width: double.infinity,
-                    padding: EdgeInsets.all(24),
+                    padding: const EdgeInsets.all(24),
                     child: Column(
                       children: [
                         Center(
@@ -50,7 +50,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             position: 2,
                           ),
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Text(
                           "Discover your exciting\nadventure around the\nworld with Trovitatrip",
                           style: TextStyle(
@@ -59,24 +59,24 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Gap(16),
-                        Text("Many attractive promos await you"),
-                        Gap(24),
+                        const Gap(16),
+                        const Text("Many attractive promos await you"),
+                        const Gap(24),
                         GestureDetector(
                           onTap: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => TravelMainPage(),
+                                builder: (context) => const TravelMainPage(),
                               ),
                             );
                           },
                           child: Container(
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(124, 132, 100, 1),
+                              color: const Color.fromRGBO(124, 132, 100, 1),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Get Started",
                                 style: TextStyle(
@@ -86,16 +86,16 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(24),
+                        const Gap(24),
                         SizedBox(
                           height: 24,
                           child: Stack(
                             children: [
-                              Center(child: Divider()),
+                              const Center(child: Divider()),
                               Center(
                                 child: Container(
                                   color: Colors.white,
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
                                   child: Text(
                                     "or Login with",
                                     style: TextStyle(
@@ -108,7 +108,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                             ],
                           ),
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -120,11 +120,11 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 shape: BoxShape.circle,
                               ),
                               child: IconButton(
-                                icon: Icon(Icons.flutter_dash),
+                                icon: const Icon(Icons.flutter_dash),
                                 onPressed: () {},
                               ),
                             ),
-                            Gap(24),
+                            const Gap(24),
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
@@ -133,11 +133,11 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 shape: BoxShape.circle,
                               ),
                               child: IconButton(
-                                icon: Icon(Icons.flutter_dash),
+                                icon: const Icon(Icons.flutter_dash),
                                 onPressed: () {},
                               ),
                             ),
-                            Gap(24),
+                            const Gap(24),
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
@@ -146,7 +146,7 @@ class _TravelLoginPageState extends State<TravelLoginPage> {
                                 shape: BoxShape.circle,
                               ),
                               child: IconButton(
-                                icon: Icon(Icons.flutter_dash),
+                                icon: const Icon(Icons.flutter_dash),
                                 onPressed: () {},
                               ),
                             )
