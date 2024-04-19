@@ -184,9 +184,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                               backgroundColor: Colors.white,
                               child: IconButton(
                                 icon: Icon(Icons.favorite_outline),
-                                onPressed: () {
-
-                                },
+                                onPressed: () {},
                               ),
                             ),
                           ],
@@ -194,11 +192,39 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                            
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Column(
                             children: [
-
+                              Text("Culture"),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Secret Temple",
+                                  ),
+                                  Icon(
+                                    Icons.star_border,
+                                  ),
+                                  Text("4.8"),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.location_on_outlined,
+                                  ),
+                                  Text("Unknown Places"),
+                                  Text(
+                                    "\$147",
+                                    style: TextStyle(
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text("/Person")
+                                ],
+                              )
                             ],
                           ),
                         )
