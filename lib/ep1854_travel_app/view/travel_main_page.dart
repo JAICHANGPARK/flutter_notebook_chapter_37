@@ -177,7 +177,30 @@ class _TravelMainPageState extends State<TravelMainPage> {
                     child: Column(
                       children: [
                         Row(
-                          children: [Spacer(), CircleAvatar()],
+                          children: [
+                            Spacer(),
+                            CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.white,
+                              child: IconButton(
+                                icon: Icon(Icons.favorite_outline),
+                                onPressed: () {
+
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        Container(
+                          decoration: BoxDecoration(
+                            
+                          ),
+                          child: Column(
+                            children: [
+
+                            ],
+                          ),
                         )
                       ],
                     ),
