@@ -56,7 +56,24 @@ class _TravelMainPageState extends State<TravelMainPage> {
                     ),
                   )
                 ],
-              )
+              ),
+              SizedBox(
+                height: 42,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).primaryColor,
+                      ),
+                      child: Text(
+                        "Culture",
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
