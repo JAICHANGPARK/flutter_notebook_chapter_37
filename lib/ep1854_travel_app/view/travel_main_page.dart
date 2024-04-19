@@ -67,9 +67,13 @@ class _TravelMainPageState extends State<TravelMainPage> {
                       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                       decoration: BoxDecoration(
                         color: Theme.of(context).primaryColor,
+                        borderRadius: BorderRadius.circular(24)
                       ),
                       child: Text(
                         "Culture",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )
                   ],
