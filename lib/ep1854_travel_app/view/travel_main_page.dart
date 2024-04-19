@@ -205,9 +205,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                                 children: [
                                   Text(
                                     "Secret Temple",
-                                    style: TextStyle(
-                                      fontSize: 20
-                                    ),
+                                    style: TextStyle(fontSize: 20),
                                   ),
                                   Spacer(),
                                   Icon(
@@ -221,6 +219,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                                 children: [
                                   Icon(
                                     Icons.location_on_outlined,
+                                    size: 18,
                                   ),
                                   Text("Unknown Places"),
                                   Spacer(),
