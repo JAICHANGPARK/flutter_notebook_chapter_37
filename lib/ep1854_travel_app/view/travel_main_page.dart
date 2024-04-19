@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelMainPage extends StatefulWidget {
   const TravelMainPage({super.key});
@@ -40,8 +41,14 @@ class _TravelMainPageState extends State<TravelMainPage> {
                       ),
                     ),
                   ),
-                  
+                  Gap(16),
                   Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
                     child: IconButton(
                       icon: Icon(Icons.filter_alt_outlined),
                       onPressed: () {},
