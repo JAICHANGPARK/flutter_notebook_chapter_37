@@ -168,7 +168,8 @@ class _TravelMainPageState extends State<TravelMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 320,
-                    margin: ,
+                    margin: EdgeInsets.only(bottom: 24),
+                    padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.green,
