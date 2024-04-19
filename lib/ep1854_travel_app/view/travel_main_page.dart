@@ -44,19 +44,19 @@ class _TravelMainPageState extends State<TravelMainPage> {
             icon: Icon(
               Icons.favorite_outline,
             ),
-            label: "Maps",
+            label: "Saved",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.chat_bubble_outline,
             ),
-            label: "Maps",
+            label: "Inbox",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_2_outlined,
             ),
-            label: "Maps",
+            label: "Profile",
           ),
         ],
       ),
