@@ -25,10 +25,22 @@ class _TravelMainPageState extends State<TravelMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      child: TextField(),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(32),
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Search",
+                        ),
+                      ),
                     ),
-
                   ),
+                  
                   Container(
                     child: IconButton(
                       icon: Icon(Icons.filter_alt_outlined),
