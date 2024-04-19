@@ -167,16 +167,16 @@ class _TravelMainPageState extends State<TravelMainPage> {
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
+                    height: 320,
+                    margin: ,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16)
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.green,
                     ),
                     child: Column(
                       children: [
                         Row(
-                          children: [
-                            Spacer(),
-                            CircleAvatar()
-                          ],
+                          children: [Spacer(), CircleAvatar()],
                         )
                       ],
                     ),
