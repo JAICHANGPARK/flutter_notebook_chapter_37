@@ -13,6 +13,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [],
       ),
@@ -20,6 +21,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
+        currentIndex: pageIndex,
         onTap: (idx) {
           setState(() {
             pageIndex = idx;
