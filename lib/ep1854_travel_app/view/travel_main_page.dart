@@ -167,7 +167,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    height: 320,
+                    height: 360,
                     margin: EdgeInsets.only(bottom: 24),
                     padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
