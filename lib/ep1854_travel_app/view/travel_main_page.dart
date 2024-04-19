@@ -57,13 +57,14 @@ class _TravelMainPageState extends State<TravelMainPage> {
                   )
                 ],
               ),
+              Gap(16),
               SizedBox(
-                height: 42,
+                height: 52,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                       decoration: BoxDecoration(
                         color: Theme.of(context).primaryColor,
                       ),
