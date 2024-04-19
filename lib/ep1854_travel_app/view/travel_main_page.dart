@@ -8,6 +8,8 @@ class TravelMainPage extends StatefulWidget {
 }
 
 class _TravelMainPageState extends State<TravelMainPage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +20,11 @@ class _TravelMainPageState extends State<TravelMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
-        
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(
