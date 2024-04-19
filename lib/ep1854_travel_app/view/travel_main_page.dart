@@ -166,7 +166,21 @@ class _TravelMainPageState extends State<TravelMainPage> {
               Gap(16),
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Placeholder();
+                  return Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Spacer(),
+                            CircleAvatar()
+                          ],
+                        )
+                      ],
+                    ),
+                  );
                 },
               ))
             ],
