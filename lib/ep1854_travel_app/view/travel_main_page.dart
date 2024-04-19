@@ -37,7 +37,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Search",
-                          prefixIcon: Icon(Icons.search)
+                          suffixIcon: Icon(Icons.search),
                         ),
                       ),
                     ),
