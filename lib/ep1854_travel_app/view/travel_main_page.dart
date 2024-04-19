@@ -173,6 +173,12 @@ class _TravelMainPageState extends State<TravelMainPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.green,
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2022/08/15/09/14/koyasan-temple-7387445_1280.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                     child: Column(
                       children: [
