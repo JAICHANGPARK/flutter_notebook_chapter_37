@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1854_travel_app/view/travel_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class TravelMainPage extends StatefulWidget {
@@ -166,83 +167,92 @@ class _TravelMainPageState extends State<TravelMainPage> {
               Gap(16),
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Container(
-                    height: 360,
-                    margin: EdgeInsets.only(bottom: 24),
-                    padding: EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      color: Colors.green,
-                      image: DecorationImage(
-                        image: NetworkImage(
-                          "https://cdn.pixabay.com/photo/2022/08/15/09/14/koyasan-temple-7387445_1280.jpg",
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => TravelDetailPage(),
                         ),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Spacer(),
-                            CircleAvatar(
-                              radius: 24,
-                              backgroundColor: Colors.white,
-                              child: IconButton(
-                                icon: Icon(Icons.favorite_outline),
-                                onPressed: () {},
-                              ),
-                            ),
-                          ],
-                        ),
-                        Spacer(),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
+                      );
+                    },
+                    child: Container(
+                      height: 360,
+                      margin: EdgeInsets.only(bottom: 24),
+                      padding: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: Colors.green,
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2022/08/15/09/14/koyasan-temple-7387445_1280.jpg",
                           ),
-                          padding: EdgeInsets.all(12),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
                             children: [
-                              Text("Culture"),
-                              // Gap(12),
-                              Row(
-                                children: [
-                                  Text(
-                                    "Secret Temple",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                  Spacer(),
-                                  Icon(
-                                    Icons.star_border,
-                                  ),
-                                  Text("4.8"),
-                                ],
+                              Spacer(),
+                              CircleAvatar(
+                                radius: 24,
+                                backgroundColor: Colors.white,
+                                child: IconButton(
+                                  icon: Icon(Icons.favorite_outline),
+                                  onPressed: () {},
+                                ),
                               ),
-                              // Gap(12),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.location_on_outlined,
-                                    size: 18,
-                                  ),
-                                  Text("Unknown Places"),
-                                  Spacer(),
-                                  Text(
-                                    "\$147",
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text("/Person")
-                                ],
-                              )
                             ],
                           ),
-                        )
-                      ],
+                          Spacer(),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Culture"),
+                                // Gap(12),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "Secret Temple",
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.star_border,
+                                    ),
+                                    Text("4.8"),
+                                  ],
+                                ),
+                                // Gap(12),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.location_on_outlined,
+                                      size: 18,
+                                    ),
+                                    Text("Unknown Places"),
+                                    Spacer(),
+                                    Text(
+                                      "\$147",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text("/Person")
+                                  ],
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
