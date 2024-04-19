@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TravelMainPage extends StatefulWidget {
@@ -14,8 +15,31 @@ class _TravelMainPageState extends State<TravelMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      child: TextField(),
+                    ),
+
+                  ),
+                  Container(
+                    child: IconButton(
+                      icon: Icon(Icons.filter_alt_outlined),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
