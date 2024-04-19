@@ -166,7 +166,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
               Gap(16),
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
-                  return Container();
+                  return Placeholder();
                 },
               ))
             ],
