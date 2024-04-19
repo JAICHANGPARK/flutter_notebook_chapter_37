@@ -33,8 +33,8 @@ class _TravelMainPageState extends State<TravelMainPage> {
                           color: Colors.grey[200]!,
                         ),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Search",
@@ -43,7 +43,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                       ),
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
@@ -52,20 +52,20 @@ class _TravelMainPageState extends State<TravelMainPage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.filter_alt_outlined),
+                      icon: const Icon(Icons.filter_alt_outlined),
                       onPressed: () {},
                     ),
                   )
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               SizedBox(
                 height: 52,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 16,
                       ),
@@ -73,7 +73,7 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         color: Theme.of(context).primaryColor,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Culture",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -81,9 +81,9 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 16,
                       ),
@@ -101,9 +101,9 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 16,
                       ),
@@ -121,9 +121,9 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 16,
                       ),
@@ -141,9 +141,9 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                         vertical: 16,
                       ),
@@ -164,25 +164,25 @@ class _TravelMainPageState extends State<TravelMainPage> {
                   ],
                 ),
               ),
-              Gap(16),
+              const Gap(16),
               Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => TravelDetailPage(),
+                          builder: (context) => const TravelDetailPage(),
                         ),
                       );
                     },
                     child: Container(
                       height: 360,
-                      margin: EdgeInsets.only(bottom: 24),
-                      padding: EdgeInsets.all(16),
+                      margin: const EdgeInsets.only(bottom: 24),
+                      padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
                         color: Colors.green,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: NetworkImage(
                             "https://cdn.pixabay.com/photo/2022/08/15/09/14/koyasan-temple-7387445_1280.jpg",
                           ),
@@ -193,25 +193,25 @@ class _TravelMainPageState extends State<TravelMainPage> {
                         children: [
                           Row(
                             children: [
-                              Spacer(),
+                              const Spacer(),
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.white,
                                 child: IconButton(
-                                  icon: Icon(Icons.favorite_outline),
+                                  icon: const Icon(Icons.favorite_outline),
                                   onPressed: () {},
                                 ),
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            padding: EdgeInsets.all(12),
-                            child: Column(
+                            padding: const EdgeInsets.all(12),
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Culture"),
@@ -272,31 +272,31 @@ class _TravelMainPageState extends State<TravelMainPage> {
           });
         },
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.map_outlined,
             ),
             label: "Maps",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_outline,
             ),
             label: "Saved",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.chat_bubble_outline,
             ),
             label: "Inbox",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.person_2_outlined,
             ),
