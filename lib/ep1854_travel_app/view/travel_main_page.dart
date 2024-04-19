@@ -195,27 +195,35 @@ class _TravelMainPageState extends State<TravelMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Culture"),
+                              // Gap(12),
                               Row(
                                 children: [
                                   Text(
                                     "Secret Temple",
+                                    style: TextStyle(
+                                      fontSize: 20
+                                    ),
                                   ),
+                                  Spacer(),
                                   Icon(
                                     Icons.star_border,
                                   ),
                                   Text("4.8"),
                                 ],
                               ),
+                              // Gap(12),
                               Row(
                                 children: [
                                   Icon(
                                     Icons.location_on_outlined,
                                   ),
                                   Text("Unknown Places"),
+                                  Spacer(),
                                   Text(
                                     "\$147",
                                     style: TextStyle(
