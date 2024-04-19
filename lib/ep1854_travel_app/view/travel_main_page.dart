@@ -16,6 +16,9 @@ class _TravelMainPageState extends State<TravelMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        selectedItemColor: Theme.of(context).primaryColor,
+        backgroundColor: Colors.white,
+        
         items: [
           BottomNavigationBarItem(
             icon: Icon(
