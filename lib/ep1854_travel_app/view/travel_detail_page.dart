@@ -19,14 +19,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: Colors.grey[100]!,
+                      color: Colors.grey[200]!,
                     ),
                   ),
                   child: IconButton(
                     icon: Icon(Icons.arrow_back),
                     onPressed: () {},
                   ),
-                )
+                ),
+                Expanded(
+                  child: Center(
+                    child: Text("Detail"),
+                  ),
+                ),
               ],
             )
           ],
