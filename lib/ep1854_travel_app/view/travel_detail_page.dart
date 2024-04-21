@@ -66,10 +66,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: "\$147",
-                        ),
+                            text: "\$147",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            )),
                         TextSpan(
-                          text: "\$147",
+                          text: "/Person",
                         )
                       ],
                     ),
