@@ -57,7 +57,26 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         height: 80,
         child: Row(
           children: [
-            Expanded(child: Column()),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Start From"),
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "\$147",
+                        ),
+                        TextSpan(
+                          text: "\$147",
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
             Container(
               width: 160,
               height: 42,
