@@ -59,12 +59,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Expanded(child: Column()),
             Container(
+              width: 160,
+              height: 42,
               decoration: BoxDecoration(
                 color: const Color.fromRGBO(124, 132, 100, 1),
                 borderRadius: BorderRadius.circular(24),
               ),
-              child: Text(
-                "Book Now",
+              child: Center(
+                child: Text(
+                  "Book Now",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ),
             )
           ],
