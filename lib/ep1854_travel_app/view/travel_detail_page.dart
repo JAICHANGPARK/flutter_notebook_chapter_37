@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({super.key});
 
@@ -17,7 +16,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Row(
               children: [
-                
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[100]!,
+                    ),
+                  ),
+                )
               ],
             )
           ],
