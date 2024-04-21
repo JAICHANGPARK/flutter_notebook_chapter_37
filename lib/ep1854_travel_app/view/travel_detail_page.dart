@@ -21,6 +21,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     border: Border.all(
                       color: Colors.grey[200]!,
                     ),
+                    shape: BoxShape.circle,
                   ),
                   child: IconButton(
                     icon: Icon(Icons.arrow_back),
@@ -30,6 +31,18 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 Expanded(
                   child: Center(
                     child: Text("Detail"),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[200]!,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.favorite_outline),
+                    onPressed: () {},
                   ),
                 ),
               ],
