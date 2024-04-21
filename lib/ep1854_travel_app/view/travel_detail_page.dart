@@ -12,40 +12,60 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back),
+                      onPressed: () {},
+                    ),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Text("Detail"),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.favorite_outline),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        child: Row(
           children: [
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[200]!,
-                    ),
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: () {},
-                  ),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text("Detail"),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[200]!,
-                    ),
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    icon: Icon(Icons.favorite_outline),
-                    onPressed: () {},
-                  ),
-                ),
-              ],
+            Expanded(child: Column()),
+            Container(
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(124, 132, 100, 1),
+                borderRadius: BorderRadius.circular(24),
+              ),
+              child: Text(
+                "Book Now",
+              ),
             )
           ],
         ),
