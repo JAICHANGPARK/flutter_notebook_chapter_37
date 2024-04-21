@@ -15,6 +15,7 @@ dependencies:
   gap: ^3.0.1
   dots_indicator:
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
