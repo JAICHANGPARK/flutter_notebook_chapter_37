@@ -61,7 +61,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Start From"),
+                  Text(
+                    "Start From",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
                   Text.rich(
                     TextSpan(
                       children: [
