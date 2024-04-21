@@ -22,6 +22,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       color: Colors.grey[100]!,
                     ),
                   ),
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back),
+                    onPressed: () {},
+                  ),
                 )
               ],
             )
