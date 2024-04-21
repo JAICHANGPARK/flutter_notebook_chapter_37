@@ -64,8 +64,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             color: Colors.grey,
                           ),
                         ),
+                        Gap(24),
                         TabBar(
                           isScrollable: true,
+                          tabAlignment: TabAlignment.start,
                           tabs: [
                             Tab(
                               text: "Description",
@@ -74,6 +76,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                               text: "Review",
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 400,
+                          child: TabBarView(
+
+                              children: [
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                            ),
+                          ]),
                         )
                       ],
                     ),
