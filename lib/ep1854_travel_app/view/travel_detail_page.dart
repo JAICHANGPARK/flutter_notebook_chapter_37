@@ -48,13 +48,21 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     ),
                   ),
                 ],
-              )
+              ),
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(
+                  children: [],
+                ),
+              ))
             ],
           ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
+        color: Colors.white,
+        surfaceTintColor: Colors.white,
         child: Row(
           children: [
             Expanded(
