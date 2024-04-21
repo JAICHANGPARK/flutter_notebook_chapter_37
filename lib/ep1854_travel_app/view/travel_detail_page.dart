@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({super.key});
@@ -49,12 +50,36 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   ),
                 ],
               ),
+              Gap(24),
               Expanded(
-                  child: SingleChildScrollView(
-                child: Column(
-                  children: [],
+                child: SingleChildScrollView(
+                  child: DefaultTabController(
+                    length: 2,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 520,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        TabBar(
+                          isScrollable: true,
+                          tabs: [
+                            Tab(
+                              text: "Description",
+                            ),
+                            Tab(
+                              text: "Review",
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 ),
-              ))
+              )
             ],
           ),
         ),
