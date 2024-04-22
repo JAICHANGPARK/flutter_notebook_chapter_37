@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HikingLoginPage extends StatelessWidget {
   const HikingLoginPage({super.key});
@@ -20,6 +21,8 @@ class HikingLoginPage extends StatelessWidget {
                   Text(
                     "Let HikingG be your trusted companion as you explore the great outdoors!",
                   ),
+
+                  Gap(24),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -31,6 +34,7 @@ class HikingLoginPage extends StatelessWidget {
                       child: Text("Sign in with Google"),
                     ),
                   ),
+                  Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
