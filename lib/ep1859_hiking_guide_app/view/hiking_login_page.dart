@@ -14,15 +14,18 @@ class HikingLoginPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     "Embark on Your Next Adventure with Us!",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 32,
                     ),
                   ),
                   Text(
                     "Let HikingG be your trusted companion as you explore the great outdoors!",
+                    style: TextStyle(fontSize: 16),
                   ),
                   Gap(24),
                   Container(
