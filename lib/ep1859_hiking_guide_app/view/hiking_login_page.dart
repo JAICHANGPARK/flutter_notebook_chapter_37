@@ -22,10 +22,13 @@ class HikingLoginPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 32,
                     ),
+                    textAlign: TextAlign.center,
                   ),
+                  Gap(8),
                   Text(
                     "Let HikingG be your trusted companion as you explore the great outdoors!",
                     style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.center,
                   ),
                   Gap(24),
                   Container(
