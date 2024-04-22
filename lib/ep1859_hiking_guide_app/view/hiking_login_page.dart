@@ -36,6 +36,7 @@ class HikingLoginPage extends StatelessWidget {
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     padding: EdgeInsets.symmetric(vertical: 12),
                     child: Center(
