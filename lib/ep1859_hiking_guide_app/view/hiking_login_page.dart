@@ -17,11 +17,13 @@ class HikingLoginPage extends StatelessWidget {
                 children: [
                   Text(
                     "Embark on Your Next Adventure with Us!",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Text(
                     "Let HikingG be your trusted companion as you explore the great outdoors!",
                   ),
-
                   Gap(24),
                   Container(
                     decoration: BoxDecoration(
