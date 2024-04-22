@@ -1,8 +1,15 @@
 # flutter_notebook_chapter_37
 
-## EP1854
 
-- FTroviatrip - Travel Mobile App
+## EP1859
+
+- mendaqi - Hiking Guide Mobile Apps
+- By Bayu Sasmita🍃 for Caraka
+- https://dribbble.com/shots/24019926-mendaqi-Hiking-Guide-Mobile-Apps
+
+## EP1854-1858
+
+- Troviatrip - Travel Mobile App
 - By Ananto Nugroho Putra for Korsa
 - https://dribbble.com/shots/23946462-Troviatrip-Travel-Mobile-App
 
