@@ -122,6 +122,30 @@ class _HikingHomePageState extends State<HikingHomePage> {
               Icons.home_filled,
             ),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.language
+            ),
+            label: "Explore",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.newspaper
+            ),
+            label: "Newsfeed",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.download
+            ),
+            label: "Download",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.account_circle_outlined
+            ),
+            label: "Profile",
           )
         ],
       ),
