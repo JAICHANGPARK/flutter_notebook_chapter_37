@@ -25,7 +25,12 @@ class _HikingHomePageState extends State<HikingHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Dreamwalker"),
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Row(
                           children: [
                             Icon(
@@ -53,6 +58,23 @@ class _HikingHomePageState extends State<HikingHomePage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Gap(16),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  icon: Icon(
+                    Icons.search,
+                  ),
+                ),
               ),
             )
           ],
