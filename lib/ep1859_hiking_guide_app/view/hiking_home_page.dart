@@ -11,6 +11,6 @@ class HikingHomePage extends StatefulWidget {
 class _HikingHomePageState extends State<HikingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
