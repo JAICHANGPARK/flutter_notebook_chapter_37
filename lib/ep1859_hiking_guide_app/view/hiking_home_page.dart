@@ -76,7 +76,42 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   ),
                 ),
               ),
-            )
+            ),
+            Gap(12),
+            SizedBox(
+              height: 24,
+              child: Placeholder(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Community Event"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "See more",
+                  ),
+                )
+              ],
+            ),
+            Container(
+              height: 160,
+              decoration: BoxDecoration(
+                border: Border.all(),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Around your location"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "See more",
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
