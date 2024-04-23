@@ -116,6 +116,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
