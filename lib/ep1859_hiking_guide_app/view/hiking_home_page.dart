@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HikingHomePage extends StatefulWidget {
   const HikingHomePage({super.key});
 
@@ -11,6 +10,37 @@ class HikingHomePage extends StatefulWidget {
 class _HikingHomePageState extends State<HikingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Dreamwalker"),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.location_on_outlined,
+                            size: 16,
+                          ),
+                          Text(
+                            "Republic of Korea",
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
