@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HikingHomePage extends StatefulWidget {
   const HikingHomePage({super.key});
@@ -15,10 +16,11 @@ class _HikingHomePageState extends State<HikingHomePage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
                   CircleAvatar(),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
