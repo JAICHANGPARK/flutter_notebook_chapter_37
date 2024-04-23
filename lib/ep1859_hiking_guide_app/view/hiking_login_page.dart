@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1859_hiking_guide_app/view/hiking_home_page.dart';
 import 'package:gap/gap.dart';
 
 class HikingLoginPage extends StatelessWidget {
@@ -32,16 +33,25 @@ class HikingLoginPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   Gap(24),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[200]!,
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => HikingHomePage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
+                        borderRadius: BorderRadius.circular(24),
                       ),
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                    padding: EdgeInsets.symmetric(vertical: 12),
-                    child: Center(
-                      child: Text("Sign in with Google"),
+                      padding: EdgeInsets.symmetric(vertical: 12),
+                      child: Center(
+                        child: Text("Sign in with Google"),
+                      ),
                     ),
                   ),
                   Gap(16),
