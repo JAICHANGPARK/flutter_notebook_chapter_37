@@ -35,6 +35,18 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       )
                     ],
                   ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.grey[200]!,
+                    ),
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.notifications_none),
+                    onPressed: () {},
+                  ),
                 )
               ],
             )
