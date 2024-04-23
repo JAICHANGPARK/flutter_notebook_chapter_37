@@ -14,41 +14,44 @@ class _HikingHomePageState extends State<HikingHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Dreamwalker"),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.location_on_outlined,
-                            size: 16,
-                          ),
-                          Text(
-                            "Republic of Korea",
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.grey[200]!,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Dreamwalker"),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on_outlined,
+                              size: 16,
+                            ),
+                            Text(
+                              "Republic of Korea",
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
-                  child: IconButton(
-                    icon: Icon(Icons.notifications_none),
-                    onPressed: () {},
-                  ),
-                )
-              ],
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.notifications_none),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
