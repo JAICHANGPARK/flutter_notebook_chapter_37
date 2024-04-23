@@ -115,6 +115,16 @@ class _HikingHomePageState extends State<HikingHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          )
+        ],
+      ),
     );
   }
 }
