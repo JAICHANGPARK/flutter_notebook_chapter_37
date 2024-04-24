@@ -139,10 +139,12 @@ class _HikingHomePageState extends State<HikingHomePage> {
             Container(
               height: 160,
               decoration: BoxDecoration(
-                border: Border.all(),
+                border: Border.all(
+                  color: Colors.grey[400]!,
+                ),
               ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.all(8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -159,7 +161,18 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, metus at scelerisque tristique, nunc lacus vulputate purus, vitae elementum nulla lectus tempus sem. Donec hendrerit auctor tellus, sed",
+                    maxLines: 2,
                   ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 16,
+                      ),
+                      CircleAvatar(radius: 16,),
+                      CircleAvatar(radius: 16,),
+                      Text("Dream, +8 more"),
+                    ],
+                  )
                 ],
               ),
             ),
