@@ -81,21 +81,34 @@ class _HikingHomePageState extends State<HikingHomePage> {
               ),
             ),
             Gap(12),
-            SizedBox(
-              height: 24,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                      color: Colors.grey[200]!,
-                    )),
-                    child: Row(
-                      children: [],
-                    ),
-                  );
-                },
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+              ),
+              child: SizedBox(
+                height: 32,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.only(right: 16),
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                        color: Colors.grey[200]!,
+                      )),
+                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        children: [
+                          Text("Sort"),
+                          Icon(
+                            Icons.keyboard_arrow_down_sharp,
+                            size: 12,
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
             Row(
