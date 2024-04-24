@@ -74,6 +74,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   icon: Icon(
                     Icons.search,
                   ),
+                  hintText: "Search route mount,...",
+                  border: InputBorder.none,
                 ),
               ),
             ),
@@ -125,27 +127,19 @@ class _HikingHomePageState extends State<HikingHomePage> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.language
-            ),
+            icon: Icon(Icons.language),
             label: "Explore",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-                Icons.newspaper
-            ),
+            icon: Icon(Icons.newspaper),
             label: "Newsfeed",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-                Icons.download
-            ),
+            icon: Icon(Icons.download),
             label: "Download",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-                Icons.account_circle_outlined
-            ),
+            icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
           )
         ],
