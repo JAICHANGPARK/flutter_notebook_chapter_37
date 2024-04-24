@@ -141,7 +141,27 @@ class _HikingHomePageState extends State<HikingHomePage> {
               decoration: BoxDecoration(
                 border: Border.all(),
               ),
-              child: Text("Hiking Summit Quest Adventure"),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Hiking Summit Quest Adventure"),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.calendar_month,
+                      ),
+                      Text("28 Apr 2024"),
+                      Icon(Icons.golf_course),
+                      Text("Magelang"),
+                    ],
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, metus at scelerisque tristique, nunc lacus vulputate purus, vitae elementum nulla lectus tempus sem. Donec hendrerit auctor tellus, sed",
+                  ),
+                ],
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
