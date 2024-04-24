@@ -69,6 +69,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
                 borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: TextField(
                 decoration: InputDecoration(
                   icon: Icon(
@@ -82,7 +83,20 @@ class _HikingHomePageState extends State<HikingHomePage> {
             Gap(12),
             SizedBox(
               height: 24,
-              child: Placeholder(),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      color: Colors.grey[200]!,
+                    )),
+                    child: Row(
+                      children: [],
+                    ),
+                  );
+                },
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
