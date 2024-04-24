@@ -160,10 +160,12 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       Text("Magelang"),
                     ],
                   ),
+                  Gap(12),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, metus at scelerisque tristique, nunc lacus vulputate purus, vitae elementum nulla lectus tempus sem. Donec hendrerit auctor tellus, sed",
                     maxLines: 2,
                   ),
+                  Gap(12),
                   Row(
                     children: [
                       CircleAvatar(
