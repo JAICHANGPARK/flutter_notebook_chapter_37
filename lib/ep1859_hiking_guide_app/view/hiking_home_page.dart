@@ -113,23 +113,35 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Community Event"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See more",
+            Gap(24),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Community Event",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
                   ),
-                )
-              ],
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See more",
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
               height: 160,
               decoration: BoxDecoration(
                 border: Border.all(),
               ),
+              child: Text("Hiking Summit Quest Adventure"),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
