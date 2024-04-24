@@ -93,9 +93,11 @@ class _HikingHomePageState extends State<HikingHomePage> {
                     return Container(
                       margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
-                          border: Border.all(
-                        color: Colors.grey[200]!,
-                      )),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(24),
+                      ),
                       padding: EdgeInsets.symmetric(horizontal: 12),
                       child: Row(
                         children: [
