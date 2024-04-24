@@ -113,7 +113,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            Gap(24),
+            Gap(8),
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 16,
@@ -201,17 +201,26 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Around your location"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See more",
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Around your location",
+                    style: TextStyle(
+                      fontSize: 16,
+
+                    ),
                   ),
-                )
-              ],
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See more",
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
