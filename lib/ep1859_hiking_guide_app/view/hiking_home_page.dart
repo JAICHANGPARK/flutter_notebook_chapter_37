@@ -210,7 +210,6 @@ class _HikingHomePageState extends State<HikingHomePage> {
                     "Around your location",
                     style: TextStyle(
                       fontSize: 16,
-
                     ),
                   ),
                   TextButton(
@@ -222,6 +221,23 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ],
               ),
             ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 320,
+                      margin: EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.blueAccent,
+                      ),
+                    );
+                  },
+                ),
+              ),
+            )
           ],
         ),
       ),
