@@ -142,6 +142,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 border: Border.all(
                   color: Colors.grey[400]!,
                 ),
+                borderRadius: BorderRadius.circular(8),
               ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: EdgeInsets.all(8),
@@ -168,11 +169,33 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       CircleAvatar(
                         radius: 16,
                       ),
-                      CircleAvatar(radius: 16,),
-                      CircleAvatar(radius: 16,),
+                      CircleAvatar(
+                        radius: 16,
+                      ),
+                      CircleAvatar(
+                        radius: 16,
+                      ),
                       Text("Dream, +8 more"),
+                      Spacer(),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.lightGreen,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 6,
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Join Event",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      )
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
