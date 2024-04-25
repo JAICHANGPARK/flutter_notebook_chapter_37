@@ -255,6 +255,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                             children: [
                               Icon(
                                 Icons.golf_course,
+                                size: 16,
                               ),
                               Text("East Java, INdonesia"),
                             ],
