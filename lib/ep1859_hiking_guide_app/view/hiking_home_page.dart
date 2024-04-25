@@ -262,7 +262,10 @@ class _HikingHomePageState extends State<HikingHomePage> {
                           ),
                           Row(
                             children: [
-
+                                Icon(Icons.timer),
+                              Text("4h 45m"),
+                              Icon(Icons.route),
+                              Text("16.6km")
                             ],
                           )
                         ],
