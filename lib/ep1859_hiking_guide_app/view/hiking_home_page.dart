@@ -253,6 +253,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(23),
@@ -264,6 +265,15 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                         ),
                                         Text("Hard"),
                                       ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    radius: 14,
+                                    backgroundColor: Colors.white,
+                                    child: Icon(
+                                      Icons.download,
+                                      size: 16,
                                     ),
                                   )
                                 ],
