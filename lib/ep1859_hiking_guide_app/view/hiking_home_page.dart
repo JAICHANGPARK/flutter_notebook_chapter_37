@@ -231,9 +231,6 @@ class _HikingHomePageState extends State<HikingHomePage> {
                     return Container(
                       width: 320,
                       margin: EdgeInsets.only(right: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.blueAccent,
-                      ),
                       child: Column(
                         children: [
                           Expanded(
@@ -246,6 +243,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                   ),
                                   fit: BoxFit.cover,
                                 ),
+                                borderRadius: BorderRadius.circular(12),
                               ),
                               child: Row(
                                 children: [
