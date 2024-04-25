@@ -268,10 +268,12 @@ class _HikingHomePageState extends State<HikingHomePage> {
                               ),
                               Gap(4),
                               Text("4h 45m", style: TextStyle(),),
+                              Gap(16),
                               Icon(
                                 Icons.route,
                                 size: 16,
                               ),
+                              Gap(4),
                               Text("16.6km"),
                             ],
                           )
