@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class HikingHomePage extends StatefulWidget {
@@ -232,6 +233,38 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       margin: EdgeInsets.only(right: 8),
                       decoration: BoxDecoration(
                         color: Colors.blueAccent,
+                      ),
+                      child: Column(
+                        children: [
+                          Expanded(child: Container()),
+                          Row(
+                            children: [
+                              Text(
+                                "Mount via Tretes",
+                                style: TextStyle(),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.star,
+                                size: 16,
+                              ),
+                              Text("4.9 (120)"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.golf_course,
+                              ),
+                              Text("East Java, INdonesia"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+
+                            ],
+                          )
+                        ],
                       ),
                     );
                   },
