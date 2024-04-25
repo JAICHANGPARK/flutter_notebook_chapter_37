@@ -226,6 +226,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
               child: Padding(
                 padding: const EdgeInsets.only(
                   left: 16,
+                  bottom: 16,
                 ),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
