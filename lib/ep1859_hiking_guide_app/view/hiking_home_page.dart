@@ -224,7 +224,9 @@ class _HikingHomePageState extends State<HikingHomePage> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(
+                  left: 16,
+                ),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
@@ -314,7 +316,9 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            SizedBox(height: 12,),
+            SizedBox(
+              height: 12,
+            ),
           ],
         ),
       ),
