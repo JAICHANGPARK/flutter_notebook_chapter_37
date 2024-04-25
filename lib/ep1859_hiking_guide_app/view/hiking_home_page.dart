@@ -236,7 +236,19 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       ),
                       child: Column(
                         children: [
-                          Expanded(child: Container()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.lightGreen,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ),
                           Gap(6),
                           Row(
                             children: [
@@ -271,7 +283,10 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                 size: 16,
                               ),
                               Gap(4),
-                              Text("4h 45m", style: TextStyle(),),
+                              Text(
+                                "4h 45m",
+                                style: TextStyle(),
+                              ),
                               Gap(16),
                               Icon(
                                 Icons.route,
