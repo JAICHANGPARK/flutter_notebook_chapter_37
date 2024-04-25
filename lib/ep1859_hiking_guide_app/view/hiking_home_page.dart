@@ -247,6 +247,19 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.workspace_premium,
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           Gap(6),
