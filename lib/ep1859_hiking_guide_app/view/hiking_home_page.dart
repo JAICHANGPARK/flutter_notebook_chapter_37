@@ -248,14 +248,21 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                 ),
                                 borderRadius: BorderRadius.circular(12),
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(23),
+                                    ),
                                     child: Row(
                                       children: [
                                         Icon(
                                           Icons.workspace_premium,
                                         ),
+                                        Text("Hard"),
                                       ],
                                     ),
                                   )
