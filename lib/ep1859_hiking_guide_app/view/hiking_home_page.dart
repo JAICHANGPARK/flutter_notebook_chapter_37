@@ -313,7 +313,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   },
                 ),
               ),
-            )
+            ),
+            SizedBox(height: 12,),
           ],
         ),
       ),
