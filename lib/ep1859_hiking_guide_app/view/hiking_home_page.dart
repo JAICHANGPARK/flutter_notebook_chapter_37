@@ -237,6 +237,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       child: Column(
                         children: [
                           Expanded(child: Container()),
+                          Gap(6),
                           Row(
                             children: [
                               Text(
@@ -251,15 +252,18 @@ class _HikingHomePageState extends State<HikingHomePage> {
                               Text("4.9 (120)"),
                             ],
                           ),
+                          Gap(4),
                           Row(
                             children: [
                               Icon(
                                 Icons.golf_course,
                                 size: 16,
                               ),
+                              Gap(4),
                               Text("East Java, INdonesia"),
                             ],
                           ),
+                          Gap(4),
                           Row(
                             children: [
                               Icon(
