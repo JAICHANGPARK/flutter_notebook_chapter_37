@@ -20,9 +20,9 @@ class _HikingHomePageState extends State<HikingHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
-                  Gap(12),
-                  Expanded(
+                  const CircleAvatar(),
+                  const Gap(12),
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -54,24 +54,24 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.notifications_none),
+                      icon: const Icon(Icons.notifications_none),
                       onPressed: () {},
                     ),
                   )
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.grey[300]!,
                 ),
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const TextField(
                 decoration: InputDecoration(
                   icon: Icon(
                     Icons.search,
@@ -81,7 +81,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            Gap(12),
+            const Gap(12),
             Padding(
               padding: const EdgeInsets.only(
                 left: 16,
@@ -92,15 +92,15 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 16),
+                      margin: const EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 12),
-                      child: Row(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: const Row(
                         children: [
                           Text("Sort"),
                           Icon(
@@ -114,7 +114,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            Gap(8),
+            const Gap(8),
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 16,
@@ -122,7 +122,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Community Event",
                     style: TextStyle(
                       fontSize: 16,
@@ -130,7 +130,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "See more",
                     ),
                   )
@@ -145,13 +145,13 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              padding: EdgeInsets.all(8),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.all(8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Hiking Summit Quest Adventure"),
-                  Row(
+                  const Text("Hiking Summit Quest Adventure"),
+                  const Row(
                     children: [
                       Icon(
                         Icons.calendar_month,
@@ -161,34 +161,34 @@ class _HikingHomePageState extends State<HikingHomePage> {
                       Text("Magelang"),
                     ],
                   ),
-                  Gap(12),
-                  Text(
+                  const Gap(12),
+                  const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, metus at scelerisque tristique, nunc lacus vulputate purus, vitae elementum nulla lectus tempus sem. Donec hendrerit auctor tellus, sed",
                     maxLines: 2,
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 16,
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 16,
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 16,
                       ),
-                      Text("Dream, +8 more"),
-                      Spacer(),
+                      const Text("Dream, +8 more"),
+                      const Spacer(),
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.lightGreen,
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 6,
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Join Event",
                             style: TextStyle(
@@ -207,7 +207,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Around your location",
                     style: TextStyle(
                       fontSize: 16,
@@ -215,7 +215,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "See more",
                     ),
                   )
@@ -233,14 +233,14 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 320,
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       child: Column(
                         children: [
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.lightGreen,
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg",
                                   ),
@@ -248,17 +248,17 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                 ),
                                 borderRadius: BorderRadius.circular(12),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(23),
                                     ),
-                                    child: Row(
+                                    child: const Row(
                                       children: [
                                         Icon(
                                           Icons.workspace_premium,
@@ -267,8 +267,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                                       ],
                                     ),
                                   ),
-                                  Spacer(),
-                                  CircleAvatar(
+                                  const Spacer(),
+                                  const CircleAvatar(
                                     radius: 14,
                                     backgroundColor: Colors.white,
                                     child: Icon(
@@ -280,8 +280,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                               ),
                             ),
                           ),
-                          Gap(6),
-                          Row(
+                          const Gap(6),
+                          const Row(
                             children: [
                               Text(
                                 "Mount via Tretes",
@@ -295,8 +295,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                               Text("4.9 (120)"),
                             ],
                           ),
-                          Gap(4),
-                          Row(
+                          const Gap(4),
+                          const Row(
                             children: [
                               Icon(
                                 Icons.golf_course,
@@ -306,8 +306,8 @@ class _HikingHomePageState extends State<HikingHomePage> {
                               Text("East Java, INdonesia"),
                             ],
                           ),
-                          Gap(4),
-                          Row(
+                          const Gap(4),
+                          const Row(
                             children: [
                               Icon(
                                 Icons.timer,
@@ -334,7 +334,7 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
           ],
@@ -343,25 +343,25 @@ class _HikingHomePageState extends State<HikingHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.language),
             label: "Explore",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.newspaper),
             label: "Newsfeed",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.download),
             label: "Download",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
           )
