@@ -24,13 +24,15 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
       bottomNavigationBar: BottomAppBar(
         height: 82,
         child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 16, vertical:4),
+          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           decoration: BoxDecoration(
-            color: Colors.green,
+            color: Color.fromRGBO(108, 123, 81, 1),
             borderRadius: BorderRadius.circular(32),
           ),
           child: Center(
-            child: Text("Preview Trail"),
+            child: Text("Preview Trail", style: TextStyle(
+              
+            ),),
           ),
         ),
       ),
