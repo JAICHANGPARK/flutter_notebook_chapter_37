@@ -22,7 +22,9 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 82,
+        color: Colors.white,
+        surfaceTintColor: Colors.white,
+        height: 72,
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           decoration: BoxDecoration(
@@ -30,9 +32,12 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
             borderRadius: BorderRadius.circular(32),
           ),
           child: Center(
-            child: Text("Preview Trail", style: TextStyle(
-              
-            ),),
+            child: Text(
+              "Preview Trail",
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           ),
         ),
       ),
