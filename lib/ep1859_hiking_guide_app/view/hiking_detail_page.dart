@@ -13,7 +13,14 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
+          ),
           Expanded(
             child: SingleChildScrollView(
               child: Placeholder(),
