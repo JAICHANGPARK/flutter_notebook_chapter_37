@@ -24,10 +24,11 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
       bottomNavigationBar: BottomAppBar(
         height: 82,
         child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
           decoration: BoxDecoration(
-            
+
           ),
-          child: Text("Preview Trail"),
+          child: Center(child: Text("Preview Trail")),
         ),
       ),
     );
