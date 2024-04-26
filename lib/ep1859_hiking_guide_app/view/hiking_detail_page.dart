@@ -19,11 +19,27 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(8),
               ),
+              chji
             ),
           ),
           Expanded(
             child: SingleChildScrollView(
-              child: Placeholder(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Mount via Tretes"),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.golf_course,
+                        size: 16,
+                      ),
+                      Text("East Java, Indonesia"),
+                    ],
+                  ),
+
+                ],
+              ),
             ),
           )
         ],
