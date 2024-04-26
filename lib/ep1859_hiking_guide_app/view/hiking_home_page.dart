@@ -235,8 +235,11 @@ class _HikingHomePageState extends State<HikingHomePage> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => HikingDetailPage(),),);
-                        
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => HikingDetailPage(),
+                          ),
+                        );
                       },
                       child: Container(
                         width: 320,
