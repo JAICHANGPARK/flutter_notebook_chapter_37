@@ -56,6 +56,7 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                       ],
                     ),
                     Container(
+                      height: 82,
                       decoration: BoxDecoration(
                         color: Colors.grey[200]!,
                       ),
