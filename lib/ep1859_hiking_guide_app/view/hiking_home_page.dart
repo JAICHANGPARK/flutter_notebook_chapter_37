@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
+import 'hiking_detail_page.dart';
+
 class HikingHomePage extends StatefulWidget {
   const HikingHomePage({super.key});
 
@@ -231,103 +233,109 @@ class _HikingHomePageState extends State<HikingHomePage> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return Container(
-                      width: 320,
-                      margin: const EdgeInsets.only(right: 8),
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.lightGreen,
-                                image: const DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg",
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => HikingDetailPage(),),);
+                        
+                      },
+                      child: Container(
+                        width: 320,
+                        margin: const EdgeInsets.only(right: 8),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.lightGreen,
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
                                   ),
-                                  fit: BoxFit.cover,
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              padding: const EdgeInsets.all(16),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(23),
+                                padding: const EdgeInsets.all(16),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(23),
+                                      ),
+                                      child: const Row(
+                                        children: [
+                                          Icon(
+                                            Icons.workspace_premium,
+                                          ),
+                                          Text("Hard"),
+                                        ],
+                                      ),
                                     ),
-                                    child: const Row(
-                                      children: [
-                                        Icon(
-                                          Icons.workspace_premium,
-                                        ),
-                                        Text("Hard"),
-                                      ],
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                  const CircleAvatar(
-                                    radius: 14,
-                                    backgroundColor: Colors.white,
-                                    child: Icon(
-                                      Icons.download,
-                                      size: 16,
-                                    ),
-                                  )
-                                ],
+                                    const Spacer(),
+                                    const CircleAvatar(
+                                      radius: 14,
+                                      backgroundColor: Colors.white,
+                                      child: Icon(
+                                        Icons.download,
+                                        size: 16,
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                          const Gap(6),
-                          const Row(
-                            children: [
-                              Text(
-                                "Mount via Tretes",
-                                style: TextStyle(),
-                              ),
-                              Spacer(),
-                              Icon(
-                                Icons.star,
-                                size: 16,
-                              ),
-                              Text("4.9 (120)"),
-                            ],
-                          ),
-                          const Gap(4),
-                          const Row(
-                            children: [
-                              Icon(
-                                Icons.golf_course,
-                                size: 16,
-                              ),
-                              Gap(4),
-                              Text("East Java, INdonesia"),
-                            ],
-                          ),
-                          const Gap(4),
-                          const Row(
-                            children: [
-                              Icon(
-                                Icons.timer,
-                                size: 16,
-                              ),
-                              Gap(4),
-                              Text(
-                                "4h 45m",
-                                style: TextStyle(),
-                              ),
-                              Gap(16),
-                              Icon(
-                                Icons.route,
-                                size: 16,
-                              ),
-                              Gap(4),
-                              Text("16.6km"),
-                            ],
-                          )
-                        ],
+                            const Gap(6),
+                            const Row(
+                              children: [
+                                Text(
+                                  "Mount via Tretes",
+                                  style: TextStyle(),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.star,
+                                  size: 16,
+                                ),
+                                Text("4.9 (120)"),
+                              ],
+                            ),
+                            const Gap(4),
+                            const Row(
+                              children: [
+                                Icon(
+                                  Icons.golf_course,
+                                  size: 16,
+                                ),
+                                Gap(4),
+                                Text("East Java, INdonesia"),
+                              ],
+                            ),
+                            const Gap(4),
+                            const Row(
+                              children: [
+                                Icon(
+                                  Icons.timer,
+                                  size: 16,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "4h 45m",
+                                  style: TextStyle(),
+                                ),
+                                Gap(16),
+                                Icon(
+                                  Icons.route,
+                                  size: 16,
+                                ),
+                                Gap(4),
+                                Text("16.6km"),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     );
                   },
