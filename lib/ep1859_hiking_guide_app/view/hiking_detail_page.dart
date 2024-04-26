@@ -21,6 +21,15 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
           )
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        height: 82,
+        child: Container(
+          decoration: BoxDecoration(
+            
+          ),
+          child: Text("Preview Trail"),
+        ),
+      ),
     );
   }
 }
