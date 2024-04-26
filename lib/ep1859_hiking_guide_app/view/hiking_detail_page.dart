@@ -26,9 +26,12 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
           decoration: BoxDecoration(
-
+            color: Colors.green,
+            borderRadius: BorderRadius.circular(32),
           ),
-          child: Center(child: Text("Preview Trail")),
+          child: Center(
+            child: Text("Preview Trail"),
+          ),
         ),
       ),
     );
