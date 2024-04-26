@@ -19,7 +19,9 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(8),
               ),
+              padding: EdgeInsets.only(top: 72,left: 24, right: 24),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.white,
