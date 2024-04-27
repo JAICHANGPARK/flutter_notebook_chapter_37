@@ -127,12 +127,14 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                       ),
                     ),
                     Text("Thur 11 April 2024"),
+                    Gap(24),
                     Row(
                       children: [
                         Icon(
                           Icons.grain,
-                          size: 42,
+                          size: 64,
                         ),
+                        Gap(12),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
