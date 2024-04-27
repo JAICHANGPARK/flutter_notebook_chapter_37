@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class HikingDetailPage extends StatefulWidget {
   const HikingDetailPage({super.key});
@@ -16,10 +19,13 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              padding: EdgeInsets.only(top: 72,left: 24, right: 24),
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(8),
+                  image: DecorationImage(
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg"),
+                    fit: BoxFit.cover,
+                  )),
+              padding: EdgeInsets.only(top: 72, left: 24, right: 24),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -45,7 +51,12 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Mount via Tretes"),
+                    Text(
+                      "Mount via Tretes",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
                     Row(
                       children: [
                         Icon(
@@ -55,10 +66,43 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                         Text("East Java, Indonesia"),
                       ],
                     ),
+                    Gap(6),
                     Container(
-                      height: 82,
+                      height: 68,
                       decoration: BoxDecoration(
-                        color: Colors.grey[200]!,
+                        color: Colors.grey[100]!,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("3.1km"),
+                                Text("Length"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("115ft"),
+                                Text("Elevation Gain"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("OUt & Back"),
+                                Text("Route Type"),
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     ),
                     Text("Description"),
