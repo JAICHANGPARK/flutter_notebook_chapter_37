@@ -105,11 +105,79 @@ class _HikingDetailPageState extends State<HikingDetailPage> {
                         ],
                       ),
                     ),
-                    Text("Description"),
+                    Gap(12),
+                    Text(
+                      "Description",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    Gap(12),
                     Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                       maxLines: 3,
                     ),
+                    Gap(12),
+                    Text(
+                      "Weather Prediction",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    Text("Thur 11 April 2024"),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.grain,
+                          size: 42,
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "20",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Text("Thunderstorm"),
+                            ],
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.water_drop_outlined,
+                                ),
+                                Text("94%"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.water_drop_outlined,
+                                ),
+                                Text("94%"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.water_drop_outlined,
+                                ),
+                                Text("94%"),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
