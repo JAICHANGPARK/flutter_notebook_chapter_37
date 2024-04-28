@@ -20,13 +20,19 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
               children: [
                 Expanded(child: Stack(
                   children: [
-                    Positioned(child: CircleAvatar()),
+                    Positioned(child: CircleAvatar(
+                      radius: 26,
+                    )),
                     Positioned(
-                        left: 24,
-                        child: CircleAvatar())
+                        left: 40,
+                        child: CircleAvatar(
+                          radius: 26,
+                        ))
                   ],
                 )),
-                CircleAvatar()
+                CircleAvatar(
+                  radius: 26,
+                )
               ],
             )
         
