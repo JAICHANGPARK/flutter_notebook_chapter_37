@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/crypto_home_page.dart';
+
 void main(){
 
   runApp(CryptoMobileApp());
@@ -12,7 +14,7 @@ class CryptoMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CryptoMobileApp(),
+      home: CryptoHomePage(),
     );
   }
 }
