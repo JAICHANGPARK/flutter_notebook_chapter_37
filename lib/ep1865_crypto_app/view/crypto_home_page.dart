@@ -24,11 +24,13 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                     children: [
                       Positioned(child: CircleAvatar(
                         radius: 26,
+                        backgroundColor: Colors.grey,
                       )),
                       Positioned(
                           left: 40,
                           child: CircleAvatar(
                             radius: 26,
+                            backgroundColor: Colors.white,
                           ))
                     ],
                   )),
