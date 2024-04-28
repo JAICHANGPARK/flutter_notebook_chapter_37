@@ -40,10 +40,21 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   )),
                   CircleAvatar(
                     radius: 26,
+                    backgroundColor: Colors.white,
+                    child: Icon(Icons.search),
                   )
                 ],
               ),
-            )
+            ),
+            Text("List of quites"),
+            SizedBox(
+              height: 52,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {},
+              ),
+            ),
           ],
         ),
       ),
