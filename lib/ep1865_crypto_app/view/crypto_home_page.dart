@@ -11,6 +11,12 @@ class CryptoHomePage extends StatefulWidget {
 class _CryptoHomePageState extends State<CryptoHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
