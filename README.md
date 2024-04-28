@@ -3,7 +3,7 @@
 ## EP1865
 
 - Crypto Trading Mobile iOS App
-- By Bayu Sasmita🍃 for Caraka
+- By Kristina Taskaeva for Purrweb UI/UX Agency
 - https://dribbble.com/shots/23997478-Crypto-Trading-Mobile-iOS-App
 
 ## EP1859-1864
