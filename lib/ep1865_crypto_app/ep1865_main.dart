@@ -12,7 +12,7 @@ class CryptoMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      home: CryptoMobileApp(),
     );
   }
 }
