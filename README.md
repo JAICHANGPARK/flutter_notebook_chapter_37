@@ -2,7 +2,7 @@
 
 ## EP1865
 
-- mendaqi - Hiking Guide Mobile Apps
+- Crypto Trading Mobile iOS App
 - By Bayu Sasmita🍃 for Caraka
 - https://dribbble.com/shots/23997478-Crypto-Trading-Mobile-iOS-App
 
