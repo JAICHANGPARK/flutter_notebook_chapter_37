@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  
+
+  runApp(CryptoMobileApp());
+
 }
 
 class CryptoMobileApp extends StatelessWidget {
@@ -9,6 +11,6 @@ class CryptoMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp();
   }
 }
