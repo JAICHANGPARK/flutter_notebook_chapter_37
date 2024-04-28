@@ -16,24 +16,27 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(child: Stack(
-                  children: [
-                    Positioned(child: CircleAvatar(
-                      radius: 26,
-                    )),
-                    Positioned(
-                        left: 40,
-                        child: CircleAvatar(
-                          radius: 26,
-                        ))
-                  ],
-                )),
-                CircleAvatar(
-                  radius: 26,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Expanded(child: Stack(
+                    children: [
+                      Positioned(child: CircleAvatar(
+                        radius: 26,
+                      )),
+                      Positioned(
+                          left: 40,
+                          child: CircleAvatar(
+                            radius: 26,
+                          ))
+                    ],
+                  )),
+                  CircleAvatar(
+                    radius: 26,
+                  )
+                ],
+              ),
             )
         
           ],
