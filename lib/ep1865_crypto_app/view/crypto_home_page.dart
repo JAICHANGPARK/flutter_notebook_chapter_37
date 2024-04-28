@@ -13,47 +13,57 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
     return Scaffold(
       backgroundColor: Colors.green[50],
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Expanded(
-                    child: Stack(
-                  children: [
-                    Positioned(
-                      left: 40,
-                      child: CircleAvatar(
-                        radius: 26,
-                        backgroundColor: Colors.white,
-                        child: Icon(Icons.add),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                      child: Stack(
+                    children: [
+                      Positioned(
+                        left: 40,
+                        child: CircleAvatar(
+                          radius: 26,
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.add),
+                        ),
                       ),
-                    ),
-                    Positioned(
-                      child: CircleAvatar(
-                        radius: 26,
-                        backgroundColor: Colors.grey,
+                      Positioned(
+                        child: CircleAvatar(
+                          radius: 26,
+                          backgroundColor: Colors.grey,
+                        ),
                       ),
-                    ),
-                  ],
-                )),
-                CircleAvatar(
-                  radius: 26,
-                  backgroundColor: Colors.white,
-                  child: Icon(Icons.search),
-                )
-              ],
-            ),
-            Text("List of quites"),
-            SizedBox(
-              height: 52,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {},
+                    ],
+                  )),
+                  CircleAvatar(
+                    radius: 26,
+                    backgroundColor: Colors.white,
+                    child: Icon(Icons.search),
+                  )
+                ],
               ),
-            ),
-          ],
+              Text("List of quites"),
+              SizedBox(
+                height: 52,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {},
+                ),
+              ),
+              Expanded(child: SingleChildScrollView(child: Column(
+                children: [
+
+                ],
+              ),)),
+              Text("Indexes"),
+
+            ],
+          ),
         ),
       ),
     );
