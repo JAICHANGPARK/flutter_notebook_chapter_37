@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CryptoHomePage extends StatefulWidget {
   const CryptoHomePage({super.key});
@@ -55,13 +56,42 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   itemBuilder: (context, index) {},
                 ),
               ),
-              Expanded(child: SingleChildScrollView(child: Column(
-                children: [
-
-                ],
-              ),)),
-              Text("Indexes"),
-
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Indexes"),
+                    Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Gap(12),
+                    Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text("Stocks"),
+                    Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Gap(12),
+                    Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              )),
             ],
           ),
         ),
