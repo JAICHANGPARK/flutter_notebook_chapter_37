@@ -12,9 +12,10 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green[100],
       body: Column(
         children: [
-          
+
         ],
       ),
     );
