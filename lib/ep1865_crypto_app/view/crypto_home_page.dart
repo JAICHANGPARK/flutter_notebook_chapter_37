@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CryptoHomePage extends StatefulWidget {
   const CryptoHomePage({super.key});
 
@@ -20,18 +19,23 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Expanded(child: Stack(
+                  Expanded(
+                      child: Stack(
                     children: [
-                      Positioned(child: CircleAvatar(
-                        radius: 26,
-                        backgroundColor: Colors.grey,
-                      )),
                       Positioned(
-                          left: 40,
-                          child: CircleAvatar(
-                            radius: 26,
-                            backgroundColor: Colors.white,
-                          ))
+                        left: 40,
+                        child: CircleAvatar(
+                          radius: 26,
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.add),
+                        ),
+                      ),
+                      Positioned(
+                        child: CircleAvatar(
+                          radius: 26,
+                          backgroundColor: Colors.grey,
+                        ),
+                      ),
                     ],
                   )),
                   CircleAvatar(
@@ -40,7 +44,6 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                 ],
               ),
             )
-        
           ],
         ),
       ),
