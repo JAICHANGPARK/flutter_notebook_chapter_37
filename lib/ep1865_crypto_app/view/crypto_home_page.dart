@@ -14,6 +14,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
       backgroundColor: Colors.green[50],
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
