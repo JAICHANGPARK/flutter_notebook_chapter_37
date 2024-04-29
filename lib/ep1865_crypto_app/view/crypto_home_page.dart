@@ -62,16 +62,21 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                 ),
               ),
               SizedBox(
-                height: 52,
+                height: 36,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 10,
+                  itemCount: tabs.length,
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: BoxDecoration(
                         color: index == 0 ? Colors.black : Colors.white,
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                      child: Text("${tabs[index]}"),
+                      margin: EdgeInsets.only(right: 16),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Center(
+                        child: Text("${tabs[index]}"),
+                      ),
                     );
                   },
                 ),
