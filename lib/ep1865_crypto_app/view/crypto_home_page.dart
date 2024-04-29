@@ -111,11 +111,15 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                       ),
                       child: Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            radius: 32,
+                          ),
                           Expanded(child: Column(children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                
+                                Text("ABCD"),
+                                Text("2222.09"),
                               ],
                             )
                           ],))
