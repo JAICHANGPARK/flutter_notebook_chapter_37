@@ -13,7 +13,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   gap: ^3.0.1
-  dots_indicator:
+  dots_indicator: ^3.0.0
+  google_fonts: ^6.2.1
 
 
 dev_dependencies:
