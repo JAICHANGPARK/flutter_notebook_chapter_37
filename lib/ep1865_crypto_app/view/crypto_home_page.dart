@@ -123,6 +123,16 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                                 Text("ABCD"),
                                 Text("2222.09"),
                               ],
+                            ),
+                            Row(
+
+                              children: [
+                                Text("Unknown Bank"),
+                                Spacer(),
+                                Text("-33.72"),
+                                Gap(6),
+                                Text("-1.52%"),
+                              ],
                             )
                           ],))
                         ],
