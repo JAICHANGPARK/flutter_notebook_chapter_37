@@ -59,7 +59,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                 "List of quites",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 42,
+                  fontSize: 48,
                 ),
               ),
               Gap(12),
@@ -81,6 +81,8 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                           "${tabs[index]}",
                           style: TextStyle(
                             color: index == 0 ? Colors.white : Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
