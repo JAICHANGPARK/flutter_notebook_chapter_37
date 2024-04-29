@@ -62,6 +62,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   fontSize: 42,
                 ),
               ),
+              Gap(12),
               SizedBox(
                 height: 36,
                 child: ListView.builder(
@@ -82,6 +83,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   },
                 ),
               ),
+              Gap(24),
               Expanded(
                   child: SingleChildScrollView(
                 child: Column(
