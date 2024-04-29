@@ -66,7 +66,13 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
-                  itemBuilder: (context, index) {},
+                  itemBuilder: (context, index) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                    );
+                  },
                 ),
               ),
               Expanded(
