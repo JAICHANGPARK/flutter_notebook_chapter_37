@@ -89,7 +89,13 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Indexes"),
+                    Text(
+                      "Indexes",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
                     Container(
                       height: 72,
                       decoration: BoxDecoration(
