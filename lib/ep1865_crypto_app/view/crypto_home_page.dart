@@ -69,8 +69,9 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: index == 0 ? Colors.black : Colors.white,
                       ),
+                      child: Text("${tabs[index]}"),
                     );
                   },
                 ),
