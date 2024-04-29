@@ -77,7 +77,12 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                       margin: EdgeInsets.only(right: 16),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Center(
-                        child: Text("${tabs[index]}"),
+                        child: Text(
+                          "${tabs[index]}",
+                          style: TextStyle(
+                            color: index == 0 ? Colors.white : Colors.black,
+                          ),
+                        ),
                       ),
                     );
                   },
@@ -93,9 +98,10 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                       "Indexes",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: 20,
                       ),
                     ),
+                    Gap(12),
                     Container(
                       height: 72,
                       decoration: BoxDecoration(
