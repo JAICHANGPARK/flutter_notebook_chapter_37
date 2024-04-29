@@ -105,15 +105,17 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                     ),
                     Gap(12),
                     Container(
-                      height: 72,
+
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      padding: EdgeInsets.all(12),
                       child: Row(
                         children: [
                           CircleAvatar(
-                            radius: 32,
+                            radius: 30,
                           ),
+                          Gap(12),
                           Expanded(child: Column(children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
