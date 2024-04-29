@@ -203,6 +203,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                         ],
                       ),
                     ),
+                    Gap(24),
                     Text(
                       "Stocks",
                       style: TextStyle(
@@ -210,6 +211,7 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                         fontSize: 20,
                       ),
                     ),
+                    Gap(12),
                     ...List.generate(
                       3,
                       (index) => Container(
