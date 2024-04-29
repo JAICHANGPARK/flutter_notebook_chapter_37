@@ -168,55 +168,103 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                           Gap(12),
                           Expanded(
                               child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        "ABCD",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                        ),
-                                      ),
-                                      Text(
-                                        "2222.09",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                        ),
-                                      ),
-                                    ],
+                                  Text(
+                                    "ABCD",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
                                   ),
-                                  Gap(6),
-                                  Row(
-                                    children: [
-                                      Text("Unknown Bank"),
-                                      Spacer(),
-                                      Text("-33.72"),
-                                      Gap(6),
-                                      Text("-1.52%"),
-                                    ],
-                                  )
+                                  Text(
+                                    "2222.09",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
                                 ],
-                              ))
+                              ),
+                              Gap(6),
+                              Row(
+                                children: [
+                                  Text("Unknown Bank"),
+                                  Spacer(),
+                                  Text("-33.72"),
+                                  Gap(6),
+                                  Text("-1.52%"),
+                                ],
+                              )
+                            ],
+                          ))
                         ],
                       ),
                     ),
-                    Text("Stocks"),
-                    Container(
-                      height: 72,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
+                    Text(
+                      "Stocks",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
                       ),
                     ),
-                    Gap(12),
-                    Container(
-                      height: 72,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
+                    ...List.generate(
+                      3,
+                      (index) => Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        margin: EdgeInsets.only(
+                          bottom: 12,
+                        ),
+                        padding: EdgeInsets.all(12),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 30,
+                            ),
+                            Gap(12),
+                            Expanded(
+                                child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "ABCD",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text(
+                                      "2222.09",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Gap(6),
+                                Row(
+                                  children: [
+                                    Text("Unknown Bank"),
+                                    Spacer(),
+                                    Text("-33.72"),
+                                    Gap(6),
+                                    Text("-1.52%"),
+                                  ],
+                                )
+                              ],
+                            ))
+                          ],
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               )),
