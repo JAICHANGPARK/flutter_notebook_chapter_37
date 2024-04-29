@@ -129,7 +129,13 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                                       fontSize: 18,
                                     ),
                                   ),
-                                  Text("2222.09"),
+                                  Text(
+                                    "2222.09",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
                                 ],
                               ),
                               Row(
