@@ -54,11 +54,12 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   )
                 ],
               ),
+              Gap(16),
               Text(
                 "List of quites",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 34,
+                  fontSize: 42,
                 ),
               ),
               SizedBox(
