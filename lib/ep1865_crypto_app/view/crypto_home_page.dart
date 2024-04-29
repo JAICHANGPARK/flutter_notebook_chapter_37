@@ -109,6 +109,18 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: Row(
+                        children: [
+                          CircleAvatar(),
+                          Expanded(child: Column(children: [
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
+                          ],))
+                        ],
+                      ),
                     ),
                     Gap(12),
                     Container(
