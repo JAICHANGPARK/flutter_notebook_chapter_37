@@ -105,9 +105,9 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                     ),
                     Gap(12),
                     Container(
-
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(16),
                       ),
                       padding: EdgeInsets.all(12),
                       child: Row(
@@ -116,25 +116,33 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                             radius: 30,
                           ),
                           Gap(12),
-                          Expanded(child: Column(children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("ABCD"),
-                                Text("2222.09"),
-                              ],
-                            ),
-                            Row(
-
-                              children: [
-                                Text("Unknown Bank"),
-                                Spacer(),
-                                Text("-33.72"),
-                                Gap(6),
-                                Text("-1.52%"),
-                              ],
-                            )
-                          ],))
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "ABCD",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text("2222.09"),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text("Unknown Bank"),
+                                  Spacer(),
+                                  Text("-33.72"),
+                                  Gap(6),
+                                  Text("-1.52%"),
+                                ],
+                              )
+                            ],
+                          ))
                         ],
                       ),
                     ),
