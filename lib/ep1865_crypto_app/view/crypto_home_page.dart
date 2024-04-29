@@ -9,6 +9,13 @@ class CryptoHomePage extends StatefulWidget {
 }
 
 class _CryptoHomePageState extends State<CryptoHomePage> {
+  List<String> tabs = [
+    "All",
+    "Green",
+    "Red",
+    "Orange",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +54,13 @@ class _CryptoHomePageState extends State<CryptoHomePage> {
                   )
                 ],
               ),
-              Text("List of quites"),
+              Text(
+                "List of quites",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 34,
+                ),
+              ),
               SizedBox(
                 height: 52,
                 child: ListView.builder(
