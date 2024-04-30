@@ -81,7 +81,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                 itemCount: tabs.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         tabIndex = index;
                       });
@@ -108,6 +108,27 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                 },
               ),
             ),
+            Expanded(
+                child: IndexedStack(
+              index: tabIndex,
+              children: [
+                Container(
+                  child: Center(
+                    child: Text("All"),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return SizedBox(
+                          height: 320,
+                          child: Card());
+                    },
+                  ),
+                )
+              ],
+            ))
           ],
         ),
       ),
