@@ -128,6 +128,9 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                         child: Card(
                           color: Colors.white,
                           surfaceTintColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
                         ),
                       );
                     },
