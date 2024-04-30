@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -70,8 +71,9 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
               ),
             ),
             Gap(12),
-            SizedBox(
+            Container(
               height: 36,
+              padding: EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
