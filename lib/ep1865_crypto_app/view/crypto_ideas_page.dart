@@ -46,7 +46,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
             ),
             Gap(16),
             Text(
-              "List of quites",
+              "Ideas",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 48,
