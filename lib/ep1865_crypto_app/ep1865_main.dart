@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1865_crypto_app/view/crypto_ideas_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'view/crypto_home_page.dart';
@@ -13,7 +14,7 @@ class CryptoMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CryptoHomePage(),
+      home: CryptoIdeasPage(),
       theme: ThemeData(
         fontFamily: GoogleFonts.onest().fontFamily,
       ),
