@@ -17,6 +17,8 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
     "Subscriptions",
   ];
 
+  int tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,26 +74,33 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
             ),
             Gap(12),
             Container(
-              height: 36,
+              height: 40,
               padding: EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
                 itemBuilder: (context, index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      color: index == 0 ? Colors.black : Colors.white,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    margin: EdgeInsets.only(right: 16),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Center(
-                      child: Text(
-                        "${tabs[index]}",
-                        style: TextStyle(
-                          color: index == 0 ? Colors.white : Colors.black,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                  return GestureDetector(
+                    onTap: (){
+                      setState(() {
+                        tabIndex = index;
+                      });
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: tabIndex == index ? Colors.black : Colors.white,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      margin: EdgeInsets.only(right: 16),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Center(
+                        child: Text(
+                          "${tabs[index]}",
+                          style: TextStyle(
+                            color: tabIndex == index ? Colors.white : Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
