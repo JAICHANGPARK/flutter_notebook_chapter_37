@@ -119,12 +119,16 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0.0),
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
+                        margin: EdgeInsets.only(bottom: 12),
                         height: 420,
-                        child: Card(),
+                        child: Card(
+                          color: Colors.white,
+                          surfaceTintColor: Colors.white,
+                        ),
                       );
                     },
                   ),
