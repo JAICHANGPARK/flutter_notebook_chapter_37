@@ -108,6 +108,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                 },
               ),
             ),
+            Gap(8),
             Expanded(
                 child: IndexedStack(
               index: tabIndex,
@@ -117,14 +118,14 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                     child: Text("All"),
                   ),
                 ),
-
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: ListView.builder(
                     itemBuilder: (context, index) {
-                      return SizedBox(
-                          height: 420,
-                          child: Card());
+                      return Container(
+                        height: 420,
+                        child: Card(),
+                      );
                     },
                   ),
                 )
