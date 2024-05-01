@@ -194,16 +194,42 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                     ),
                                   ),
                                 ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      "analytics and a scheme for working by levels!",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.normal,
-                                        fontSize: 32,
+                                Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        "analytics and a scheme for working by levels!",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.normal,
+                                          fontSize: 24,
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                      Row(
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[300]!,
+                                              ),
+                                              borderRadius: BorderRadius.circular(32),
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.favorite_outline,
+                                                ),
+                                                Gap(8),
+                                                Text(
+                                                  "126",
+                                                ),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
