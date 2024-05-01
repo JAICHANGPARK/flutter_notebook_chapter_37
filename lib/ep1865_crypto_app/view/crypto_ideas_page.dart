@@ -154,7 +154,16 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                                   ),
                                                 ),
                                                 Container(
-                                                  child: Text("Premium"),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.orange,
+                                                  ),
+                                                  child: Text(
+                                                    "Premium",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
                                                 )
                                               ],
                                             ),
