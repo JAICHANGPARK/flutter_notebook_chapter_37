@@ -157,7 +157,8 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                                 Gap(4),
                                                 Container(
                                                   padding: EdgeInsets.symmetric(
-                                                    horizontal: 6,
+                                                    horizontal: 12,
+                                                    vertical: 4,
                                                   ),
                                                   decoration: BoxDecoration(
                                                     color: Colors.orange,
