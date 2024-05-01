@@ -131,7 +131,6 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-
                             child: Column(
                               children: [
                                 Padding(
@@ -147,7 +146,13 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                           children: [
                                             Row(
                                               children: [
-                                                Text("Vilarso"),
+                                                Text(
+                                                  "Vilarso",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 16,
+                                                  ),
+                                                ),
                                                 Container(
                                                   child: Text("Premium"),
                                                 )
