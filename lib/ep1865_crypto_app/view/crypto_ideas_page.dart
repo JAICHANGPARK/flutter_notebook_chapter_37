@@ -124,7 +124,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           margin: EdgeInsets.only(bottom: 12),
-                          height: 420,
+                          height: 480,
                           child: Card(
                             color: Colors.white,
                             surfaceTintColor: Colors.white,
@@ -215,7 +215,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                               ),
                                               borderRadius: BorderRadius.circular(32),
                                             ),
-                                            padding: EdgeInsets.symmetric(horizontal: 12,vertical: 5),
+                                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                                             child: Row(
                                               children: [
                                                 Icon(
@@ -225,8 +225,51 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                                 Gap(8),
                                                 Text(
                                                   "126",
+                                                  style: TextStyle(
+                                                    fontSize: 15,
+                                                    color: Colors.grey[400]!,
+                                                  ),
                                                 ),
                                               ],
+                                            ),
+                                          ),
+                                          Gap(12),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[300]!,
+                                              ),
+                                              borderRadius: BorderRadius.circular(32),
+                                            ),
+                                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+                                            child: Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.chat_bubble_outline,
+                                                  color: Colors.grey[400]!,
+                                                ),
+                                                Gap(8),
+                                                Text(
+                                                  "12",
+                                                  style: TextStyle(
+                                                    fontSize: 15,
+                                                    color: Colors.grey[400]!,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Icon(
+                                            Icons.visibility,
+                                            color: Colors.grey[400]!,
+                                          ),
+                                          Gap(8),
+                                          Text(
+                                            "523",
+                                            style: TextStyle(
+                                              fontSize: 15,
+                                              color: Colors.grey[400]!,
                                             ),
                                           )
                                         ],
