@@ -140,6 +140,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                       CircleAvatar(
                                         radius: 28,
                                       ),
+                                      Gap(12),
                                       Expanded(
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -153,9 +154,14 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                                     fontSize: 16,
                                                   ),
                                                 ),
+                                                Gap(4),
                                                 Container(
+                                                  padding: EdgeInsets.symmetric(
+                                                    horizontal: 6,
+                                                  ),
                                                   decoration: BoxDecoration(
                                                     color: Colors.orange,
+                                                    borderRadius: BorderRadius.circular(32),
                                                   ),
                                                   child: Text(
                                                     "Premium",
