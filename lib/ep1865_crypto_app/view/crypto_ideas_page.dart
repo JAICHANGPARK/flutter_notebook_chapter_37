@@ -110,34 +110,35 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
             ),
             Gap(8),
             Expanded(
-                child: IndexedStack(
-              index: tabIndex,
-              children: [
-                Container(
-                  child: Center(
-                    child: Text("All"),
+              child: IndexedStack(
+                index: tabIndex,
+                children: [
+                  Container(
+                    child: Center(
+                      child: Text("All"),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0.0),
-                  child: ListView.builder(
-                    itemBuilder: (context, index) {
-                      return Container(
-                        margin: EdgeInsets.only(bottom: 12),
-                        height: 420,
-                        child: Card(
-                          color: Colors.white,
-                          surfaceTintColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0.0),
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.only(bottom: 12),
+                          height: 420,
+                          child: Card(
+                            color: Colors.white,
+                            surfaceTintColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                )
-              ],
-            ))
+                        );
+                      },
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
