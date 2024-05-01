@@ -205,6 +205,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                           fontSize: 24,
                                         ),
                                       ),
+                                      Gap(12),
                                       Row(
                                         children: [
                                           Container(
