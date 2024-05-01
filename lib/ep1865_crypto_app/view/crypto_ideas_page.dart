@@ -214,10 +214,12 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                               ),
                                               borderRadius: BorderRadius.circular(32),
                                             ),
+                                            padding: EdgeInsets.symmetric(horizontal: 12,vertical: 5),
                                             child: Row(
                                               children: [
                                                 Icon(
                                                   Icons.favorite_outline,
+                                                  color: Colors.grey[400]!,
                                                 ),
                                                 Gap(8),
                                                 Text(
