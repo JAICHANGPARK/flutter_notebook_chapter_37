@@ -143,6 +143,7 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                       ),
                                       Expanded(
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Row(
                                               children: [
