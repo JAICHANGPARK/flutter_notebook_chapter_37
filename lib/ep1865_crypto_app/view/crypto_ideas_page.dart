@@ -131,6 +131,42 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
+
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 28,
+                                      ),
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Text("Vilarso"),
+                                                Container(
+                                                  child: Text("Premium"),
+                                                )
+                                              ],
+                                            ),
+                                            Text("5h ago"),
+                                          ],
+                                        ),
+                                      ),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         );
                       },
