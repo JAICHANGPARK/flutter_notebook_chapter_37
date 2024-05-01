@@ -188,11 +188,18 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                   ),
                                 ),
                                 Expanded(
-                                    child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                    ),
                                   ),
-                                ))
+                                ),
+                                Text(
+                                  "analytics and a scheme for working by levels!",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
                               ],
                             ),
                           ),
