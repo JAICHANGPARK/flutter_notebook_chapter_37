@@ -186,7 +186,13 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                       ),
                                     ],
                                   ),
-                                )
+                                ),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                  ),
+                                ))
                               ],
                             ),
                           ),
