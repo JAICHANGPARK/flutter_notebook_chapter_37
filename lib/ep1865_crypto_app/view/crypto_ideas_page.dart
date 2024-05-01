@@ -194,11 +194,16 @@ class _CryptoIdeasPageState extends State<CryptoIdeasPage> {
                                     ),
                                   ),
                                 ),
-                                Text(
-                                  "analytics and a scheme for working by levels!",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                Column(
+                                  children: [
+                                    Text(
+                                      "analytics and a scheme for working by levels!",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 32,
+                                      ),
+                                    ),
+                                  ],
                                 )
                               ],
                             ),
