@@ -29,12 +29,22 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 Spacer(),
                 Container(
                   decoration: BoxDecoration(
-                      border: Border.all(
-                    color: Colors.grey[200]!,
-                  )),
+                    border: Border.all(
+                      color: Colors.grey[200]!,
+                    ),
+                    
+                  ),
+                  padding: EdgeInsets.all(4),
                   child: Icon(Icons.nightlight_outlined),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[200]!,
+                    ),
+
+                  ),
+                  padding: EdgeInsets.all(4),
                   child: Icon(Icons.notifications_active_outlined),
                 ),
               ],
