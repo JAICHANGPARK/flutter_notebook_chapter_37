@@ -28,8 +28,8 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   ),
                   Gap(4),
                   Container(
-                    height: 25,
-                    width: 25,
+                    height: 22,
+                    width: 22,
                     decoration: BoxDecoration(
                       color: Colors.black,
                       shape: BoxShape.circle,
