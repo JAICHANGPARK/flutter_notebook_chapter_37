@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SneakersHomePage extends StatefulWidget {
   const SneakersHomePage({super.key});
@@ -12,44 +13,49 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Text("8"),
-                Container(
-                  height: 25,
-                  width: 25,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                Text("8"),
-                Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[200]!,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Text("8"),
+                  Container(
+                    height: 25,
+                    width: 25,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      shape: BoxShape.circle,
                     ),
-                    
                   ),
-                  padding: EdgeInsets.all(4),
-                  child: Icon(Icons.nightlight_outlined),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[200]!,
-                    ),
+                  Text("8"),
 
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+
+                    ),
+                    padding: EdgeInsets.all(4),
+                    child: Icon(Icons.nightlight_outlined),
                   ),
-                  padding: EdgeInsets.all(4),
-                  child: Icon(Icons.notifications_active_outlined),
-                ),
-              ],
-            ),
-          ],
+                  Gap(6),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+
+                    ),
+                    padding: EdgeInsets.all(4),
+                    child: Icon(Icons.notifications_active_outlined),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
