@@ -19,7 +19,14 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
             children: [
               Row(
                 children: [
-                  Text("8"),
+                  Text(
+                    "8",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),
+                  ),
+                  Gap(4),
                   Container(
                     height: 25,
                     width: 25,
@@ -28,15 +35,18 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       shape: BoxShape.circle,
                     ),
                   ),
-                  Text("8"),
-
+                  Gap(4),
+                  Text("8",
+                    style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                  ),),
                   Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
-
                     ),
                     padding: EdgeInsets.all(4),
                     child: Icon(Icons.nightlight_outlined),
@@ -47,7 +57,6 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
-
                     ),
                     padding: EdgeInsets.all(4),
                     child: Icon(Icons.notifications_active_outlined),
