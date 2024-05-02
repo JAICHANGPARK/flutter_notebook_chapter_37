@@ -33,14 +33,23 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.black,
                       shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          spreadRadius: 2
+                        ),
+                      ],
                     ),
                   ),
                   Gap(4),
-                  Text("8",
+                  Text(
+                    "8",
                     style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                  ),),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),
+                  ),
                   Spacer(),
                   Container(
                     decoration: BoxDecoration(
