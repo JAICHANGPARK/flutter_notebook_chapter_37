@@ -3,7 +3,7 @@
 ## EP1869
 
 - 807 Sneakers - Marketplace mobile apps
-- By Kristina Taskaeva for Purrweb UI/UX Agency
+- By Zaini Achmad® for Vektora
 - https://dribbble.com/shots/24060773-807-Sneakers-Marketplace-mobile-apps
 
 ## EP1865-1868
