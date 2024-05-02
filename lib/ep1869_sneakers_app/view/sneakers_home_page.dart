@@ -28,14 +28,17 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 Text("8"),
                 Spacer(),
                 Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                    color: Colors.grey[200]!,
+                  )),
                   child: Icon(Icons.nightlight_outlined),
                 ),
                 Container(
-                  child: Icon(Icons.nightlight_outlined),
+                  child: Icon(Icons.notifications_active_outlined),
                 ),
               ],
             ),
-
           ],
         ),
       ),
