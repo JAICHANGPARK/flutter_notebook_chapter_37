@@ -14,7 +14,28 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                Text("8"),
+                Container(
+                  height: 25,
+                  width: 25,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                Text("8"),
+                Spacer(),
+                Container(
+                  child: Icon(Icons.nightlight_outlined),
+                ),
+                Container(
+                  child: Icon(Icons.nightlight_outlined),
+                ),
+              ],
+            ),
+
           ],
         ),
       ),
