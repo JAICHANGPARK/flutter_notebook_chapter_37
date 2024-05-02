@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_37
 
-## EP1865
+## EP1869
+
+- 807 Sneakers - Marketplace mobile apps
+- By Kristina Taskaeva for Purrweb UI/UX Agency
+- https://dribbble.com/shots/24060773-807-Sneakers-Marketplace-mobile-apps
+
+## EP1865-1868
 
 - Crypto Trading Mobile iOS App
 - By Kristina Taskaeva for Purrweb UI/UX Agency
