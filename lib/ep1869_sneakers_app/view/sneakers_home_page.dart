@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SneakersHomePage extends StatefulWidget {
   const SneakersHomePage({super.key});
 
@@ -11,6 +10,12 @@ class SneakersHomePage extends StatefulWidget {
 class _SneakersHomePageState extends State<SneakersHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [],
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+      ),
+    );
   }
 }
