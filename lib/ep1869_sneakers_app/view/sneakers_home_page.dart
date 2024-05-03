@@ -197,6 +197,22 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.grey[200]!,
                         ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              right: 8,
+                              top: 8,
+                              child: Container(
+                                padding: EdgeInsets.all(6),
+                                color: Colors.white,
+                                child: Icon(
+                                  Icons.favorite_border,
+                                  size: 16,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Gap(12),
@@ -205,10 +221,37 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.grey[200]!,
                         ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              right: 8,
+                              top: 8,
+                              child: Container(
+                                padding: EdgeInsets.all(6),
+                                color: Colors.white,
+                                child: Icon(
+                                  Icons.favorite_border,
+                                  size: 16,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
                 ),
+              ),
+              GridView.builder(
+                shrinkWrap: true,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 4,
+                ),
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: index % 2 == 0 ? Colors.red : Colors.blue,
+                  );
+                },
               )
             ],
           ),
