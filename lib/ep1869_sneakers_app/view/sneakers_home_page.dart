@@ -242,6 +242,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   ],
                 ),
               ),
+              Gap(16),
               GridView.builder(
                 shrinkWrap: true,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -252,7 +253,8 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                     color: index % 2 == 0 ? Colors.red : Colors.blue,
                   );
                 },
-              )
+              ),
+              Gap(16),
             ],
           ),
         ),
