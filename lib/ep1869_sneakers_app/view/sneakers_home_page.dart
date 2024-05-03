@@ -247,7 +247,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 shrinkWrap: true,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 4,
-                  childAspectRatio: .8
+                  childAspectRatio: 1.2
                 ),
                 itemCount: 8,
                 itemBuilder: (context, index) {
@@ -265,7 +265,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 ),
               ),
               Container(
-                height: 240,
+                height: 200,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
