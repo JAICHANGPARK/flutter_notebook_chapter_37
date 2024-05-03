@@ -16,6 +16,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -34,7 +35,11 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       color: Colors.black,
                       shape: BoxShape.circle,
                       boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 3, spreadRadius: 2),
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          spreadRadius: 2,
+                        ),
                       ],
                     ),
                   ),
@@ -149,7 +154,9 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   ],
                 ),
               ),
+              Gap(12),
               Text("Recently Viewed"),
+              Gap(12),
               SizedBox(
                 height: 100,
                 child: Row(
