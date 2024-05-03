@@ -255,6 +255,13 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 },
               ),
               Gap(16),
+              Text(
+                "Value for money",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
             ],
           ),
         ),
