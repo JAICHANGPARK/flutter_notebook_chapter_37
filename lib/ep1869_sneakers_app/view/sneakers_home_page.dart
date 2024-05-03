@@ -34,11 +34,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       color: Colors.black,
                       shape: BoxShape.circle,
                       boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          spreadRadius: 2
-                        ),
+                        BoxShadow(color: Colors.black, blurRadius: 3, spreadRadius: 2),
                       ],
                     ),
                   ),
@@ -76,11 +72,28 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 height: 52,
                 child: Row(
                   children: [
-
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                        ),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text("AAAA"),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Gap(12),
                     Expanded(child: Placeholder()),
+                    Gap(12),
                     Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-
                   ],
                 ),
               )
