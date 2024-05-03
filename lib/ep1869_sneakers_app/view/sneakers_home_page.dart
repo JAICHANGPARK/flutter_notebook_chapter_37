@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -171,6 +172,22 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[200]!,
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              right: 8,
+                              top: 8,
+                              child: Container(
+                                padding: EdgeInsets.all(6),
+                                color: Colors.white,
+                                child: Icon(
+                                  Icons.favorite_border,
+                                  size: 16,
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
