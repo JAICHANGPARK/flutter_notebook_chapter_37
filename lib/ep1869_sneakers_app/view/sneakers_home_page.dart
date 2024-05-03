@@ -264,8 +264,9 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   fontSize: 16,
                 ),
               ),
+              Gap(16),
               Container(
-                height: 200,
+                height: 180,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
