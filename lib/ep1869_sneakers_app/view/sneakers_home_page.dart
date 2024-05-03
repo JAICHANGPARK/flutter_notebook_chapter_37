@@ -72,6 +72,18 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 52,
+                child: Row(
+                  children: [
+
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+
+                  ],
+                ),
+              )
             ],
           ),
         ),
