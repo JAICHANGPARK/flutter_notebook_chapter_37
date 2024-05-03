@@ -148,6 +148,21 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                     ),
                   ],
                 ),
+              ),
+              Text("Recently Viewed"),
+              SizedBox(
+                height: 100,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100]!,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
