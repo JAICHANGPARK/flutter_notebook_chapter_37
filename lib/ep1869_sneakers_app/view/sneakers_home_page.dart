@@ -68,8 +68,24 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   ),
                 ],
               ),
+              Gap(12),
+              Container(
+                height: 46,
+                decoration: BoxDecoration(
+                  color: Colors.grey[200]!,
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.search,
+                    ),
+                    hintText: "Search",
+                  ),
+                ),
+              ),
+              Gap(12),
               SizedBox(
-                height: 52,
+                height: 42,
                 child: Row(
                   children: [
                     Expanded(
