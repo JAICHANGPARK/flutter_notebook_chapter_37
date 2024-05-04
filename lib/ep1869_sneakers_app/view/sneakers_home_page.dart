@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
+
+import 'sneakers_detail_page.dart';
 
 class SneakersHomePage extends StatefulWidget {
   const SneakersHomePage({super.key});
@@ -262,52 +265,61 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 ),
               ),
               Gap(16),
-              Container(
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                ),
-                padding: EdgeInsets.all(12),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "\$110.00",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                        Icon(
-                          Icons.favorite_border,
-                          size: 18,
-                        ),
-                      ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => SneakersDetailPage(),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Gel-111130 Men",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                  );
+                },
+                child: Container(
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                  padding: EdgeInsets.all(12),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "\$110.00",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
-                        ),
-                        Container(
-                          color: Colors.black,
-                          child: Icon(
-                            Icons.shopping_bag_outlined,
-                            color: Colors.white,
+                          Icon(
+                            Icons.favorite_border,
                             size: 18,
                           ),
-                        )
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Gel-111130 Men",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          Container(
+                            color: Colors.black,
+                            child: Icon(
+                              Icons.shopping_bag_outlined,
+                              color: Colors.white,
+                              size: 18,
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
