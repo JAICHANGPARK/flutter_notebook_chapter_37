@@ -267,7 +267,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
-                padding: EdgeInsets.all(12),
+                padding: EdgeInsets.all(4),
                 child: Column(
                   children: [
                     Row(
@@ -283,9 +283,11 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Gel-111130 Men"),
                         Container(
+                          color: Colors.black,
                           child: IconButton(
                             icon: Icon(Icons.shopping_bag_outlined),
                             onPressed: () {},
