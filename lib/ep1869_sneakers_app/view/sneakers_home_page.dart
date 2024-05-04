@@ -245,10 +245,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
               Gap(16),
               GridView.builder(
                 shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4,
-                  childAspectRatio: 1.2
-                ),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4, childAspectRatio: 1.2),
                 itemCount: 8,
                 itemBuilder: (context, index) {
                   return Container(
@@ -270,6 +267,7 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
+                child: R
               ),
             ],
           ),
