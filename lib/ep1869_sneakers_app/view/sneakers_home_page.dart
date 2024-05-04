@@ -267,7 +267,11 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
-                child: R
+                child: Row(
+                  children: [
+                    
+                  ],
+                )
               ),
             ],
           ),
