@@ -280,14 +280,23 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                         ),
                       ],
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Gel-111130 Men"),
+                        Text(
+                          "Gel-111130 Men",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         Container(
                           color: Colors.black,
-                          child: Icon(Icons.shopping_bag_outlined),
+                          child: Icon(
+                            Icons.shopping_bag_outlined,
+                            color: Colors.white,
+                            size: 18,
+                          ),
                         )
                       ],
                     ),
