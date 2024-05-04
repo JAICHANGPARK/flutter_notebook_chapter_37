@@ -267,31 +267,27 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
-                padding: EdgeInsets.all(4),
+                padding: EdgeInsets.all(12),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("\$110.00"),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.favorite_border,
-                          ),
+                        Icon(
+                          Icons.favorite_border,
                         ),
                       ],
                     ),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Gel-111130 Men"),
                         Container(
                           color: Colors.black,
-                          child: IconButton(
-                            icon: Icon(Icons.shopping_bag_outlined),
-                            onPressed: () {},
-                          ),
+                          child: Icon(Icons.shopping_bag_outlined),
                         )
                       ],
                     ),
