@@ -39,24 +39,44 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               ),
               Gap(12),
               Row(
-                children: [
-
-                ],
+                children: [],
               ),
               Row(
-                children: [
-
-                ],
+                children: [],
               ),
               Text("US\$226.00"),
               Divider(),
               Row(
                 children: [
-
+                  Text("Size"),
                 ],
               ),
               Divider(),
-              
+              Row(
+                children: [Text("Colour")],
+              ),
+              Divider(),
+              Row(
+                children: [Text("Quantity")],
+              ),
+              Container(
+                height: 52,
+                color: Colors.black,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.shopping_bag_outlined,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "BUY NOW",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
