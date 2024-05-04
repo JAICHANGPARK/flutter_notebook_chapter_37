@@ -288,11 +288,11 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                         Container(
                           child: IconButton(
                             icon: Icon(Icons.shopping_bag_outlined),
+                            onPressed: () {},
                           ),
                         )
                       ],
                     ),
-
                   ],
                 ),
               ),
