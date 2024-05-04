@@ -63,6 +63,7 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                 height: 52,
                 color: Colors.black,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.shopping_bag_outlined,
