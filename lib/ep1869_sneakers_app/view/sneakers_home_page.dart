@@ -263,23 +263,39 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
               ),
               Gap(16),
               Container(
-                  height: 180,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                  ),
-                  padding: EdgeInsets.all(12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("\$110.00"),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.favorite_border,
+                height: 180,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                padding: EdgeInsets.all(12),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("\$110.00"),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.favorite_border,
+                          ),
                         ),
-                      ),
-                    ],
-                  )),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text("Gel-111130 Men"),
+                        Container(
+                          child: IconButton(
+                            icon: Icon(Icons.shopping_bag_outlined),
+                          ),
+                        )
+                      ],
+                    ),
+
+                  ],
+                ),
+              ),
             ],
           ),
         ),
