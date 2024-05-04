@@ -267,7 +267,9 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.grey,
                   ),
+                  padding: EdgeInsets.all(12),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("\$110.00"),
                       IconButton(
