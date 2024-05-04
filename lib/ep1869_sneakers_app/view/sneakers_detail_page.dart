@@ -10,6 +10,27 @@ class SneakersDetailPage extends StatefulWidget {
 class _SneakersDetailPageState extends State<SneakersDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Icon(Icons.arrow_back),
+                Text("New Orda"),
+                Spacer(),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                    color: Colors.grey[200]!,
+                  )),
+                  child: Icon(Icons.square_outlined),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
