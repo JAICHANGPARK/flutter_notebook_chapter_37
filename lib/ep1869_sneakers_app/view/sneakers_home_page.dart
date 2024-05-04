@@ -274,9 +274,16 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("\$110.00"),
+                        Text(
+                          "\$110.00",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
                         Icon(
                           Icons.favorite_border,
+                          size: 18,
                         ),
                       ],
                     ),
