@@ -263,16 +263,21 @@ class _SneakersHomePageState extends State<SneakersHomePage> {
               ),
               Gap(16),
               Container(
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                ),
-                child: Row(
-                  children: [
-                    
-                  ],
-                )
-              ),
+                  height: 180,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                  child: Row(
+                    children: [
+                      Text("\$110.00"),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.favorite_border,
+                        ),
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),
