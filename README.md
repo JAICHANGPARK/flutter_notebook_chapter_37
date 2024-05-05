@@ -2,9 +2,9 @@
 
 ## EP1873
 
-- 807 Sneakers - Marketplace mobile apps
-- By Zaini Achmad® for Vektora
-- https://dribbble.com/shots/24060773-807-Sneakers-Marketplace-mobile-apps
+- Manga App UI
+- By Ronas IT | UI/UX Team
+- https://dribbble.com/shots/24002225-Manga-App-UI
 
 ## EP1869-1872
 
