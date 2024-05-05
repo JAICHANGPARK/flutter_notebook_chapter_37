@@ -84,6 +84,7 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                   )
                 ],
               ),
+              Gap(12),
               Row(
                 children: [
                   ...List.generate(
@@ -96,7 +97,9 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                   ),
                 ],
               ),
+              Gap(12),
               Text("US\$226.00"),
+              Gap(12),
               Divider(),
               Row(
                 children: [
