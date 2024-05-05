@@ -159,7 +159,16 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                       color: Colors.blueGrey[200],
                     ),
                     child: Row(
-                      children: [],
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.remove,
+                          ),
+                        ),
+                        Text("1"),
+
+                      ],
                     ),
                   )
                 ],
