@@ -141,7 +141,20 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               ),
               Divider(),
               Row(
-                children: [Text("Quantity")],
+                children: [
+                  Text("Quantity"),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey[200],
+                    ),
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    ),
+                  )
+                ],
               ),
               Container(
                 height: 52,
