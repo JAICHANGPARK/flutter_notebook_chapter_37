@@ -11,6 +11,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Column(
         children: [
 
