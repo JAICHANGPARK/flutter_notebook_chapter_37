@@ -34,12 +34,17 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                 ],
               ),
               Gap(16),
-              PageView(children: [
-                Container(
-                  height: 400,
-                  color: Colors.blue,
-                ),
-              ]),
+              SizedBox(
+                height: 400,
+                child: PageView(children: [
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                  ),
+                ]),
+              ),
               Gap(12),
               Row(
                 children: [],
