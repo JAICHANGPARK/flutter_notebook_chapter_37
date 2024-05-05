@@ -34,31 +34,33 @@ class _MangaHomePageState extends State<MangaHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.black,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        selectedItemColor: Colors.amberAccent,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
-            ),
-            label: ""
-          ),
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.explore_outlined,
               ),
-              label: ""
-          ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_border,
               ),
-              label: ""
-          ),
+              label: ""),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline_outlined,
               ),
-              label: ""
-          )
+              label: "")
         ],
       ),
     );
