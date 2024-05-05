@@ -128,7 +128,12 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Divider(),
               Row(
                 children: [
-                  Text("Colour"),
+                  Text(
+                    "Colour",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
                   Spacer(),
                   Text(
                     "Light Grey",
@@ -142,16 +147,19 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Divider(),
               Row(
                 children: [
-                  Text("Quantity"),
+                  Text(
+                    "Quantity",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
                   Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blueGrey[200],
                     ),
                     child: Row(
-                      children: [
-                        
-                      ],
+                      children: [],
                     ),
                   )
                 ],
