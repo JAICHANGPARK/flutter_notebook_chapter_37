@@ -12,11 +12,28 @@ class _MangaHomePageState extends State<MangaHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        elevation: 0,
+        title: Text("NOW"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.shopping_bag_outlined),
+          ),
         ],
       ),
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      
     );
   }
 }
