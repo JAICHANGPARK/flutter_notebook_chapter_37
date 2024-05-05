@@ -13,7 +13,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
