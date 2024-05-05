@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -33,9 +34,11 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                 ],
               ),
               Gap(16),
-              Container(
-                height: 400,
-                color: Colors.blue,
+              PageView(
+                child: Container(
+                  height: 400,
+                  color: Colors.blue,
+                ),
               ),
               Gap(12),
               Row(
