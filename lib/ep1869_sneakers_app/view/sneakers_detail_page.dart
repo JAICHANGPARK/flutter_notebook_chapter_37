@@ -116,15 +116,28 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                     ),
                   ),
                   Spacer(),
-                  Text("US 11",    style: TextStyle(
-                    fontSize: 20,
-                  ),),
+                  Text(
+                    "US 11",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
                   Icon(Icons.height),
                 ],
               ),
               Divider(),
               Row(
-                children: [Text("Colour")],
+                children: [
+                  Text("Colour"),
+                  Spacer(),
+                  Text(
+                    "Light Grey",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  Icon(Icons.height),
+                ],
               ),
               Divider(),
               Row(
