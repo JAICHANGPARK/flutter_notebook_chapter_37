@@ -102,7 +102,6 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Text(
                 "US\$226.00",
                 style: TextStyle(
-                  
                   fontSize: 18,
                 ),
               ),
@@ -110,7 +109,17 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Divider(),
               Row(
                 children: [
-                  Text("Size"),
+                  Text(
+                    "Size",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  Spacer(),
+                  Text("US 11",    style: TextStyle(
+                    fontSize: 20,
+                  ),),
+                  Icon(Icons.height),
                 ],
               ),
               Divider(),
