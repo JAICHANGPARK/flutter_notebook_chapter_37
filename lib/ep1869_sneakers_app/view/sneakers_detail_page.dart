@@ -47,7 +47,29 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               ),
               Gap(12),
               Row(
-                children: [],
+                children: [
+                  Text("001 Men's Trail Running Shoes LTD Edition - 8"),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.favorite_border,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.upload,
+                    ),
+                  )
+                ],
               ),
               Row(
                 children: [],
