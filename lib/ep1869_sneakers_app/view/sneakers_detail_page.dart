@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class SneakersDetailPage extends StatefulWidget {
@@ -48,8 +49,9 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Gap(12),
               Row(
                 children: [
-                  Text("001 Men's Trail Running Shoes LTD Edition - 8"),
+                  Expanded(child: Text("001 Men's Trail Running Shoes LTD Edition - 8")),
                   Container(
+                    padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
@@ -61,7 +63,7 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                     ),
                   ),
                   Container(
-                    
+                    padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
