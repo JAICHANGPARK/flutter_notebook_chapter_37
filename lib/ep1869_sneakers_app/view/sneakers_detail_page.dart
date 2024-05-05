@@ -57,9 +57,11 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                     ),
                     child: Icon(
                       Icons.favorite_border,
+                      size: 16,
                     ),
                   ),
                   Container(
+                    
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
@@ -67,6 +69,7 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                     ),
                     child: Icon(
                       Icons.upload,
+                      size: 16,
                     ),
                   )
                 ],
