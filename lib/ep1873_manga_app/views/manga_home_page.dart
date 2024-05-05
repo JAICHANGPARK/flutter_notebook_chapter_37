@@ -31,6 +31,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 240,
@@ -47,11 +48,16 @@ class _MangaHomePageState extends State<MangaHomePage> {
                 children: [Text("FOR YOU")],
               ),
               GridView.builder(
-                  shrinkWrap: true,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                  itemBuilder: (context, index) {
-                    return Placeholder();
-                  })
+                shrinkWrap: true,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 12,
+                  mainAxisSpacing: 12,
+                ),
+                itemBuilder: (context, index) {
+                  return Placeholder();
+                },
+              )
             ],
           ),
         ),
