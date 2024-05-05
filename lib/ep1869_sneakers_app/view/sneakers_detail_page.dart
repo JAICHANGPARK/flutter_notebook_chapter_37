@@ -18,6 +18,7 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -98,7 +99,13 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                 ],
               ),
               Gap(12),
-              Text("US\$226.00"),
+              Text(
+                "US\$226.00",
+                style: TextStyle(
+                  
+                  fontSize: 18,
+                ),
+              ),
               Gap(12),
               Divider(),
               Row(
