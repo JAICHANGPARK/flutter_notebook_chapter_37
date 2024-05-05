@@ -85,7 +85,16 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                 ],
               ),
               Row(
-                children: [],
+                children: [
+                  ...List.generate(
+                    4,
+                    (index) => Icon(Icons.eco),
+                  ),
+                  Icon(Icons.eco_outlined),
+                  Text(
+                    "205 Reviews",
+                  ),
+                ],
               ),
               Text("US\$226.00"),
               Divider(),
