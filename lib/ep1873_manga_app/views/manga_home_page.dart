@@ -30,7 +30,17 @@ class _MangaHomePageState extends State<MangaHomePage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: 240,
+              child: Placeholder(),
+            ),
+            Row(
+              children: [
+                Text("FOR YOU")
+              ],
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
