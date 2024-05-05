@@ -49,7 +49,15 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
               Gap(12),
               Row(
                 children: [
-                  Expanded(child: Text("001 Men's Trail Running Shoes LTD Edition - 8")),
+                  Expanded(
+                    child: Text(
+                      "001 Men's Trail Running\nShoes LTD Edition - 8",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
                   Container(
                     padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
