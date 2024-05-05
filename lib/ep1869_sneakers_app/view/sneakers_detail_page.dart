@@ -167,12 +167,18 @@ class _SneakersDetailPageState extends State<SneakersDetailPage> {
                           ),
                         ),
                         Text("1"),
-
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.add,
+                          ),
+                        ),
                       ],
                     ),
                   )
                 ],
               ),
+              Gap(12),
               Container(
                 height: 52,
                 color: Colors.black,
