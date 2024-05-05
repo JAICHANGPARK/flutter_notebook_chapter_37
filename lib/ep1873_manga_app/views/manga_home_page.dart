@@ -33,7 +33,34 @@ class _MangaHomePageState extends State<MangaHomePage> {
           children: [],
         ),
       ),
-      
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: ""
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.explore_outlined,
+              ),
+              label: ""
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bookmark_border,
+              ),
+              label: ""
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline_outlined,
+              ),
+              label: ""
+          )
+        ],
+      ),
     );
   }
 }
