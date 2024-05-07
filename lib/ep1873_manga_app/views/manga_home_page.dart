@@ -139,10 +139,18 @@ class _MangaHomePageState extends State<MangaHomePage> {
                 ),
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
+                  itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                        width: 250,
-                        child: Column());
+                      width: 250,
+                      color: Colors.white,
+                      margin: EdgeInsets.only(right: 8),
+                      child: Column(
+                        children: [
+
+                        ],
+                      ),
+                    );
                   },
                 ),
               ),
