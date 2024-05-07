@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MangaHomePage extends StatefulWidget {
   const MangaHomePage({super.key});
@@ -34,15 +35,17 @@ class _MangaHomePageState extends State<MangaHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                  height: 200,
+                  height: 180,
                   child: Row(
                     children: [
                       Container(
-                        width: 140,
+                        width: 130,
                         decoration: BoxDecoration(
                           color: Colors.grey,
+                          
                         ),
                       ),
+                      Gap(12),
                       Expanded(
                           child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,6 +78,9 @@ class _MangaHomePageState extends State<MangaHomePage> {
                               ),
                               Text(
                                 "20 min left",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ],
                           ),
