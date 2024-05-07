@@ -142,7 +142,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      width: 250,
+                      width: 300,
                       color: Colors.white,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
@@ -154,10 +154,27 @@ class _MangaHomePageState extends State<MangaHomePage> {
                   },
                 ),
               ),
-              Row(
-                children: [
-                  Text("FOR YOU"),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "ALL BOOKS",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.arrow_forward),
+                    )
+                  ],
+                ),
               ),
               GridView.builder(
                 shrinkWrap: true,
