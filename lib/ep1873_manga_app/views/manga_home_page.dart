@@ -35,7 +35,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                  height: 180,
+                  height: 182,
                   child: Row(
                     children: [
                       Container(
@@ -90,12 +90,18 @@ class _MangaHomePageState extends State<MangaHomePage> {
                             value: .7,
                             color: Colors.amberAccent,
                           ),
+                          Gap(12),
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.amberAccent,
-                            ),
+                            padding: EdgeInsets.symmetric(vertical: 8),
+                            decoration:
+                                BoxDecoration(color: Colors.amberAccent, borderRadius: BorderRadius.circular(5)),
                             child: Center(
-                              child: Text("Continue Reading"),
+                              child: Text(
+                                "Continue Reading",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           )
                         ],
