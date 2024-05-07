@@ -147,14 +147,13 @@ class _MangaHomePageState extends State<MangaHomePage> {
                       color: Colors.white,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
-                        children: [
-
-                        ],
+                        children: [],
                       ),
                     );
                   },
                 ),
               ),
+              Gap(16),
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
@@ -178,18 +177,21 @@ class _MangaHomePageState extends State<MangaHomePage> {
                   ],
                 ),
               ),
-              GridView.builder(
-                shrinkWrap: true,
-                itemCount: 10,
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: GridView.builder(
+                  shrinkWrap: true,
+                  itemCount: 10,
+                  physics: NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Placeholder();
+                  },
                 ),
-                itemBuilder: (context, index) {
-                  return Placeholder();
-                },
               )
             ],
           ),
