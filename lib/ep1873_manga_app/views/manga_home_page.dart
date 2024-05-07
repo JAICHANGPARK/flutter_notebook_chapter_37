@@ -59,11 +59,23 @@ class _MangaHomePageState extends State<MangaHomePage> {
                               color: Colors.white,
                             ),
                           ),
-                          Text("Unknown"),
+                          Text(
+                            "Unknown",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                           Row(
                             children: [
-                              Text("78%"),
-                              Text("20 min left"),
+                              Text(
+                                "78%",
+                                style: TextStyle(
+                                  color: Colors.orange,
+                                ),
+                              ),
+                              Text(
+                                "20 min left",
+                              ),
                             ],
                           ),
                         ],
