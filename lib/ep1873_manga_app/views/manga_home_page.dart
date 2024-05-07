@@ -36,6 +36,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
             children: [
               Container(
                   height: 182,
+                  margin: EdgeInsets.symmetric(horizontal: 12),
                   child: Row(
                     children: [
                       Container(
@@ -116,7 +117,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: Colors.white
+                      color: Colors.white,
                     ),
                   ),
                   IconButton(
