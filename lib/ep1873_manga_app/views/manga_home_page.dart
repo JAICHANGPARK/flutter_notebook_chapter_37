@@ -45,10 +45,13 @@ class _MangaHomePageState extends State<MangaHomePage> {
                 child: Placeholder(),
               ),
               Row(
-                children: [Text("FOR YOU")],
+                children: [
+                  Text("FOR YOU"),
+                ],
               ),
               GridView.builder(
                 shrinkWrap: true,
+                itemCount: 10,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 12,
