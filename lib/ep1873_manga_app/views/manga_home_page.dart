@@ -72,6 +72,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                               color: Colors.grey,
                             ),
                           ),
+                          Gap(24),
                           Row(
                             children: [
                               Text(
@@ -80,6 +81,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                                   color: Colors.orange,
                                 ),
                               ),
+                              Gap(12),
                               Text(
                                 "20 min left",
                                 style: TextStyle(
@@ -88,6 +90,10 @@ class _MangaHomePageState extends State<MangaHomePage> {
                               ),
                             ],
                           ),
+                          Gap(4),
+                          LinearProgressIndicator(
+                            value: .7,
+                          )
                         ],
                       ))
                     ],
