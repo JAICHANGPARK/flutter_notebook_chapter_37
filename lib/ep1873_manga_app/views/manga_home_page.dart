@@ -42,7 +42,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                         width: 130,
                         decoration: BoxDecoration(
                           color: Colors.grey,
-                          
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Gap(12),
@@ -54,14 +54,18 @@ class _MangaHomePageState extends State<MangaHomePage> {
                             "Leveling, Vol. 5",
                             style: TextStyle(
                               color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
                             ),
                           ),
+
                           Text(
                             "Chapter 32",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
+                          Gap(12),
                           Text(
                             "Unknown",
                             style: TextStyle(
