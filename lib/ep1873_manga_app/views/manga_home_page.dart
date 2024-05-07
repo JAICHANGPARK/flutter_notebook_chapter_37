@@ -109,26 +109,42 @@ class _MangaHomePageState extends State<MangaHomePage> {
                       ))
                     ],
                   )),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "FOR YOU",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: Colors.white,
+              Gap(16),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "FOR YOU",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.arrow_forward),
-                  )
-                ],
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.arrow_forward),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 240,
-                child: Placeholder(),
+                margin: EdgeInsets.only(
+                  left: 16,
+                ),
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                        width: 250,
+                        child: Column());
+                  },
+                ),
               ),
               Row(
                 children: [
