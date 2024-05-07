@@ -181,6 +181,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
               GridView.builder(
                 shrinkWrap: true,
                 itemCount: 10,
+                physics: NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 12,
