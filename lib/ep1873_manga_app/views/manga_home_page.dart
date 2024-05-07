@@ -43,12 +43,23 @@ class _MangaHomePageState extends State<MangaHomePage> {
                           color: Colors.grey,
                         ),
                       ),
-                      Expanded(child: Column(
-                        
+                      Expanded(
+                          child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-
-
-                      ],))
+                          Text(
+                            "Leveling, Vol. 5",
+                          ),
+                          Text("Chapter 32"),
+                          Text("Unknown"),
+                          Row(
+                            children: [
+                              Text("78%"),
+                              Text("20 min left"),
+                            ],
+                          )
+                        ],
+                      ))
                     ],
                   )),
               Row(
