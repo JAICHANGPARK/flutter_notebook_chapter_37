@@ -34,15 +34,21 @@ class _MangaHomePageState extends State<MangaHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                  height: 240,
+                  height: 200,
                   child: Row(
                     children: [
                       Container(
-                        width: 100,
+                        width: 140,
                         decoration: BoxDecoration(
                           color: Colors.grey,
                         ),
-                      )
+                      ),
+                      Expanded(child: Column(
+                        
+                        children: [
+
+
+                      ],))
                     ],
                   )),
               Row(
