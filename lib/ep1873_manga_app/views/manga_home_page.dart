@@ -109,7 +109,21 @@ class _MangaHomePageState extends State<MangaHomePage> {
                     ],
                   )),
               Row(
-                children: [Text("FOR YOU")],
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "FOR YOU",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.white
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_forward),
+                  )
+                ],
               ),
               Container(
                 height: 240,
