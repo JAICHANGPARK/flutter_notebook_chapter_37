@@ -128,6 +128,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.arrow_forward),
+                      color: Colors.white,
                     )
                   ],
                 ),
@@ -172,6 +173,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.arrow_forward),
+                      color: Colors.white,
                     )
                   ],
                 ),
