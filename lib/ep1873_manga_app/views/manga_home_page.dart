@@ -52,13 +52,8 @@ class _MangaHomePageState extends State<MangaHomePage> {
                         children: [
                           Text(
                             "Leveling, Vol. 5",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20
-                            ),
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                           ),
-
                           Text(
                             "Chapter 32",
                             style: TextStyle(
@@ -93,6 +88,15 @@ class _MangaHomePageState extends State<MangaHomePage> {
                           Gap(4),
                           LinearProgressIndicator(
                             value: .7,
+                            color: Colors.amberAccent,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.amberAccent,
+                            ),
+                            child: Center(
+                              child: Text("Continue Reading"),
+                            ),
                           )
                         ],
                       ))
