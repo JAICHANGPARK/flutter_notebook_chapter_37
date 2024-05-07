@@ -78,7 +78,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                               Text(
                                 "78%",
                                 style: TextStyle(
-                                  color: Colors.orange,
+                                  color: Colors.orangeAccent,
                                 ),
                               ),
                               Gap(12),
