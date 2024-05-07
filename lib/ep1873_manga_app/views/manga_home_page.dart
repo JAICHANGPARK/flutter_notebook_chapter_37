@@ -49,15 +49,23 @@ class _MangaHomePageState extends State<MangaHomePage> {
                         children: [
                           Text(
                             "Leveling, Vol. 5",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
-                          Text("Chapter 32"),
+                          Text(
+                            "Chapter 32",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                           Text("Unknown"),
                           Row(
                             children: [
                               Text("78%"),
                               Text("20 min left"),
                             ],
-                          )
+                          ),
                         ],
                       ))
                     ],
