@@ -34,7 +34,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
       ),
       body: SafeArea(
           child: IndexedStack(
-        index: 0,
+        index: pageIndex,
         children: [
           MangaHomeWidget(),
           MangaDiscoverWidget(),
