@@ -135,7 +135,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                 ),
               ),
               Container(
-                height: 240,
+                height: 220,
                 margin: EdgeInsets.only(
                   left: 16,
                 ),
@@ -166,7 +166,12 @@ class _MangaHomePageState extends State<MangaHomePage> {
                             ),
                           ),
                           Gap(4),
-                          Text("Chapter 47")
+                          Text(
+                            "Chapter 47",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
                         ],
                       ),
                     );
