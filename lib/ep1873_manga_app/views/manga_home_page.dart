@@ -16,22 +16,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        elevation: 0,
-        title: const Text("NOW"),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.search),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.shopping_bag_outlined),
-          ),
-        ],
-      ),
+
       body: SafeArea(
           child: IndexedStack(
         index: pageIndex,
