@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class MangaHomePage extends StatefulWidget {
@@ -147,7 +148,17 @@ class _MangaHomePageState extends State<MangaHomePage> {
                       color: Colors.white,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
-                        children: [],
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            ),
+                          ),
+                          Text("Sample Manga"),
+                          Text("Chapter 47")
+                        ],
                       ),
                     );
                   },
