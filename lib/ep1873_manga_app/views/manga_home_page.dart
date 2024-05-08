@@ -144,7 +144,7 @@ class _MangaHomePageState extends State<MangaHomePage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      width: 300,
+                      width: 320,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
