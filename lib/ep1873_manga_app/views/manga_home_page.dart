@@ -20,27 +20,26 @@ class _MangaHomePageState extends State<MangaHomePage> {
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         elevation: 0,
-        title: Text("NOW"),
+        title: const Text("NOW"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.shopping_bag_outlined),
+            icon: const Icon(Icons.shopping_bag_outlined),
           ),
         ],
       ),
       body: SafeArea(
-        child: IndexedStack(
-          index: 0,
-          children: [
-            MangaHomeWidget(),
-            MangaDiscoverWidget(),
-          ],
-        )
-      ),
+          child: IndexedStack(
+        index: 0,
+        children: [
+          MangaHomeWidget(),
+          MangaDiscoverWidget(),
+        ],
+      )),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
@@ -48,23 +47,29 @@ class _MangaHomePageState extends State<MangaHomePage> {
         showSelectedLabels: false,
         selectedItemColor: Colors.amberAccent,
         unselectedItemColor: Colors.grey,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
+        currentIndex: pageIndex,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: ""),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.explore_outlined,
               ),
               label: ""),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_border,
               ),
               label: ""),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline_outlined,
               ),
@@ -73,4 +78,6 @@ class _MangaHomePageState extends State<MangaHomePage> {
       ),
     );
   }
+
+  int pageIndex = 0;
 }
