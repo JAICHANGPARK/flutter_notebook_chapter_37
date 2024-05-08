@@ -212,9 +212,15 @@ class _MangaHomePageState extends State<MangaHomePage> {
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
+                    childAspectRatio: 0.8,
                   ),
                   itemBuilder: (context, index) {
-                    return Placeholder();
+                    return Container(
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    );
                   },
                 ),
               )
