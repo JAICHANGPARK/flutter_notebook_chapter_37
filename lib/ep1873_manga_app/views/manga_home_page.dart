@@ -145,18 +145,27 @@ class _MangaHomePageState extends State<MangaHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 300,
-                      color: Colors.white,
                       margin: EdgeInsets.only(right: 8),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
                               ),
                             ),
                           ),
-                          Text("Sample Manga"),
+                          Gap(8),
+                          Text(
+                            "Sample Manga",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Gap(4),
                           Text("Chapter 47")
                         ],
                       ),
