@@ -11,13 +11,16 @@ class MangaDiscoverWidget extends StatefulWidget {
 class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        AppBar(
-          title: Text("ALL BOOKS"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("ALL BOOKS"),
 
-        )
-      ],
+      ),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
