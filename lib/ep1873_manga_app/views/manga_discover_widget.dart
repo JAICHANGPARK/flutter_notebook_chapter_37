@@ -31,7 +31,17 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container();
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(.2),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Mystery",
+                    ),
+                  ),
+                );
               },
             ),
           ),
