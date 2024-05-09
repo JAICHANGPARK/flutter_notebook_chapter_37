@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MangaDiscoverWidget extends StatefulWidget {
   const MangaDiscoverWidget({super.key});
 
@@ -15,12 +14,18 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text("ALL BOOKS"),
-
+        centerTitle: true,
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.arrow_back,
+          ),
+        ),
       ),
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
     );
   }
