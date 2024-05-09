@@ -72,6 +72,7 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
                 ),
                 Icon(
                   Icons.keyboard_arrow_down,
+                  color: Colors.white,
                 )
               ],
             ),
@@ -101,11 +102,13 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
+                        Gap(12),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text("Manga Manga Vol. 7"),
                                   IconButton(
