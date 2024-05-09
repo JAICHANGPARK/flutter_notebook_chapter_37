@@ -100,7 +100,40 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                        )
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text("Manga Manga Vol. 7"),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.bookmark_border,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Text("Unknown Writer"),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                  ),
+                                  Text(
+                                    "5.0",
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
+                                maxLines: 2,
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   );
