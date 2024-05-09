@@ -25,7 +25,17 @@ class _MangaDiscoverWidgetState extends State<MangaDiscoverWidget> {
         ),
       ),
       body: Column(
-        children: [],
+        children: [
+          SizedBox(
+            height: 52,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container();
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
