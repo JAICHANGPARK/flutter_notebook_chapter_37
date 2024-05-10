@@ -84,18 +84,26 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_filled,
+              Icons.apps,
             ),
-            label: "Home",
+            label: "Discover",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_filled,
+              Icons.library_books,
             ),
-            label: "Home",
-          )
+            label: "Courses",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.nightlight,
+            ),
+            label: "Sleep",
+          ),
         ],
+        
       ),
+
     );
   }
 }
