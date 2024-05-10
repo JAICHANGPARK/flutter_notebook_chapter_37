@@ -101,9 +101,8 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             label: "Sleep",
           ),
         ],
-        
+        type: BottomNavigationBarType.fixed,
       ),
-
     );
   }
 }
