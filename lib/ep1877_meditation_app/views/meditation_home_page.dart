@@ -102,6 +102,9 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           ),
         ],
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.grey[100],
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
       ),
     );
   }
