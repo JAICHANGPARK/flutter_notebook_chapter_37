@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-
+  runApp(MeditationMobileApp());
 }
 
 class MeditationMobileApp extends StatelessWidget {
@@ -9,8 +9,6 @@ class MeditationMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
-    );
+    return MaterialApp();
   }
 }
