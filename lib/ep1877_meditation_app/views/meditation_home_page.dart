@@ -25,6 +25,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             padding: EdgeInsets.only(
               left: 16,
               top: 56,
+              right: 16,
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,7 +56,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     ),
                   ),
                 ),
-                
+                Gap(12),
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
