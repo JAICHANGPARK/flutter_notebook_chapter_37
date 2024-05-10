@@ -1,9 +1,9 @@
 # flutter_notebook_chapter_37
 
 ## EP1877
-- Manga App UI
-- By Ronas IT | UI/UX Team
-- https://dribbble.com/shots/24002225-Manga-App-UI
+- Meditation Audio Mobile App
+- By Fireart UI/UX for Fireart Studio
+- https://dribbble.com/shots/24058997-Meditation-Audio-Mobile-App
 
 
 ## EP1873-1876
