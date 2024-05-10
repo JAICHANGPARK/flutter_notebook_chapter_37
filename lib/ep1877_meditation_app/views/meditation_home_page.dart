@@ -11,6 +11,15 @@ class MeditationHomePage extends StatefulWidget {
 class _MeditationHomePageState extends State<MeditationHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 72,
+            color: Colors.blue[100],
+          )
+        ],
+      ),
+    );
   }
 }
