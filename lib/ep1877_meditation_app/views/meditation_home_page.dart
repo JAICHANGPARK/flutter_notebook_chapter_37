@@ -54,6 +54,19 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       Icons.notification_add_outlined,
                     ),
                   ),
+                ),
+                
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  padding: EdgeInsets.all(8),
+                  child: Icon(
+                    Icons.search,
+                  ),
                 )
               ],
             ),
