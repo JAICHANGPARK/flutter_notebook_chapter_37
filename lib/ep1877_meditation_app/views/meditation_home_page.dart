@@ -74,37 +74,41 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           )
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.apps,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.apps,
+              ),
+              label: "Discover",
             ),
-            label: "Discover",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.library_books,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.library_books,
+              ),
+              label: "Courses",
             ),
-            label: "Courses",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.nightlight,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.nightlight,
+              ),
+              label: "Sleep",
             ),
-            label: "Sleep",
-          ),
-        ],
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.grey[100],
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.black,
+          ],
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.grey[100],
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.black,
+
+        ),
       ),
     );
   }
