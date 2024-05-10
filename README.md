@@ -1,6 +1,12 @@
 # flutter_notebook_chapter_37
 
-## EP1873
+## EP1877
+- Manga App UI
+- By Ronas IT | UI/UX Team
+- https://dribbble.com/shots/24002225-Manga-App-UI
+
+
+## EP1873-1876
 
 - Manga App UI
 - By Ronas IT | UI/UX Team
