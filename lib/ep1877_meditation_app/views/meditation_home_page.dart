@@ -15,8 +15,15 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
       body: Column(
         children: [
           Container(
-            height: 72,
-            color: Colors.blue[100],
+            height: 120,
+
+            decoration: BoxDecoration(color: Colors.blue[50],
+
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(16),
+                bottomRight:  Radius.circular(16),
+              )
+            ),
           )
         ],
       ),
