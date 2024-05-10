@@ -15,7 +15,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
       body: Column(
         children: [
           Container(
-            height: 120,
+            height: 130,
             decoration: BoxDecoration(
                 color: Colors.blue[50],
                 borderRadius: BorderRadius.only(
@@ -24,7 +24,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                 )),
             padding: EdgeInsets.only(
               left: 16,
-              top: 62,
+              top: 56,
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -39,6 +39,20 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       Text("Hi, Dreamwalker"),
                       Text("Good Afternoon!"),
                     ],
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  padding: EdgeInsets.all(8),
+                  child: Badge(
+                    child: Icon(
+                      Icons.notification_add_outlined,
+                    ),
                   ),
                 )
               ],
