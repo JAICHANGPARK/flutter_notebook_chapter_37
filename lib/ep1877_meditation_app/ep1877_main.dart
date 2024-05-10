@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/meditation_home_page.dart';
+
 void main() {
   runApp(MeditationMobileApp());
 }
@@ -9,6 +11,8 @@ class MeditationMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: MeditationHomePage(),
+    );
   }
 }
