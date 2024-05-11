@@ -151,6 +151,12 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(16),
                                   topRight: Radius.circular(16),
+                                ),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2020/03/29/18/33/girl-4981766_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
                                 )),
                             padding: EdgeInsets.all(16),
                             child: Column(
