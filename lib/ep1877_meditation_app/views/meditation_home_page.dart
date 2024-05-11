@@ -144,8 +144,11 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                         children: [
                           Container(
                             height: 180,
+                            width: double.infinity,
                             color: Colors.blue,
+                            padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
                                   decoration: ShapeDecoration(
