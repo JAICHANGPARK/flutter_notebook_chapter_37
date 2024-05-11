@@ -13,6 +13,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 130,
