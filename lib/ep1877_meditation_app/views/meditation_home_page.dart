@@ -75,7 +75,17 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           Container(
             height: 62,
             decoration: BoxDecoration(
-              color: Colors.grey,
+              color: Colors.grey[200]!,
+            ),
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          ),
+          Container(
+            height: 360,
+            margin: EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.amberAccent,
             ),
           )
         ],
