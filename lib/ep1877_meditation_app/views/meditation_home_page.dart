@@ -139,10 +139,25 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 180,
                             color: Colors.blue,
+                            child: Column(
+                              children: [
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.awar)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Text("Today's Session"),
                           Text("Just Relax Already")
