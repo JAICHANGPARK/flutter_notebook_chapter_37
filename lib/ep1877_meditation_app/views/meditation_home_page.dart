@@ -136,6 +136,17 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       height: 360,
                       decoration: BoxDecoration(
                         color: Colors.amberAccent,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 180,
+                            color: Colors.blue,
+                          ),
+                          Text("Today's Session"),
+                          Text("Just Relax Already")
+                        ],
                       ),
                     ),
                     Gap(16),
