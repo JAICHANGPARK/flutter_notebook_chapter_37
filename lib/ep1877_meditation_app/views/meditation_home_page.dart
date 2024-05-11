@@ -134,6 +134,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                   children: [
                     Container(
                       height: 360,
+                      width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.amberAccent,
                         borderRadius: BorderRadius.circular(12),
@@ -149,10 +150,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 Container(
                                   decoration: ShapeDecoration(
                                     shape: StadiumBorder(),
+                                    color: Colors.white,
                                   ),
                                   child: Row(
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Icon(Icons.awar)
+                                      Icon(Icons.military_tech_outlined),
+                                      Text("7 MIN"),
                                     ],
                                   ),
                                 )
