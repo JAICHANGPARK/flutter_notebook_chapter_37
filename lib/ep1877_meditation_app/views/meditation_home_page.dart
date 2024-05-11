@@ -224,26 +224,46 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     ),
                     Gap(12),
                     ListView.separated(
-                        padding: EdgeInsets.zero,
-                        shrinkWrap: true,
-                        itemCount: 10,
-                        separatorBuilder: (context, index) => Divider(),
-                        itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              Container(
-                                height: 72,
-                                width: 72,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey,
-                                  borderRadius: BorderRadius.circular(6),
-                                ),
+                      padding: EdgeInsets.zero,
+                      shrinkWrap: true,
+                      itemCount: 10,
+                      separatorBuilder: (context, index) => Divider(),
+                      itemBuilder: (context, index) {
+                        return Row(
+                          children: [
+                            Container(
+                              height: 72,
+                              width: 72,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(6),
                               ),
-                              Expanded(child: Text("")),
-                              Container()
-                            ],
-                          );
-                        })
+                            ),
+                            Expanded(child: Text("")),
+                            Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                                color: Colors.grey[100],
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.play_circle_outline,
+                                    size: 18,
+                                  ),
+                                  Text("8 MIN"),
+                                ],
+                              ),
+                            ),
+                          ],
+                        );
+                      },
+                    )
                   ],
                 ),
               ),
