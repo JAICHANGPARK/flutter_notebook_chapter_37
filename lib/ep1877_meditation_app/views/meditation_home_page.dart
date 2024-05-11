@@ -81,7 +81,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             margin: EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
               color: Colors.grey[100]!,
-              borderRadius: BorderRadius.circular(8)
+              borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
               children: [
