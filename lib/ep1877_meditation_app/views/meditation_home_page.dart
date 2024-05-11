@@ -227,6 +227,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       padding: EdgeInsets.zero,
                       shrinkWrap: true,
                       itemCount: 10,
+                      physics: NeverScrollableScrollPhysics(),
                       separatorBuilder: (context, index) => Divider(),
                       itemBuilder: (context, index) {
                         return Row(
