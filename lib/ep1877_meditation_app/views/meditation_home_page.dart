@@ -181,7 +181,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text("Today's Session"),
                                   Text(
@@ -191,6 +191,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                     ),
                                   ),
                                   Text("Imperfect Meditation Challenge"),
+                                  Gap(12),
                                   Container(
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(),
