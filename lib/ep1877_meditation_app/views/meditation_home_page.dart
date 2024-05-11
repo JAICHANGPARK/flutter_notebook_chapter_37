@@ -18,11 +18,12 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           Container(
             height: 130,
             decoration: BoxDecoration(
-                color: Colors.blue[50],
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(16),
-                  bottomRight: Radius.circular(16),
-                )),
+              color: Color.fromRGBO(236, 239, 244, 1),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(16),
+                bottomRight: Radius.circular(16),
+              ),
+            ),
             padding: EdgeInsets.only(
               left: 16,
               top: 56,
@@ -79,12 +80,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             padding: EdgeInsets.symmetric(horizontal: 8),
             margin: EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
-              color: Colors.grey[200]!,
+              color: Colors.grey[100]!,
+              borderRadius: BorderRadius.circular(8)
             ),
             child: Row(
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.black,
+                  radius: 24,
                 ),
                 Gap(8),
                 Expanded(
@@ -118,7 +121,6 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     Container(
                       height: 360,
                       decoration: BoxDecoration(
