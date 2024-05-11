@@ -90,13 +90,24 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                           backgroundColor: Colors.black,
                         ),
                         Expanded(
-                            child: Column(
-                          children: [
-                            Text(
-                              "Welcome to Meditation",
-                            ),
-                          ],
-                        ))
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Welcome to Meditation",
+                              ),
+                              Text(
+                                "Here's an guide to help you get started",
+                              ),
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        )
                       ],
                     ),
                   ),
