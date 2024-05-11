@@ -71,6 +71,12 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                 )
               ],
             ),
+          ),
+          Container(
+            height: 62,
+            decoration: BoxDecoration(
+              color: Colors.grey,
+            ),
           )
         ],
       ),
@@ -107,7 +113,6 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           backgroundColor: Colors.grey[100],
           unselectedItemColor: Colors.grey,
           selectedItemColor: Colors.black,
-
         ),
       ),
     );
