@@ -32,7 +32,9 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CircleAvatar(),
+                CircleAvatar(
+                  radius: 24,
+                ),
                 Gap(8),
                 Expanded(
                   child: Column(
@@ -40,7 +42,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Hi, Dreamwalker"),
-                      Text("Good Afternoon!"),
+                      Text(
+                        "Good Afternoon!",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -97,6 +105,9 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     children: [
                       Text(
                         "Welcome to Meditation",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                       Text(
                         "Here's an guide to help you get started",
