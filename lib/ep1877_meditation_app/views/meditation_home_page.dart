@@ -215,20 +215,31 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                         ],
                       ),
                     ),
-                    Gap(16),
+                    Gap(24),
                     Text(
                       "Listen & Learn",
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
+                    Gap(12),
                     ListView.separated(
+                      padding: EdgeInsets.zero,
                         shrinkWrap: true,
                         itemCount: 10,
                         separatorBuilder: (context, index) => Divider(),
                         itemBuilder: (context, index) {
                           return Row(
-                            children: [],
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+
+                                ),
+                              )
+                            ],
                           );
                         })
                   ],
