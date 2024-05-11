@@ -84,6 +84,21 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[200]!,
                     ),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                        ),
+                        Expanded(
+                            child: Column(
+                          children: [
+                            Text(
+                              "Welcome to Meditation",
+                            ),
+                          ],
+                        ))
+                      ],
+                    ),
                   ),
                   Gap(24),
                   Container(
