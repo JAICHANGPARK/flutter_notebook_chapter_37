@@ -145,7 +145,12 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                           Container(
                             height: 180,
                             width: double.infinity,
-                            color: Colors.blue,
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(16),
+                                  topRight: Radius.circular(16),
+                                )),
                             padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -155,10 +160,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.white,
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Icon(Icons.military_tech_outlined),
+                                      Icon(
+                                        Icons.military_tech_outlined,
+                                        size: 18,
+                                      ),
                                       Text("7 MIN"),
                                     ],
                                   ),
