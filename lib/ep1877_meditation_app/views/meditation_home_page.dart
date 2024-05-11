@@ -87,6 +87,12 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             decoration: BoxDecoration(
               color: Colors.amberAccent,
             ),
+          ),
+          Text(
+            "Listen & Learn",
+            style: TextStyle(
+              fontSize:  20,
+            ),
           )
         ],
       ),
