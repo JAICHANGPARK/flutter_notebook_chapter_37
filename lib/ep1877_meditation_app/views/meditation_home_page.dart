@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -175,33 +176,39 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(12.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Today's Session"),
-                                Text(
-                                  "Just Relax Already",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                ),
-                                Text("Imperfect Meditation Challenge"),
-                                Container(
-                                  decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
-                                    color: Colors.black,
-                                  ),
-                                  child: Center(
-                                      child: Text(
-                                    "Play",
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text("Today's Session"),
+                                  Text(
+                                    "Just Relax Already",
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      fontSize: 20,
                                     ),
-                                  )),
-                                )
-                              ],
+                                  ),
+                                  Text("Imperfect Meditation Challenge"),
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.black,
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                      vertical: 12,
+                                    ),
+                                    child: Center(
+                                        child: Text(
+                                      "Play",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    )),
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
