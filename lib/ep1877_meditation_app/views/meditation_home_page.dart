@@ -73,35 +73,39 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
               ],
             ),
           ),
-          Expanded(child: Column
-
-            (
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-
-          ],),),
-          Container(
-            height: 62,
-            decoration: BoxDecoration(
-              color: Colors.grey[200]!,
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 62,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]!,
+                    ),
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                  ),
+                  Container(
+                    height: 360,
+                    margin: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.amberAccent,
+                    ),
+                  ),
+                  Text(
+                    "Listen & Learn",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  )
+                ],
+              ),
             ),
-            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
           ),
-          Container(
-            height: 360,
-            margin: EdgeInsets.symmetric(
-              horizontal: 16,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.amberAccent,
-            ),
-          ),
-          Text(
-            "Listen & Learn",
-            style: TextStyle(
-              fontSize:  20,
-            ),
-          )
+
         ],
       ),
       bottomNavigationBar: SizedBox(
