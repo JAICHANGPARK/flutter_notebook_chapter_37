@@ -73,6 +73,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
               ],
             ),
           ),
+          Expanded(child: Column
+
+            (
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+
+          ],),),
           Container(
             height: 62,
             decoration: BoxDecoration(
