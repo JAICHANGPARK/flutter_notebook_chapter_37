@@ -85,7 +85,6 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[200]!,
                     ),
-
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -122,6 +121,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       color: Colors.amberAccent,
                     ),
                   ),
+                  Gap(16),
                   Text(
                     "Listen & Learn",
                     style: TextStyle(
