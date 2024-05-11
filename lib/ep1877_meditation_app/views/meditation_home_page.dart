@@ -73,62 +73,74 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
               ],
             ),
           ),
+          Container(
+            height: 62,
+            padding: EdgeInsets.symmetric(horizontal: 8),
+            decoration: BoxDecoration(
+              color: Colors.grey[200]!,
+            ),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  backgroundColor: Colors.black,
+                ),
+                Gap(8),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Welcome to Meditation",
+                      ),
+                      Text(
+                        "Here's an guide to help you get started",
+                      ),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.arrow_forward_ios,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Gap(24),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 62,
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200]!,
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+                    Container(
+                      height: 360,
+                      decoration: BoxDecoration(
+                        color: Colors.amberAccent,
+                      ),
                     ),
-                    child: Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.black,
-                        ),
-                        Gap(8),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Welcome to Meditation",
-                              ),
-                              Text(
-                                "Here's an guide to help you get started",
-                              ),
-                            ],
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_forward_ios,
-                          ),
-                        )
-                      ],
+                    Gap(16),
+                    Text(
+                      "Listen & Learn",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                  Gap(24),
-                  Container(
-                    height: 360,
-                    decoration: BoxDecoration(
-                      color: Colors.amberAccent,
-                    ),
-                  ),
-                  Gap(16),
-                  Text(
-                    "Listen & Learn",
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                  )
-                ],
+                    ListView.separated(
+                        shrinkWrap: true,
+                        itemCount: 10,
+                        separatorBuilder: (context, index) => Divider(),
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [],
+                          );
+                        })
+                  ],
+                ),
               ),
             ),
           ),
