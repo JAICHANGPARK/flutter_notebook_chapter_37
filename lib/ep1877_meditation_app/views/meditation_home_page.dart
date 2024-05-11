@@ -240,7 +240,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 borderRadius: BorderRadius.circular(6),
                               ),
                             ),
-                            Expanded(child: Text("")),
+                            Gap(12),
+                            Expanded(
+                              child: Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                maxLines: 2,
+                              ),
+                            ),
                             Container(
                               decoration: ShapeDecoration(
                                 shape: StadiumBorder(),
