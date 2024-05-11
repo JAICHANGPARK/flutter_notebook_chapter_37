@@ -137,7 +137,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       height: 360,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.amberAccent,
+                        color: Color.fromRGBO(236, 239, 244, 1),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
