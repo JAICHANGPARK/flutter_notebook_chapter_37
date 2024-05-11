@@ -73,9 +73,11 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
               ],
             ),
           ),
+          Gap(24),
           Container(
             height: 62,
             padding: EdgeInsets.symmetric(horizontal: 8),
+            margin: EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
               color: Colors.grey[200]!,
             ),
@@ -112,7 +114,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
