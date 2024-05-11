@@ -224,7 +224,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     ),
                     Gap(12),
                     ListView.separated(
-                      padding: EdgeInsets.zero,
+                        padding: EdgeInsets.zero,
                         shrinkWrap: true,
                         itemCount: 10,
                         separatorBuilder: (context, index) => Divider(),
@@ -232,13 +232,15 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                           return Row(
                             children: [
                               Container(
-                                height: 42,
-                                width: 42,
+                                height: 72,
+                                width: 72,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
-
+                                  borderRadius: BorderRadius.circular(6),
                                 ),
-                              )
+                              ),
+                              Expanded(child: Text("")),
+                              Container()
                             ],
                           );
                         })
