@@ -139,6 +139,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                         color: Colors.amberAccent,
                         borderRadius: BorderRadius.circular(12),
                       ),
+
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -175,8 +176,17 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                               ],
                             ),
                           ),
-                          Text("Today's Session"),
-                          Text("Just Relax Already")
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Today's Session"),
+                                Text("Just Relax Already")
+                              ],
+                            ),
+                          )
+
                         ],
                       ),
                     ),
