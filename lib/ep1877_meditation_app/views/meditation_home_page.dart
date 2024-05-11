@@ -193,7 +193,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.black,
                                   ),
-                                  child: Text("Play"),
+                                  child: Center(
+                                      child: Text(
+                                    "Play",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )),
                                 )
                               ],
                             ),
