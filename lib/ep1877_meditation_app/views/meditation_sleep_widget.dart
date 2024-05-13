@@ -16,9 +16,16 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(236, 239, 244, 1),
-        leading: CircleAvatar(),
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: CircleAvatar(
+            radius: 24,
+          ),
+        ),
         centerTitle: true,
         title: Text("Sleep"),
+        toolbarHeight: 72,
+
         actions: [
           Container(
             decoration: BoxDecoration(
