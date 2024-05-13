@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+
+import 'meditation_list_widget.dart';
 
 class MeditationSleepWidget extends StatefulWidget {
   const MeditationSleepWidget({super.key});
@@ -86,6 +89,10 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
                   ),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: MeditationListWidget(),
             ),
           ],
         ),
