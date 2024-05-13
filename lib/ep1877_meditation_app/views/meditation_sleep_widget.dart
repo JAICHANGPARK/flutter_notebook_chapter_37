@@ -18,9 +18,16 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
           Container(
             decoration: BoxDecoration(
               color: Colors.grey,
-              border: Border.all(color: Colors.white,)
+              border: Border.all(
+                color: Colors.white,
+              ),
+              shape: BoxShape.circle,
             ),
+            padding: EdgeInsets.all(12),
 
+            child: Icon(
+              Icons.search,
+            ),
           )
         ],
       ),
