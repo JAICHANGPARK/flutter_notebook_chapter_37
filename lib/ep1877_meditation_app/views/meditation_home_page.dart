@@ -10,6 +10,8 @@ class MeditationHomePage extends StatefulWidget {
 }
 
 class _MeditationHomePageState extends State<MeditationHomePage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -288,6 +290,11 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
+          onTap: (idx){
+            setState(() {
+              pageIndex = idx;
+            });
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(
