@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1877_meditation_app/views/meditation_sleep_widget.dart';
 import 'package:gap/gap.dart';
 
 import 'meditation_home_widget.dart';
@@ -21,6 +22,9 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
         index: pageIndex,
         children: [
           MeditationHomeWidget(),
+          Placeholder(),
+          Placeholder(),
+          MeditationSleepWidget(),
         ],
       ),
       bottomNavigationBar: SizedBox(
