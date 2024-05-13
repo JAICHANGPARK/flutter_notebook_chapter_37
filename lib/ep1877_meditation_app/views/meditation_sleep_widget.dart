@@ -40,7 +40,13 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text("Featured"),
+                  Text(
+                    "Featured",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 26,
+                    ),
+                  ),
                   Spacer(),
                   Text("See All"),
                   Icon(
@@ -53,7 +59,35 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
               height: 320,
               margin: EdgeInsets.only(left: 16),
               color: Colors.blue,
-            )
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 240,
+                    margin: EdgeInsets.only(right: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.pinkAccent,
+                    ),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Featured",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 26,
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
           ],
         ),
       ),
