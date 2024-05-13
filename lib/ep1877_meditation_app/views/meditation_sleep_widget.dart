@@ -28,6 +28,7 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
 
         actions: [
           Container(
+            margin: EdgeInsets.only(right: 16),
             decoration: BoxDecoration(
               color: Colors.grey[200],
               border: Border.all(
