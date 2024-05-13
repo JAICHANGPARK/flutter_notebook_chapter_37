@@ -20,14 +20,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
         children: [
           Container(
             height: 130,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(236, 239, 244, 1),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(16),
                 bottomRight: Radius.circular(16),
               ),
             ),
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 16,
               top: 56,
               right: 16,
@@ -35,11 +35,11 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 24,
                 ),
-                Gap(8),
-                Expanded(
+                const Gap(8),
+                const Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -62,14 +62,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     ),
                     shape: BoxShape.circle,
                   ),
-                  padding: EdgeInsets.all(8),
-                  child: Badge(
+                  padding: const EdgeInsets.all(8),
+                  child: const Badge(
                     child: Icon(
                       Icons.notification_add_outlined,
                     ),
                   ),
                 ),
-                Gap(12),
+                const Gap(12),
                 Container(
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -77,31 +77,31 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                     ),
                     shape: BoxShape.circle,
                   ),
-                  padding: EdgeInsets.all(8),
-                  child: Icon(
+                  padding: const EdgeInsets.all(8),
+                  child: const Icon(
                     Icons.search,
                   ),
                 )
               ],
             ),
           ),
-          Gap(24),
+          const Gap(24),
           Container(
             height: 62,
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            margin: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            margin: const EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
               color: Colors.grey[100]!,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundColor: Colors.black,
                   radius: 24,
                 ),
-                Gap(8),
-                Expanded(
+                const Gap(8),
+                const Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -120,14 +120,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_forward_ios,
                   ),
                 )
               ],
             ),
           ),
-          Gap(24),
+          const Gap(24),
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
@@ -139,7 +139,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                       height: 360,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(236, 239, 244, 1),
+                        color: const Color.fromRGBO(236, 239, 244, 1),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
@@ -148,7 +148,7 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                           Container(
                             height: 180,
                             width: double.infinity,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(16),
@@ -161,17 +161,17 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: const EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  decoration: ShapeDecoration(
+                                  decoration: const ShapeDecoration(
                                     shape: StadiumBorder(),
                                     color: Colors.white,
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
-                                  child: Row(
+                                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Icon(
@@ -192,24 +192,24 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text("Today's Session"),
-                                  Text(
+                                  const Text("Today's Session"),
+                                  const Text(
                                     "Just Relax Already",
                                     style: TextStyle(
                                       fontSize: 20,
                                     ),
                                   ),
-                                  Text("Imperfect Meditation Challenge"),
-                                  Gap(12),
+                                  const Text("Imperfect Meditation Challenge"),
+                                  const Gap(12),
                                   Container(
-                                    decoration: ShapeDecoration(
+                                    decoration: const ShapeDecoration(
                                       shape: StadiumBorder(),
                                       color: Colors.black,
                                     ),
-                                    padding: EdgeInsets.symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                       vertical: 12,
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                       "Play",
                                       style: TextStyle(
@@ -224,20 +224,20 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                         ],
                       ),
                     ),
-                    Gap(24),
-                    Text(
+                    const Gap(24),
+                    const Text(
                       "Listen & Learn",
                       style: TextStyle(
                         fontSize: 20,
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     ListView.separated(
                       padding: EdgeInsets.zero,
                       shrinkWrap: true,
                       itemCount: 10,
-                      physics: NeverScrollableScrollPhysics(),
-                      separatorBuilder: (context, index) => Divider(),
+                      physics: const NeverScrollableScrollPhysics(),
+                      separatorBuilder: (context, index) => const Divider(),
                       itemBuilder: (context, index) {
                         return Row(
                           children: [
@@ -249,8 +249,8 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                                 borderRadius: BorderRadius.circular(6),
                               ),
                             ),
-                            Gap(12),
-                            Expanded(
+                            const Gap(12),
+                            const Expanded(
                               child: Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                                 maxLines: 2,
@@ -258,14 +258,14 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                             ),
                             Container(
                               decoration: ShapeDecoration(
-                                shape: StadiumBorder(),
+                                shape: const StadiumBorder(),
                                 color: Colors.grey[100],
                               ),
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 12,
                                 vertical: 6,
                               ),
-                              child: Row(
+                              child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Icon(
@@ -295,26 +295,27 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
               pageIndex = idx;
             });
           },
+          currentIndex: pageIndex,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.apps,
               ),
               label: "Discover",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.library_books,
               ),
               label: "Courses",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.nightlight,
               ),
