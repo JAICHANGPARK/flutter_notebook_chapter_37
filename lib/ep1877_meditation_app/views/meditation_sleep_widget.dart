@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MeditationSleepWidget extends StatefulWidget {
   const MeditationSleepWidget({super.key});
 
@@ -13,8 +12,17 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text("Sleep"),
+        actions: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              border: Border.all(color: Colors.white,)
+            ),
 
+          )
+        ],
       ),
     );
   }
