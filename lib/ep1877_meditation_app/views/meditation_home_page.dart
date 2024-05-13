@@ -147,17 +147,18 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
                             height: 180,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(16),
-                                  topRight: Radius.circular(16),
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(16),
+                                topRight: Radius.circular(16),
+                              ),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2020/03/29/18/33/girl-4981766_1280.jpg",
                                 ),
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2020/03/29/18/33/girl-4981766_1280.jpg",
-                                  ),
-                                  fit: BoxFit.cover,
-                                )),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                             padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
