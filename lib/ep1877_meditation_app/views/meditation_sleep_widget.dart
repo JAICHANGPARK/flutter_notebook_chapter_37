@@ -19,9 +19,9 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
         leading: Padding(
           padding: const EdgeInsets.only(left: 16),
           child: CircleAvatar(
-            radius: 24,
           ),
         ),
+        leadingWidth: 62,
         centerTitle: true,
         title: Text("Sleep"),
         toolbarHeight: 72,
