@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'meditation_list_widget.dart';
+
 
 class MeditationHomeWidget extends StatefulWidget {
   const MeditationHomeWidget({super.key});
@@ -229,7 +231,7 @@ class _MeditationHomeWidgetState extends State<MeditationHomeWidget> {
                     ),
                   ),
                   const Gap(12),
-
+                  MeditationListWidget(),
                 ],
               ),
             ),
