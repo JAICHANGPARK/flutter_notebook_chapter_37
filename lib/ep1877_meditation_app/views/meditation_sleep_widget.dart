@@ -78,13 +78,12 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
               child: Row(
                 children: [
                   Text(
-                    "Featured",
+                    "Quick & Easy",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 26,
                     ),
                   ),
-
                 ],
               ),
             ),
