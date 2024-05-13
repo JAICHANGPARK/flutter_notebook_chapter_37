@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'meditation_home_widget.dart';
+
 class MeditationHomePage extends StatefulWidget {
   const MeditationHomePage({super.key});
 
@@ -18,13 +20,13 @@ class _MeditationHomePageState extends State<MeditationHomePage> {
       body: IndexedStack(
         index: pageIndex,
         children: [
-
+          MeditationHomeWidget(),
         ],
       ),
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-          onTap: (idx){
+          onTap: (idx) {
             setState(() {
               pageIndex = idx;
             });
