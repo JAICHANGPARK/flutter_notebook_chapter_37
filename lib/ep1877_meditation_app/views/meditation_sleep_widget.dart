@@ -36,12 +36,15 @@ class _MeditationSleepWidgetState extends State<MeditationSleepWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-                    Row(
-                      children: [
-                        Text("Featured"),
-                      ],
-                    ),
-
+            Row(
+              children: [
+                Text("Featured"),
+                Text("See All"),
+                Icon(
+                  Icons.keyboard_arrow_right_outlined,
+                ),
+              ],
+            ),
           ],
         ),
       ),
