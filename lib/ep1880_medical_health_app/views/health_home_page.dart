@@ -12,6 +12,9 @@ class _HealthHomePageState extends State<HealthHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        // selectedItemColor: Color(0xff7ACE59),
+        selectedItemColor: Color.fromRGBO(50, 212, 153, 1),
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
@@ -39,7 +42,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.monitor_heart_outlined,
+              Icons.person_outline_outlined,
             ),
             label: "Doctors",
           ),
