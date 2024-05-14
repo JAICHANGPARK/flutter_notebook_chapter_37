@@ -47,10 +47,24 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 length: 3,
                 child: Column(
                   children: [
-                    TabBar(tabs: []),
+                    TabBar(tabs: [
+                      Tab(
+                        text: "Case",
+                      ),
+                      Tab(
+                        text: "vaccines",
+                      ),
+                      Tab(
+                        text: "News",
+                      )
+                    ]),
                     Expanded(
                       child: TabBarView(
-                        children: [],
+                        children: [
+                          Container(),
+                          Container(),
+                          Container(),
+                        ],
                       ),
                     )
                   ],
