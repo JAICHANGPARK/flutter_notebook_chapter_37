@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/health_home_page.dart';
+
 void main() {
   runApp(MedicalHealthApp());
 }
@@ -9,6 +11,8 @@ class MedicalHealthApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: HealthHomePage(),
+    );
   }
 }
