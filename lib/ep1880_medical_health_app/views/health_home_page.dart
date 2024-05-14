@@ -37,7 +37,27 @@ class _HealthHomePageState extends State<HealthHomePage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: 72,
+              child: Placeholder(),
+            ),
+            Expanded(
+              child: DefaultTabController(
+                length: 3,
+                child: Column(
+                  children: [
+                    TabBar(tabs: []),
+                    Expanded(
+                      child: TabBarView(
+                        children: [],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
