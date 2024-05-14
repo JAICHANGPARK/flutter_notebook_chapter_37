@@ -15,6 +15,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
         // selectedItemColor: Color(0xff7ACE59),
         selectedItemColor: Color.fromRGBO(50, 212, 153, 1),
         unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
