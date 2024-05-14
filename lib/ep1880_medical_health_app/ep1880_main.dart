@@ -15,6 +15,7 @@ class MedicalHealthApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: GoogleFonts.dmSans().fontFamily,
+        primaryColor: Color.fromRGBO(50, 212, 153, 1),
       ),
       home: HealthHomePage(),
     );
