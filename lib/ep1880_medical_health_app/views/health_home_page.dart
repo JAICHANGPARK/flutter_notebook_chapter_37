@@ -38,6 +38,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(24),
             Container(
               height: 64,
               margin: EdgeInsets.symmetric(
@@ -74,6 +75,7 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 ],
               ),
             ),
+            Gap(8),
             Expanded(
               child: DefaultTabController(
                 length: 3,
