@@ -40,7 +40,20 @@ class _HealthHomePageState extends State<HealthHomePage> {
           children: [
             Container(
               height: 72,
-              child: Placeholder(),
+              margin: EdgeInsets.symmetric(horizontal: 16,),
+              decoration: BoxDecoration(
+                color: Colors.teal[50],
+              ),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Icon(Icons.keyboard_arrow_down),
+                  Text(
+                    "United States",
+                  ),
+                  Text("44.199.496"),
+                ],
+              ),
             ),
             Expanded(
               child: DefaultTabController(
