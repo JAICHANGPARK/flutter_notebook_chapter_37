@@ -134,6 +134,28 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
                                     ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        height: 62,
+                                        width: 72,
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                      Gap(16),
+                                      Expanded(
+                                        child: Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
+                                          maxLines: 2,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
