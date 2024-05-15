@@ -39,10 +39,15 @@ class _HealthHomePageState extends State<HealthHomePage> {
         child: Column(
           children: [
             Container(
-              height: 72,
-              margin: EdgeInsets.symmetric(horizontal: 16,),
+              height: 64,
+              margin: EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 16,
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.teal[50],
+                borderRadius: BorderRadius.circular(32),
               ),
               child: Row(
                 children: [
@@ -51,7 +56,14 @@ class _HealthHomePageState extends State<HealthHomePage> {
                   Text(
                     "United States",
                   ),
-                  Text("44.199.496"),
+                  Spacer(),
+                  Text(
+                    "44.199.496",
+                    style: TextStyle(
+                      color: Theme.of(context).primaryColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ),
