@@ -105,10 +105,11 @@ class _HealthHomePageState extends State<HealthHomePage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  Gap(8),
                                   Container(
                                     height: 240,
                                     decoration: BoxDecoration(
-                                      color: Colors.purple,
+                                      color: Colors.purple[100],
                                       borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
@@ -119,16 +120,17 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
-                                      height: 2,
+                                      height: 1.8,
                                     ),
                                   ),
-                                  Gap(16),
+                                  Gap(12),
                                   Text("7 September 2021"),
                                   Gap(24),
                                   Text(
                                     "Latest News",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 20,
                                     ),
                                   )
                                 ],
