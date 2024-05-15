@@ -55,6 +55,9 @@ class _HealthHomePageState extends State<HealthHomePage> {
                   Icon(Icons.keyboard_arrow_down),
                   Text(
                     "United States",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Spacer(),
                   Text(
