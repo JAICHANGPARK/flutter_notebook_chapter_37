@@ -100,15 +100,39 @@ class _HealthHomePageState extends State<HealthHomePage> {
                           Container(),
                           Container(),
                           SingleChildScrollView(
-                            child: Column(
-                              children: [
-                                Container(
-                                  height: 400,
-                                  decoration: BoxDecoration(
-                                    color: Colors.purple,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 240,
+                                    decoration: BoxDecoration(
+                                      color: Colors.purple,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                )
-                              ],
+                                  Gap(16),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
+                                    maxLines: 2,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                      height: 2,
+                                    ),
+                                  ),
+                                  Gap(16),
+                                  Text("7 September 2021"),
+                                  Gap(24),
+                                  Text(
+                                    "Latest News",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
