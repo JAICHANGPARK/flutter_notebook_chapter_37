@@ -51,8 +51,12 @@ class _HealthHomePageState extends State<HealthHomePage> {
               ),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 18,
+                  ),
+                  Gap(12),
                   Icon(Icons.keyboard_arrow_down),
+                  Gap(12),
                   Text(
                     "United States",
                     style: TextStyle(
@@ -75,23 +79,38 @@ class _HealthHomePageState extends State<HealthHomePage> {
                 length: 3,
                 child: Column(
                   children: [
-                    TabBar(tabs: [
-                      Tab(
-                        text: "Case",
-                      ),
-                      Tab(
-                        text: "vaccines",
-                      ),
-                      Tab(
-                        text: "News",
-                      )
-                    ]),
+                    TabBar(
+                      labelColor: Theme.of(context).primaryColor,
+                      indicatorColor: Theme.of(context).primaryColor,
+                      tabs: [
+                        Tab(
+                          text: "Case",
+                        ),
+                        Tab(
+                          text: "vaccines",
+                        ),
+                        Tab(
+                          text: "News",
+                        )
+                      ],
+                    ),
                     Expanded(
                       child: TabBarView(
                         children: [
                           Container(),
                           Container(),
-                          Container(),
+                          SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 400,
+                                  decoration: BoxDecoration(
+                                    color: Colors.purple,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     )
