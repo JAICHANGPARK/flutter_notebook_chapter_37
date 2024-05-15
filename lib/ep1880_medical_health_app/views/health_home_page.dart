@@ -135,13 +135,15 @@ class _HealthHomePageState extends State<HealthHomePage> {
                                       fontSize: 20,
                                     ),
                                   ),
+                                  Gap(24),
                                   Row(
                                     children: [
                                       Container(
-                                        height: 62,
-                                        width: 72,
+                                        height: 72,
+                                        width: 82,
                                         decoration: BoxDecoration(
                                           color: Colors.blue,
+                                          borderRadius: BorderRadius.circular(16),
                                         ),
                                       ),
                                       Gap(16),
