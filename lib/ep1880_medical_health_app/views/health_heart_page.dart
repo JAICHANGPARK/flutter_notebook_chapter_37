@@ -12,15 +12,15 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        
-      ),
-      body: SafeArea(
-        child: Column(
-          children: [
 
-          ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+
+            ],
+          ),
         ),
       ),
     );
