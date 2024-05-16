@@ -205,19 +205,19 @@ class _HealthHomePageState extends State<HealthHomePage> {
             icon: Icon(
               Icons.receipt_long,
             ),
-            label: "Doctors",
+            label: "Articles",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.monitor_heart_outlined,
             ),
-            label: "Doctors",
+            label: "Health",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person_outline_outlined,
             ),
-            label: "Doctors",
+            label: "Profile",
           ),
         ],
       ),
