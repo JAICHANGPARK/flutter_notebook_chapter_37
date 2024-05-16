@@ -14,7 +14,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
               Row(
@@ -102,9 +102,16 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                           ),
                         ),
                       ),
+                      Gap(16),
                       Expanded(
-                        child: Container(),
-                      )
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   )),
                   Gap(16),
@@ -112,11 +119,24 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       child: Row(
                     children: [
                       Expanded(
-                        child: Container(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                        ),
                       ),
+                      Gap(16),
                       Expanded(
-                        child: Container(),
-                      )
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ))
                 ],
