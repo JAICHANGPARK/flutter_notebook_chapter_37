@@ -94,7 +94,13 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       child: Row(
                     children: [
                       Expanded(
-                        child: Container(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                        ),
                       ),
                       Expanded(
                         child: Container(),
