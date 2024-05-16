@@ -19,6 +19,12 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
               Row(
                 children: [
                   Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey[100]!,
+                      ),
+                    ),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -34,7 +40,21 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ))
+                  )),
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey[100]!,
+                      ),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.keyboard_arrow_left_outlined,
+                      ),
+                    ),
+                  ),
                 ],
               )
             ],
