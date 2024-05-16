@@ -178,6 +178,11 @@ class _HealthHomePageState extends State<HealthHomePage> {
         selectedItemColor: Color.fromRGBO(50, 212, 153, 1),
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
+        onTap: (idx){
+          if(idx == 3){
+            Navigator.of(context).push(MaterialPageRoute(builder: (builder)))
+          }
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(
