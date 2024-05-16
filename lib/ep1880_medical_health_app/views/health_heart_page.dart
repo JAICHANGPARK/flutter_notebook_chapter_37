@@ -22,7 +22,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: Colors.grey[100]!,
+                        color: Colors.grey[200]!,
                       ),
                     ),
                     child: IconButton(
@@ -38,6 +38,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       "Heart",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontSize: 18,
                       ),
                     ),
                   )),
@@ -45,13 +46,13 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: Colors.grey[100]!,
+                        color: Colors.grey[200]!,
                       ),
                     ),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.keyboard_arrow_left_outlined,
+                        Icons.settings,
                       ),
                     ),
                   ),
