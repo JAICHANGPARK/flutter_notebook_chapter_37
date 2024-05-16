@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1880_medical_health_app/views/health_heart_page.dart';
 import 'package:gap/gap.dart';
 
 class HealthHomePage extends StatefulWidget {
@@ -178,9 +179,13 @@ class _HealthHomePageState extends State<HealthHomePage> {
         selectedItemColor: Color.fromRGBO(50, 212, 153, 1),
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
-        onTap: (idx){
-          if(idx == 3){
-            Navigator.of(context).push(MaterialPageRoute(builder: (builder)))
+        onTap: (idx) {
+          if (idx == 3) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => HealthHeartPage(),
+              ),
+            );
           }
         },
         items: [
