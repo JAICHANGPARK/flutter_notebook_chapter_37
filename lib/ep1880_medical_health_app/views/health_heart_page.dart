@@ -57,6 +57,27 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                     ),
                   ),
                 ],
+              ),
+              Container(
+                height: 42,
+                color: Colors.blueGrey[100],
+              ),
+              Expanded(child: Placeholder()),
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 24),
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Theme.of(context).primaryColor,
+                ),
+                child: Center(
+                  child: Text(
+                    "More Heart",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               )
             ],
           ),
