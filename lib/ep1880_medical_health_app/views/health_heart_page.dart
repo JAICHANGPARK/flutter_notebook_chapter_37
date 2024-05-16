@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HealthHeartPage extends StatefulWidget {
   const HealthHeartPage({super.key});
@@ -58,11 +59,63 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                   ),
                 ],
               ),
+              Gap(16),
               Container(
                 height: 42,
-                color: Colors.blueGrey[100],
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[50],
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Center(
+                        child: Text("Day"),
+                      ),
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Text("Week"),
+                      ),
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Text("Month"),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              Expanded(child: Placeholder()),
+              Gap(24),
+              Expanded(
+                  child: Column(
+                children: [
+                  Expanded(
+                      child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(),
+                      ),
+                      Expanded(
+                        child: Container(),
+                      )
+                    ],
+                  )),
+                  Gap(16),
+                  Expanded(
+                      child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(),
+                      ),
+                      Expanded(
+                        child: Container(),
+                      )
+                    ],
+                  ))
+                ],
+              )),
+              Gap(24),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 24),
                 decoration: ShapeDecoration(
