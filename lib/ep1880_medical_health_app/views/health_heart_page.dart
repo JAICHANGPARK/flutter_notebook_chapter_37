@@ -120,6 +120,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   radius: 30,
                                   backgroundColor: Theme.of(context).primaryColor,
                                 ),
+                                Gap(24),
                                 Row(
                                   children: [
                                     Text(
@@ -136,6 +137,12 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                       ),
                                     )
                                   ],
+                                ),
+                                Text(
+                                  'Heart Heart',
+                                ),
+                                Text(
+                                  "Variability",
                                 )
                               ],
                             ),
