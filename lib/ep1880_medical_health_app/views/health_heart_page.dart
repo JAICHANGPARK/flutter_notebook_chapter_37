@@ -111,8 +111,9 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                               border: Border.all(
                                 color: Colors.grey[300]!,
                               ),
+                              borderRadius: BorderRadius.circular(16)
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -130,6 +131,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                         fontSize: 28,
                                       ),
                                     ),
+                                    Gap(8),
                                     Text(
                                       "bpm",
                                       style: TextStyle(
@@ -143,6 +145,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   'Heart Heart',
                                   style: TextStyle(),
                                 ),
+                                Gap(8),
                                 Text(
                                   "Variability",
                                 ),
