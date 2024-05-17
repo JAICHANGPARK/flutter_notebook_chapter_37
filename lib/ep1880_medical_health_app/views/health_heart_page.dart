@@ -151,6 +151,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   icon: Icon(
                                     Icons.arrow_forward,
                                   ),
+                                  color: Theme.of(context).primaryColor,
                                 ),
                               ],
                             ),
