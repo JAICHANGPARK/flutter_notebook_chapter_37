@@ -28,12 +28,12 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.keyboard_arrow_left_outlined,
                       ),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                       child: Center(
                     child: Text(
                       "Heart",
@@ -52,28 +52,28 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.settings,
                       ),
                     ),
                   ),
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               Container(
                 height: 36,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(241, 248, 255, 1),
+                  color: const Color.fromRGBO(241, 248, 255, 1),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Center(
                         child: Text("Day"),
                       ),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Center(
                         child: Text("Week"),
                       ),
@@ -84,7 +84,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                           color: Theme.of(context).primaryColor,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Month",
                             style: TextStyle(
@@ -98,7 +98,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                   ],
                 ),
               ),
-              Gap(24),
+              const Gap(24),
               Expanded(
                   child: Column(
                 children: [
@@ -112,7 +112,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   color: Colors.grey[300]!,
                                 ),
                                 borderRadius: BorderRadius.circular(16)),
-                            padding: EdgeInsets.all(20),
+                            padding: const EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -120,8 +120,8 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   radius: 30,
                                   backgroundColor: Theme.of(context).primaryColor,
                                 ),
-                                Gap(24),
-                                Row(
+                                const Gap(24),
+                                const Row(
                                   children: [
                                     Text(
                                       "98",
@@ -139,18 +139,18 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                     )
                                   ],
                                 ),
-                                Gap(16),
-                                Text(
+                                const Gap(16),
+                                const Text(
                                   'Heart Heart',
                                   style: TextStyle(),
                                 ),
-                                Gap(8),
-                                Text(
+                                const Gap(8),
+                                const Text(
                                   "Variability",
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward,
                                   ),
                                   color: Theme.of(context).primaryColor,
@@ -159,7 +159,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                             ),
                           ),
                         ),
-                        Gap(16),
+                        const Gap(16),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
@@ -167,16 +167,16 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   color: Colors.grey[300]!,
                                 ),
                                 borderRadius: BorderRadius.circular(16)),
-                            padding: EdgeInsets.all(20),
+                            padding: const EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CircleAvatar(
                                   radius: 30,
-                                  backgroundColor: Theme.of(context).primaryColor,
+                                  backgroundColor: Color.fromRGBO(108, 73, 229, 1),
                                 ),
-                                Gap(24),
-                                Row(
+                                const Gap(24),
+                                const Row(
                                   children: [
                                     Text(
                                       "98",
@@ -194,18 +194,18 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                     )
                                   ],
                                 ),
-                                Gap(16),
-                                Text(
+                                const Gap(16),
+                                const Text(
                                   'Heart Heart',
                                   style: TextStyle(),
                                 ),
-                                Gap(8),
-                                Text(
+                                const Gap(8),
+                                const Text(
                                   "Variability",
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.arrow_forward,
                                   ),
                                   color: Theme.of(context).primaryColor,
@@ -217,7 +217,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                       child: Row(
                     children: [
@@ -228,7 +228,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                 color: Colors.grey[300]!,
                               ),
                               borderRadius: BorderRadius.circular(16)),
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -236,8 +236,8 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                 radius: 30,
                                 backgroundColor: Theme.of(context).primaryColor,
                               ),
-                              Gap(24),
-                              Row(
+                              const Gap(24),
+                              const Row(
                                 children: [
                                   Text(
                                     "98",
@@ -255,18 +255,18 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   )
                                 ],
                               ),
-                              Gap(16),
-                              Text(
+                              const Gap(16),
+                              const Text(
                                 'Heart Heart',
                                 style: TextStyle(),
                               ),
-                              Gap(8),
-                              Text(
+                              const Gap(8),
+                              const Text(
                                 "Variability",
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.arrow_forward,
                                 ),
                                 color: Theme.of(context).primaryColor,
@@ -275,7 +275,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                           ),
                         ),
                       ),
-                      Gap(16),
+                      const Gap(16),
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
@@ -283,16 +283,16 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                 color: Colors.grey[300]!,
                               ),
                               borderRadius: BorderRadius.circular(16)),
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               CircleAvatar(
                                 radius: 30,
-                                backgroundColor: Theme.of(context).primaryColor,
+                                backgroundColor: Color.fromRGBO(108, 73, 229, 1),
                               ),
-                              Gap(24),
-                              Row(
+                              const Gap(24),
+                              const Row(
                                 children: [
                                   Text(
                                     "98",
@@ -310,18 +310,18 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                   )
                                 ],
                               ),
-                              Gap(16),
-                              Text(
+                              const Gap(16),
+                              const Text(
                                 'Heart Heart',
                                 style: TextStyle(),
                               ),
-                              Gap(8),
-                              Text(
+                              const Gap(8),
+                              const Text(
                                 "Variability",
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.arrow_forward,
                                 ),
                                 color: Theme.of(context).primaryColor,
@@ -334,14 +334,14 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                   ))
                 ],
               )),
-              Gap(24),
+              const Gap(24),
               Container(
-                padding: EdgeInsets.symmetric(vertical: 24),
+                padding: const EdgeInsets.symmetric(vertical: 24),
                 decoration: ShapeDecoration(
-                  shape: StadiumBorder(),
+                  shape: const StadiumBorder(),
                   color: Theme.of(context).primaryColor,
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(
                     "More Heart",
                     style: TextStyle(
