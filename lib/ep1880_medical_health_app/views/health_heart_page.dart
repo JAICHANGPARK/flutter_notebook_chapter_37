@@ -138,12 +138,20 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                                     )
                                   ],
                                 ),
+                                Gap(16),
                                 Text(
                                   'Heart Heart',
+                                  style: TextStyle(),
                                 ),
                                 Text(
                                   "Variability",
-                                )
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.arrow_forward,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
