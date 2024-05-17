@@ -114,11 +114,29 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                             ),
                             padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CircleAvatar(
                                   radius: 30,
                                   backgroundColor: Theme.of(context).primaryColor,
                                 ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "98",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 28,
+                                      ),
+                                    ),
+                                    Text(
+                                      "bpm",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                )
                               ],
                             ),
                           ),
