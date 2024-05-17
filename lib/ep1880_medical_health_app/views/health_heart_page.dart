@@ -85,7 +85,13 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: Center(
-                          child: Text("Month"),
+                          child: Text(
+                            "Month",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -97,29 +103,39 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                   child: Column(
                 children: [
                   Expanded(
-                      child: Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300]!,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(16),
+                            child: Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 30,
+                                  backgroundColor: Theme.of(context).primaryColor,
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                      ),
-                      Gap(16),
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300]!,
+                        Gap(16),
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
-                  )),
+                      ],
+                    ),
+                  ),
                   Gap(16),
                   Expanded(
                       child: Row(
