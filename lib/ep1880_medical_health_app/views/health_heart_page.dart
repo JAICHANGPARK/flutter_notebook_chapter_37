@@ -63,7 +63,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
               Container(
                 height: 36,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(241, 248, 225, 1),
+                  color: Color.fromRGBO(241, 248, 255, 1),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
@@ -163,9 +163,54 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                                borderRadius: BorderRadius.circular(16)),
+                            padding: EdgeInsets.all(20),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                CircleAvatar(
+                                  radius: 30,
+                                  backgroundColor: Theme.of(context).primaryColor,
+                                ),
+                                Gap(24),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "98",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 28,
+                                      ),
+                                    ),
+                                    Gap(8),
+                                    Text(
+                                      "bpm",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Gap(16),
+                                Text(
+                                  'Heart Heart',
+                                  style: TextStyle(),
+                                ),
+                                Gap(8),
+                                Text(
+                                  "Variability",
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.arrow_forward,
+                                  ),
+                                  color: Theme.of(context).primaryColor,
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -179,9 +224,54 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300]!,
-                            ),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                              borderRadius: BorderRadius.circular(16)),
+                          padding: EdgeInsets.all(20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundColor: Theme.of(context).primaryColor,
+                              ),
+                              Gap(24),
+                              Row(
+                                children: [
+                                  Text(
+                                    "98",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 28,
+                                    ),
+                                  ),
+                                  Gap(8),
+                                  Text(
+                                    "bpm",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Gap(16),
+                              Text(
+                                'Heart Heart',
+                                style: TextStyle(),
+                              ),
+                              Gap(8),
+                              Text(
+                                "Variability",
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -189,9 +279,54 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300]!,
-                            ),
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              ),
+                              borderRadius: BorderRadius.circular(16)),
+                          padding: EdgeInsets.all(20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundColor: Theme.of(context).primaryColor,
+                              ),
+                              Gap(24),
+                              Row(
+                                children: [
+                                  Text(
+                                    "98",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 28,
+                                    ),
+                                  ),
+                                  Gap(8),
+                                  Text(
+                                    "bpm",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Gap(16),
+                              Text(
+                                'Heart Heart',
+                                style: TextStyle(),
+                              ),
+                              Gap(8),
+                              Text(
+                                "Variability",
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ],
                           ),
                         ),
                       ),
