@@ -61,7 +61,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
               ),
               Gap(16),
               Container(
-                height: 42,
+                height: 36,
                 decoration: BoxDecoration(
                   color: Colors.grey[100],
                   borderRadius: BorderRadius.circular(24),
@@ -82,6 +82,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(24),
                         ),
                         child: Center(
                           child: Text("Month"),
