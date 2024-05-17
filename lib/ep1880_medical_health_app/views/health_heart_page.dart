@@ -63,7 +63,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
               Container(
                 height: 42,
                 decoration: BoxDecoration(
-                  color: Colors.blueGrey[50],
+                  color: Colors.grey[100],
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
@@ -79,8 +79,13 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       ),
                     ),
                     Expanded(
-                      child: Center(
-                        child: Text("Month"),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        child: Center(
+                          child: Text("Month"),
+                        ),
                       ),
                     ),
                   ],
