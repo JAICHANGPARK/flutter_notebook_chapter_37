@@ -27,7 +27,9 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                       ),
                     ),
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                       icon: const Icon(
                         Icons.keyboard_arrow_left_outlined,
                       ),
