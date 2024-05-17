@@ -63,7 +63,7 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
               Container(
                 height: 36,
                 decoration: BoxDecoration(
-                  color: Colors.grey[100],
+                  color: Color.fromRGBO(241, 248, 225, 1),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
@@ -108,11 +108,10 @@ class _HealthHeartPageState extends State<HealthHeartPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              ),
-                              borderRadius: BorderRadius.circular(16)
-                            ),
+                                border: Border.all(
+                                  color: Colors.grey[300]!,
+                                ),
+                                borderRadius: BorderRadius.circular(16)),
                             padding: EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
