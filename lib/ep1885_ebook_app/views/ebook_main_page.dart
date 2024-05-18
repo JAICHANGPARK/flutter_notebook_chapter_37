@@ -18,7 +18,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 80,
+        height: 72,
         color: Colors.white,
         padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         child: Row(
