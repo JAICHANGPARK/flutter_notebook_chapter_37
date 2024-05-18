@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class EbookMainPage extends StatefulWidget {
   const EbookMainPage({super.key});
@@ -27,6 +28,13 @@ class _EbookMainPageState extends State<EbookMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.orange,
                   borderRadius: BorderRadius.circular(32),
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.home),
+                    Gap(12),
+                    Text("Home"),
+                  ],
                 ),
               ),
             ),
