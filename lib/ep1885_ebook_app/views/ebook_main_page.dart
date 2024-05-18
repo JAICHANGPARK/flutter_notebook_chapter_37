@@ -11,6 +11,14 @@ class EbookMainPage extends StatefulWidget {
 class _EbookMainPageState extends State<EbookMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
