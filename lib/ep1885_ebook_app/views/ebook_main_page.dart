@@ -35,6 +35,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       ),
                     ),
                   ),
+                  Gap(12),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(
@@ -49,6 +50,22 @@ class _EbookMainPageState extends State<EbookMainPage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 180,
+              child: Placeholder(),
+            ),
+            Container(
+              height: 42,
+              child: Placeholder(),
+            ),
+            Container(
+              height: 360,
+              child: Placeholder(),
+            ),
+            Container(
+              height: 120,
+              child: Placeholder(),
             )
           ],
         ),
