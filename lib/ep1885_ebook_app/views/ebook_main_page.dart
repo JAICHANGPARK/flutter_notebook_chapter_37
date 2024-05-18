@@ -26,16 +26,18 @@ class _EbookMainPageState extends State<EbookMainPage> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.orange,
+                  color: Color.fromRGBO(237, 227, 200, 1),
                   borderRadius: BorderRadius.circular(32),
                 ),
+                height: double.infinity,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.home,
                       color: Colors.deepOrange,
                     ),
-                    Gap(12),
+                    Gap(8),
                     Text(
                       "Home",
                       style: TextStyle(
