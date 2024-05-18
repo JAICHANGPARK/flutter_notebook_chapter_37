@@ -14,60 +14,62 @@ class _EbookMainPageState extends State<EbookMainPage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(235, 225, 198, 1),
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Row(
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.apps,
-                    ),
-                  ),
-                  Gap(12),
-                  Expanded(
-                    child: Container(
-                      height: 42,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.apps,
                       ),
                     ),
-                  ),
-                  Gap(12),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.notifications,
+                    Gap(12),
+                    Expanded(
+                      child: Container(
+                        height: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.shopping_bag,
+                    Gap(12),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.notifications,
+                      ),
                     ),
-                  ),
-                ],
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.shopping_bag,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            Container(
-              height: 180,
-              child: Placeholder(),
-            ),
-            Container(
-              height: 42,
-              child: Placeholder(),
-            ),
-            Container(
-              height: 360,
-              child: Placeholder(),
-            ),
-            Container(
-              height: 120,
-              child: Placeholder(),
-            )
-          ],
+              Container(
+                height: 180,
+                child: Placeholder(),
+              ),
+              Container(
+                height: 42,
+                child: Placeholder(),
+              ),
+              Container(
+                height: 360,
+                child: Placeholder(),
+              ),
+              Container(
+                height: 120,
+                child: Placeholder(),
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
