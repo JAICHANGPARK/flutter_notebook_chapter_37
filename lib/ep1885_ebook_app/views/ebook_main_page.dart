@@ -15,9 +15,13 @@ class _EbookMainPageState extends State<EbookMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        color: Colors.white,
       ),
     );
   }
