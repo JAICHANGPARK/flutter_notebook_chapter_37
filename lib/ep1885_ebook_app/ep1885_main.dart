@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/ebook_main_page.dart';
+
 void main() {
   runApp(EBookApp());
 }
@@ -9,6 +11,8 @@ class EBookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: EbookMainPage(),
+    );
   }
 }
