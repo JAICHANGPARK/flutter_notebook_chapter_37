@@ -19,9 +19,17 @@ class _EbookMainPageState extends State<EbookMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 80,
         color: Colors.white,
+        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         child: Row(
           children: [
-            Expanded(child: Container()),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+              ),
+            ),
             Expanded(
                 child: Container(
               child: IconButton(
