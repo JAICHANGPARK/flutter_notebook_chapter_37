@@ -12,9 +12,45 @@ class _EbookMainPageState extends State<EbookMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(235, 225, 198, 1),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.apps,
+                    ),
+                  ),
+                  Gap(12),
+                  Expanded(
+                    child: Container(
+                      height: 42,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.notifications,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.shopping_bag,
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
