@@ -31,9 +31,17 @@ class _EbookMainPageState extends State<EbookMainPage> {
                 ),
                 child: Row(
                   children: [
-                    Icon(Icons.home),
+                    Icon(
+                      Icons.home,
+                      color: Colors.deepOrange,
+                    ),
                     Gap(12),
-                    Text("Home"),
+                    Text(
+                      "Home",
+                      style: TextStyle(
+                        color: Colors.deepOrange,
+                      ),
+                    ),
                   ],
                 ),
               ),
