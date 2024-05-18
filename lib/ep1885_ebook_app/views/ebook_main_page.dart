@@ -51,8 +51,9 @@ class _EbookMainPageState extends State<EbookMainPage> {
                 ],
               ),
             ),
-            Gap(16),
+            Gap(12),
             Expanded(child: SingleChildScrollView(
+              padding: EdgeInsets.zero,
               child: Column(children: [
                 Container(
                   height: 180,
