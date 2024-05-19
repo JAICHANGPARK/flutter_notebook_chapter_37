@@ -29,18 +29,21 @@ class _EbookMainPageState extends State<EbookMainPage> {
                   Gap(12),
                   Expanded(
                     child: Container(
-                      height: 42,
+                      height: 46,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
                         border: Border.all(
-                          color: Colors.grey[],
+                          color: Colors.grey[300]!,
                         ),
                       ),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "Search here...",
                           suffixIcon: Icon(Icons.mic),
+                          iconColor: Colors.grey[200]!,
+                          suffixIconColor: Colors.grey[500],
+                          prefixIconColor: Colors.grey[500],
                           prefixIcon: Icon(Icons.search),
                           border: InputBorder.none,
                         ),
@@ -70,9 +73,33 @@ class _EbookMainPageState extends State<EbookMainPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 180,
-                    child: Placeholder(),
-                  ),
+                      height: 180,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Top Authors",
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "See all",
+                                    ),
+                                    Icon(
+                                      Icons.keyboard_arrow_right,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      )),
                   Gap(16),
                   Container(
                     height: 42,
