@@ -121,7 +121,24 @@ class _EbookMainPageState extends State<EbookMainPage> {
                               Divider(),
                             ],
                           ),
-                        )
+                        ),
+                        Expanded(
+                            child: ListView.builder(
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Column(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                )
+                              ],
+                            );
+                          },
+                        ))
                       ],
                     ),
                   ),
