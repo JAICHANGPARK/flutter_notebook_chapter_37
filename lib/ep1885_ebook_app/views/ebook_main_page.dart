@@ -79,7 +79,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       ),
                     ),
                     margin: EdgeInsets.all(16),
-                    height: 180,
+                    height: 190,
                     child: Column(
                       children: [
                         Padding(
@@ -131,18 +131,21 @@ class _EbookMainPageState extends State<EbookMainPage> {
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
-                              return Column(
-                                children: [
-                                  Container(
-                                    height: 64,
-                                    width: 64,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 64,
+                                      width: 64,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
                                     ),
-                                  ),
-                                  Gap(12),
-                                  Text("Dream")
-                                ],
+                                    Gap(12),
+                                    Text("Dream")
+                                  ],
+                                ),
                               );
                             },
                           ),
@@ -150,10 +153,21 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       ],
                     ),
                   ),
-                  Gap(16),
                   Container(
                     height: 42,
-                    child: Placeholder(),
+                    margin: EdgeInsets.only(left: 16,),
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.deepOrange,
+                          ),
+                          child: Center(child: Text("Friction")),
+                        );
+                      },
+                    ),
                   ),
                   Gap(16),
                   Container(
