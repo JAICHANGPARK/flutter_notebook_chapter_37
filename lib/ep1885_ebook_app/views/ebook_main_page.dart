@@ -161,6 +161,8 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
+                          margin: EdgeInsets.only(right: 16),
+                          padding: EdgeInsetsDirectional.symmetric(horizontal: 12,),
                           decoration: BoxDecoration(
                             color: Colors.deepOrange,
                           ),
