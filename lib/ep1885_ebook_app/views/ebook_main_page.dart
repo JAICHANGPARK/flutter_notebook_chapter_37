@@ -73,6 +73,12 @@ class _EbookMainPageState extends State<EbookMainPage> {
               child: Column(
                 children: [
                   Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
+                      ),
                       height: 180,
                       child: Column(
                         children: [
