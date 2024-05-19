@@ -124,6 +124,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                         ),
                         Expanded(
                             child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Column(
@@ -134,7 +135,9 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
                                   ),
-                                )
+                                ),
+                                Gap(12),
+                                Text("Dream")
                               ],
                             );
                           },
