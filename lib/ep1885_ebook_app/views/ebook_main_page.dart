@@ -155,14 +155,18 @@ class _EbookMainPageState extends State<EbookMainPage> {
                   ),
                   Container(
                     height: 42,
-                    margin: EdgeInsets.only(left: 16,),
+                    margin: EdgeInsets.only(
+                      left: 16,
+                    ),
                     child: ListView.builder(
                       itemCount: 10,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
                           margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsetsDirectional.symmetric(horizontal: 12,),
+                          padding: EdgeInsetsDirectional.symmetric(
+                            horizontal: 12,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepOrange,
                           ),
@@ -174,7 +178,14 @@ class _EbookMainPageState extends State<EbookMainPage> {
                   Gap(16),
                   Container(
                     height: 360,
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        )),
+                    child: Column(
+                      children: [],
+                    ),
                   ),
                   Gap(16),
                   Container(
