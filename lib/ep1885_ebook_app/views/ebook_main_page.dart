@@ -123,24 +123,29 @@ class _EbookMainPageState extends State<EbookMainPage> {
                           ),
                         ),
                         Expanded(
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                          itemCount: 10,
-                          itemBuilder: (context, index) {
-                            return Column(
-                              children: [
-                                Container(
-                                  height: 64,
-                                  width: 64,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
+                            child: Padding(
+                          padding: const EdgeInsets.only(
+                            left: 16,
+                          ),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Column(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                    ),
                                   ),
-                                ),
-                                Gap(12),
-                                Text("Dream")
-                              ],
-                            );
-                          },
+                                  Gap(12),
+                                  Text("Dream")
+                                ],
+                              );
+                            },
+                          ),
                         ))
                       ],
                     ),
