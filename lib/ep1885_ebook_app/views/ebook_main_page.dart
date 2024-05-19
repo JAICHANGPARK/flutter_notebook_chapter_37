@@ -32,6 +32,18 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       height: 42,
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                        border: Border.all(
+                          color: Colors.grey[],
+                        ),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search here...",
+                          suffixIcon: Icon(Icons.mic),
+                          prefixIcon: Icon(Icons.search),
+                          border: InputBorder.none,
+                        ),
                       ),
                     ),
                   ),
@@ -52,31 +64,33 @@ class _EbookMainPageState extends State<EbookMainPage> {
               ),
             ),
             Gap(12),
-            Expanded(child: SingleChildScrollView(
+            Expanded(
+                child: SingleChildScrollView(
               padding: EdgeInsets.zero,
-              child: Column(children: [
-                Container(
-                  height: 180,
-                  child: Placeholder(),
-                ),
-                Gap(16),
-                Container(
-                  height: 42,
-                  child: Placeholder(),
-                ),
-                Gap(16),
-                Container(
-                  height: 360,
-                  child: Placeholder(),
-                ),
-                Gap(16),
-                Container(
-                  height: 180,
-                  child: Placeholder(),
-                ),
-              ],),
+              child: Column(
+                children: [
+                  Container(
+                    height: 180,
+                    child: Placeholder(),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 360,
+                    child: Placeholder(),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 180,
+                    child: Placeholder(),
+                  ),
+                ],
+              ),
             ))
-
           ],
         ),
       ),
