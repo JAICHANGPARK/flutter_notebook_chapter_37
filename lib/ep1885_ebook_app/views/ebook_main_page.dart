@@ -66,46 +66,55 @@ class _EbookMainPageState extends State<EbookMainPage> {
                 ],
               ),
             ),
-            Gap(12),
             Expanded(
                 child: SingleChildScrollView(
               padding: EdgeInsets.zero,
               child: Column(
                 children: [
                   Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(
-                          color: Colors.grey[200]!,
-                        ),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey[200]!,
                       ),
-                      height: 180,
-                      child: Column(
-                        children: [
-                          Row(
+                    ),
+                    margin: EdgeInsets.all(16),
+                    height: 180,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
                             children: [
-                              Text(
-                                "Top Authors",
+                              Row(
+                                children: [
+                                  Text(
+                                    "Top Authors",
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          "See all",
+                                        ),
+                                        Icon(
+                                          Icons.keyboard_arrow_right,
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
                               ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200],
-                                ),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      "See all",
-                                    ),
-                                    Icon(
-                                      Icons.keyboard_arrow_right,
-                                    ),
-                                  ],
-                                ),
-                              )
+                              Divider(),
                             ],
-                          )
-                        ],
-                      )),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   Gap(16),
                   Container(
                     height: 42,
