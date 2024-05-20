@@ -286,6 +286,39 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                     ),
                                     borderRadius: BorderRadius.circular(16),
                                   ),
+                                  padding: EdgeInsets.all(12),
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.indigo,
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                        ),
+                                      ),
+                                      Gap(8),
+                                      Row(
+                                        children: [
+                                          Text("Sample"),
+                                          Spacer(),
+                                          Icon(
+                                            Icons.star,
+                                            size: 14,
+                                          ),
+                                          Text("4.5"),
+                                        ],
+                                      ),
+                                      Gap(4),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text("Title",),
+                                          Text("\$30.00")
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 );
                               },
                             ),
