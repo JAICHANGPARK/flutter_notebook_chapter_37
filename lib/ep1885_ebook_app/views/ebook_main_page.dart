@@ -81,14 +81,16 @@ class _EbookMainPageState extends State<EbookMainPage> {
               child: Column(
                 children: [
                   Container(
+                    height: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
+                      borderRadius: BorderRadius.circular(16),
                     ),
                     margin: EdgeInsets.all(16),
-                    height: 190,
+
                     child: Column(
                       children: [
                         Padding(
@@ -127,6 +129,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                   )
                                 ],
                               ),
+                              Gap(12),
                               Divider(),
                             ],
                           ),
