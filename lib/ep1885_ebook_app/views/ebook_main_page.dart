@@ -170,10 +170,8 @@ class _EbookMainPageState extends State<EbookMainPage> {
                     ),
                   ),
                   Container(
-                    height: 42,
-                    margin: EdgeInsets.only(
-                      left: 16,
-                    ),
+                    height: 38,
+                    margin: EdgeInsets.only(left: 16, top: 8, bottom: 8),
                     child: ListView.builder(
                       itemCount: tabs.length,
                       scrollDirection: Axis.horizontal,
@@ -191,6 +189,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                             ),
                             decoration: BoxDecoration(
                               color: selectedTab == index ? Colors.deepOrange : Colors.white,
+                              borderRadius: BorderRadius.circular(6),
                             ),
                             child: Center(
                               child: Text(
@@ -205,7 +204,6 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       },
                     ),
                   ),
-                  Gap(16),
                   Container(
                     height: 360,
                     decoration: BoxDecoration(
