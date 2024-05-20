@@ -196,6 +196,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                 tabs[index],
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  color: selectedTab == index ? Colors.white : Colors.black,
                                 ),
                               ),
                             ),
