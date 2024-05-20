@@ -214,6 +214,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
+                      borderRadius: BorderRadius.circular(16),
                     ),
                     margin: EdgeInsets.all(16),
                     child: Column(
@@ -249,7 +250,8 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                     ),
                                   ],
                                 ),
-                              )
+                              ),
+                              Gap(12),
                             ],
                           ),
                         ),
