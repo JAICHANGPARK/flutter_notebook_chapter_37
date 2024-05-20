@@ -215,6 +215,14 @@ class _EbookMainPageState extends State<EbookMainPage> {
                         color: Colors.grey[200]!,
                       ),
                       borderRadius: BorderRadius.circular(16),
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.fromRGBO(240, 232, 211, 1),
+                          Color.fromRGBO(250, 249, 244, 1),
+                          Colors.white,
+                          Colors.white,
+                        ],
+                      ),
                     ),
                     margin: EdgeInsets.all(16),
                     child: Column(
@@ -251,10 +259,10 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                   ],
                                 ),
                               ),
-                              Gap(12),
                             ],
                           ),
                         ),
+                        Gap(12),
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsets.only(
