@@ -175,18 +175,27 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       left: 16,
                     ),
                     child: ListView.builder(
-                      itemCount: 10,
+                      itemCount: tabs.length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsetsDirectional.symmetric(
-                            horizontal: 12,
+                        return GestureDetector(
+                          onTap: (){
+                            
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(right: 16),
+                            padding: EdgeInsetsDirectional.symmetric(
+                              horizontal: 12,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                            ),
+                            child: Center(
+                              child: Text(
+                                tabs[index],
+                              ),
+                            ),
                           ),
-                          decoration: BoxDecoration(
-                            color: Colors.deepOrange,
-                          ),
-                          child: Center(child: Text("Friction")),
                         );
                       },
                     ),
