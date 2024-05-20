@@ -90,7 +90,6 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     margin: EdgeInsets.all(16),
-
                     child: Column(
                       children: [
                         Padding(
@@ -211,10 +210,11 @@ class _EbookMainPageState extends State<EbookMainPage> {
                   Container(
                     height: 360,
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(
-                          color: Colors.grey[200]!,
-                        )),
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
                     margin: EdgeInsets.all(16),
                     child: Column(
                       children: [
@@ -224,7 +224,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                "Top Authors",
+                                "Top Trending",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
