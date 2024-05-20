@@ -77,146 +77,25 @@ class _EbookMainPageState extends State<EbookMainPage> {
             ),
             Expanded(
                 child: SingleChildScrollView(
-                  padding: EdgeInsets.zero,
-                  child: Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          border: Border.all(
-                            color: Colors.grey[200]!,
-                          ),
-                        ),
-                        margin: EdgeInsets.all(16),
-                        height: 190,
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Column(
-                                children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text(
-                                        "Top Authors",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20,
-                                        ),
-                                      ),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[200],
-                                          borderRadius: BorderRadius.circular(4),
-                                        ),
-                                        padding: EdgeInsets.symmetric(
-                                          horizontal: 8,
-                                          vertical: 3,
-                                        ),
-                                        child: Row(
-                                          children: [
-                                            Text(
-                                              "See all",
-                                            ),
-                                            Icon(
-                                              Icons.keyboard_arrow_right,
-                                            ),
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Divider(),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.only(
-                                    left: 16,
-                                  ),
-                                  child: ListView.builder(
-                                    scrollDirection: Axis.horizontal,
-                                    itemCount: 10,
-                                    itemBuilder: (context, index) {
-                                      return Padding(
-                                        padding: const EdgeInsets.only(right: 12),
-                                        child: Column(
-                                          children: [
-                                            Container(
-                                              height: 64,
-                                              width: 64,
-                                              decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                                borderRadius: BorderRadius.circular(16),
-                                                image: DecorationImage(
-                                                  image: NetworkImage(
-                                                    "https://thispersondoesnotexist.com/",
-                                                  ),
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                            ),
-                                            Gap(12),
-                                            Text("Dream")
-                                          ],
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ))
-                          ],
-                        ),
+              padding: EdgeInsets.zero,
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey[200]!,
                       ),
-                      Container(
-                        height: 42,
-                        margin: EdgeInsets.only(
-                          left: 16,
-                        ),
-                        child: ListView.builder(
-                          itemCount: tabs.length,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return GestureDetector(
-                              onTap: () {
-                                setState(() {
-                                  selectedTab = index;
-                                });
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(right: 16),
-                                padding: EdgeInsetsDirectional.symmetric(
-                                  horizontal: 12,
-                                ),
-                                decoration: BoxDecoration(
-                                    color: selectedTab == index ? Colors.deepOrange :
-                                    Colors.white, 
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    tabs[index],
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                      Gap(16),
-                      Container(
-                        height: 360,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.grey[200]!,
-                            )),
-                        margin: EdgeInsets.all(16),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Row(
+                    ),
+                    margin: EdgeInsets.all(16),
+                    height: 190,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
+                              Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
@@ -248,42 +127,165 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                   )
                                 ],
                               ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                  left: 16,
-                                  bottom: 16,
-                                ),
-                                child: ListView.builder(
-                                  scrollDirection: Axis.horizontal,
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 160,
-                                      margin: EdgeInsets.only(right: 12),
+                              Divider(),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                            child: Padding(
+                          padding: const EdgeInsets.only(
+                            left: 16,
+                          ),
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 64,
+                                      width: 64,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        border: Border.all(
-                                          color: Colors.grey[300]!,
+                                        color: Colors.blue,
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://thispersondoesnotexist.com/",
+                                          ),
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
-                                    );
-                                  },
+                                    ),
+                                    Gap(12),
+                                    Text("Dream")
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 42,
+                    margin: EdgeInsets.only(
+                      left: 16,
+                    ),
+                    child: ListView.builder(
+                      itemCount: tabs.length,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedTab = index;
+                            });
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(right: 16),
+                            padding: EdgeInsetsDirectional.symmetric(
+                              horizontal: 16,
+                            ),
+                            decoration: BoxDecoration(
+                              color: selectedTab == index ? Colors.deepOrange : Colors.white,
+                            ),
+                            child: Center(
+                              child: Text(
+                                tabs[index],
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
-                            )
-                          ],
-                        ),
-                      ),
-                      Gap(16),
-                      Container(
-                        height: 180,
-                        child: Placeholder(),
-                      ),
-                    ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
-                ))
+                  Gap(16),
+                  Container(
+                    height: 360,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        )),
+                    margin: EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Top Authors",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 3,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "See all",
+                                    ),
+                                    Icon(
+                                      Icons.keyboard_arrow_right,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              bottom: 16,
+                            ),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 160,
+                                  margin: EdgeInsets.only(right: 12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey[300]!,
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 180,
+                    child: Placeholder(),
+                  ),
+                ],
+              ),
+            ))
           ],
         ),
       ),
@@ -320,25 +322,25 @@ class _EbookMainPageState extends State<EbookMainPage> {
             ),
             Expanded(
                 child: Container(
-                  child: IconButton(
-                    icon: Icon(Icons.explore_outlined),
-                    onPressed: () {},
-                  ),
-                )),
+              child: IconButton(
+                icon: Icon(Icons.explore_outlined),
+                onPressed: () {},
+              ),
+            )),
             Expanded(
                 child: Container(
-                  child: IconButton(
-                    icon: Icon(Icons.bookmark_border),
-                    onPressed: () {},
-                  ),
-                )),
+              child: IconButton(
+                icon: Icon(Icons.bookmark_border),
+                onPressed: () {},
+              ),
+            )),
             Expanded(
                 child: Container(
-                  child: IconButton(
-                    icon: Icon(Icons.person_outline_outlined),
-                    onPressed: () {},
-                  ),
-                )),
+              child: IconButton(
+                icon: Icon(Icons.person_outline_outlined),
+                onPressed: () {},
+              ),
+            )),
           ],
         ),
       ),
