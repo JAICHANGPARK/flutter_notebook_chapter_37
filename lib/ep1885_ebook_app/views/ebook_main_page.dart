@@ -9,6 +9,16 @@ class EbookMainPage extends StatefulWidget {
 }
 
 class _EbookMainPageState extends State<EbookMainPage> {
+
+  final tabs = [
+    "Fiction",
+    "Historical",
+    "Thriller",
+    "Biography",
+  ];
+
+  int selectedTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
