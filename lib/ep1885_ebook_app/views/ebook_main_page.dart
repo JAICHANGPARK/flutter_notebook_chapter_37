@@ -9,7 +9,6 @@ class EbookMainPage extends StatefulWidget {
 }
 
 class _EbookMainPageState extends State<EbookMainPage> {
-
   final tabs = [
     "Fiction",
     "Historical",
@@ -150,6 +149,13 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                       width: 64,
                                       decoration: BoxDecoration(
                                         color: Colors.blue,
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://thispersondoesnotexist.com/",
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                     Gap(12),
