@@ -216,7 +216,10 @@ class _EbookMainPageState extends State<EbookMainPage> {
                       ),
                       borderRadius: BorderRadius.circular(16),
                       gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
                         colors: [
+                          Color.fromRGBO(240, 232, 211, 1),
                           Color.fromRGBO(240, 232, 211, 1),
                           Color.fromRGBO(250, 249, 244, 1),
                           Colors.white,
@@ -281,6 +284,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                     border: Border.all(
                                       color: Colors.grey[300]!,
                                     ),
+                                    borderRadius: BorderRadius.circular(16),
                                   ),
                                 );
                               },
