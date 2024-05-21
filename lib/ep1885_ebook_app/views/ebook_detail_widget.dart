@@ -11,10 +11,13 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
 
-        ],
+          ],
+        ),
       ),
     );
   }
