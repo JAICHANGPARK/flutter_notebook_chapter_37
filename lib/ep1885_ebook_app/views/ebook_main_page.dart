@@ -292,9 +292,7 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                       Expanded(
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.indigo,
-                                            borderRadius: BorderRadius.circular(8)
-                                          ),
+                                              color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
                                         ),
                                       ),
                                       Gap(8),
@@ -305,16 +303,30 @@ class _EbookMainPageState extends State<EbookMainPage> {
                                           Icon(
                                             Icons.star,
                                             size: 14,
+                                            color: Colors.orange,
                                           ),
-                                          Text("4.5"),
+                                          Gap(5),
+                                          Text(
+                                            "4.5",
+                                          ),
                                         ],
                                       ),
                                       Gap(4),
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text("Title",),
-                                          Text("\$30.00")
+                                          Text(
+                                            "Title",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "\$30.00",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
                                         ],
                                       )
                                     ],
