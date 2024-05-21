@@ -106,8 +106,28 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                             border: Border.all(
                               color: Colors.orange,
                             ),
+                            borderRadius: BorderRadius.circular(4),
                           ),
-                        )
+                          child: Icon(
+                            Icons.remove,
+                          ),
+                        ),
+                        Gap(6),
+                        Text("01"),
+                        Gap(6),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.orange,
+                            ),
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Icon(
+                            Icons.add,
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     )
                   ],
