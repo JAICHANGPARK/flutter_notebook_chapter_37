@@ -52,6 +52,7 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
                     Row(
@@ -63,9 +64,21 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[100],
                           ),
+                          padding: EdgeInsets.all(8),
                           child: Row(
                             children: [
-                              
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                              ),
+                              Text("4.5"),
+                              Container(
+                                color: Colors.white,
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                  size: 16,
+                                ),
+                              )
                             ],
                           ),
                         )
