@@ -47,11 +47,16 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                 ],
               ),
               Expanded(
-                child: Container(),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
               ),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
                 ),
                 padding: EdgeInsets.all(16),
                 child: Column(
@@ -66,6 +71,7 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                             ),
                           ),
                         ),
+                        Gap(12),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[100],
@@ -77,7 +83,9 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                                 Icons.star,
                                 size: 15,
                               ),
+                              Gap(6),
                               Text("4.5"),
+                              Gap(6),
                               Container(
                                 color: Colors.white,
                                 child: Icon(
