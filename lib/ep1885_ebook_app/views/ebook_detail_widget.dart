@@ -137,6 +137,17 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                       style: TextStyle(
                         color: Colors.grey,
                       ),
+                    ),
+                    Container(
+                      child: Center(
+                        child: Text(
+                          "Buy Now",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
