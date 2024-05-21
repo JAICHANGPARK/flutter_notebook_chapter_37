@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class EbookDetailPage extends StatefulWidget {
   const EbookDetailPage({super.key});
@@ -85,6 +86,26 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                                 ),
                               )
                             ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Gap(12),
+                    Row(
+                      children: [
+                        Text(
+                          "\$30.00",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.orange,
+                            fontSize: 19,
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.orange,
+                            ),
                           ),
                         )
                       ],
