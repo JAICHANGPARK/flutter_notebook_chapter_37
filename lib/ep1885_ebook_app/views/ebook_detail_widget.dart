@@ -58,7 +58,12 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                     Row(
                       children: [
                         Expanded(
-                          child: Text("A Graphic Guide To Title Title Title Title Title"),
+                          child: Text(
+                            "A Graphic Guide To Title Title Title Title Title",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         Container(
                           decoration: BoxDecoration(
