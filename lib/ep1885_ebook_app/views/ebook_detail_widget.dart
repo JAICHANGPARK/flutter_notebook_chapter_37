@@ -48,11 +48,13 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
               ),
               Expanded(
                 child: Container(
+                  margin: EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: Colors.blue,
                   ),
                 ),
               ),
+              Gap(16),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
