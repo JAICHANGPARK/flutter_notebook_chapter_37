@@ -147,6 +147,7 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                       maxLines: 6,
                       style: TextStyle(
                         color: Colors.grey,
+                        fontSize: 13,
                       ),
                     ),
                     Gap(12),
