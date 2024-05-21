@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1885_ebook_app/views/ebook_detail_widget.dart';
 import 'package:gap/gap.dart';
 
 class EbookMainPage extends StatefulWidget {
@@ -276,60 +277,69 @@ class _EbookMainPageState extends State<EbookMainPage> {
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  width: 160,
-                                  margin: EdgeInsets.only(right: 12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey[300]!,
+                                return GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => EbookDetailPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    width: 160,
+                                    margin: EdgeInsets.only(right: 12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(16),
                                     ),
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  padding: EdgeInsets.all(12),
-                                  child: Column(
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
+                                    padding: EdgeInsets.all(12),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                color: Colors.indigo, borderRadius: BorderRadius.circular(8)),
+                                          ),
                                         ),
-                                      ),
-                                      Gap(8),
-                                      Row(
-                                        children: [
-                                          Text("Sample"),
-                                          Spacer(),
-                                          Icon(
-                                            Icons.star,
-                                            size: 14,
-                                            color: Colors.orange,
-                                          ),
-                                          Gap(5),
-                                          Text(
-                                            "4.5",
-                                          ),
-                                        ],
-                                      ),
-                                      Gap(4),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            "Title",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                        Gap(8),
+                                        Row(
+                                          children: [
+                                            Text("Sample"),
+                                            Spacer(),
+                                            Icon(
+                                              Icons.star,
+                                              size: 14,
+                                              color: Colors.orange,
                                             ),
-                                          ),
-                                          Text(
-                                            "\$30.00",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                            Gap(5),
+                                            Text(
+                                              "4.5",
                                             ),
-                                          )
-                                        ],
-                                      )
-                                    ],
+                                          ],
+                                        ),
+                                        Gap(4),
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "Title",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$30.00",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 );
                               },
