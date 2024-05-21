@@ -101,6 +101,7 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                             fontSize: 19,
                           ),
                         ),
+                        Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -129,6 +130,13 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                           ),
                         ),
                       ],
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed lacus nec odio commodo aliquam vitae luctus libero. Cras at ligula non diam ultrices varius ut vitae massa. Vivamus fringilla lorem eu nunc faucibus laoreet. Pellentesque dignissim dui elit, a vulputate libero euismod et. Quisque in quam tempor, iaculis dolor nec, sagittis lorem. Suspendisse vitae metus nec velit congue fermentum. Curabitur sed augue ut odio dapibus blandit a vitae metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vestibulum enim in convallis viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis scelerisque eu nisl at scelerisque. Maecenas dui ipsum, aliquam molestie semper quis, sollicitudin sit amet odio. Pellentesque eget euismod eros. Nulla facilisi. Nullam ut augue eu erat bibendum finibus.",
+                      maxLines: 6,
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
                     )
                   ],
                 ),
