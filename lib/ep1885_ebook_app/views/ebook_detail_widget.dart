@@ -51,6 +51,7 @@ class _EbookDetailPageState extends State<EbookDetailPage> {
                   margin: EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: Colors.blue,
+                    borderRadius: BorderRadius.circular(16),
                   ),
                 ),
               ),
