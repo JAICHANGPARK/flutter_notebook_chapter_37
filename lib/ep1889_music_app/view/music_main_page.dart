@@ -13,7 +13,20 @@ class _MusicMainPageState extends State<MusicMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Container(
+                  height: 32,
+                  width: 32,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all()
+                  ),
+                )
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
