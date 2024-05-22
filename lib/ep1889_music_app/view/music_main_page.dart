@@ -30,7 +30,25 @@ class _MusicMainPageState extends State<MusicMainPage> {
             ),
             label: "Feed",
           ),
-          
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Discover",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.headphones,
+            ),
+            label: "My Device",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.feed_outlined,
+            ),
+            label: "Feed",
+          ),
+
         ],
       ),
     );
