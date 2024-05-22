@@ -95,7 +95,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                           ],
                         ),
                         Container(
-                          height: 240,
+                          height: 280,
                           child: Placeholder(),
                         ),
                         Row(
@@ -104,6 +104,10 @@ class _MusicMainPageState extends State<MusicMainPage> {
                               "Playlist",
                             ),
                           ],
+                        ),
+                        Container(
+                          height: 280,
+                          child: Placeholder(),
                         ),
                       ],
                     ),
