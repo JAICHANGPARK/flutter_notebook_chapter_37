@@ -17,6 +17,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
@@ -44,11 +45,10 @@ class _MusicMainPageState extends State<MusicMainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.feed_outlined,
+              Icons.person_outline_outlined,
             ),
-            label: "Feed",
+            label: "Profile",
           ),
-
         ],
       ),
     );
