@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/music_main_page.dart';
+
 
 void main() {
   runApp(MusicApp());
@@ -10,6 +12,8 @@ class MusicApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: MusicMainPage(),
+    );
   }
 }
