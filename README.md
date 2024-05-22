@@ -6,7 +6,7 @@
 - By DStudio®
 - https://dribbble.com/shots/24120872-Music-App
 
-## EP1885 - 1888
+## EP1885-1888
 
 - eBook Mobile App
 - By Netro Creative Asiq M. for Netro Creative
