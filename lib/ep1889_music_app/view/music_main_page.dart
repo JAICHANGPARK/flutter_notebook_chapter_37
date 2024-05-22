@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicMainPage extends StatefulWidget {
   const MusicMainPage({super.key});
@@ -38,21 +39,24 @@ class _MusicMainPageState extends State<MusicMainPage> {
                   ),
                 ),
                 Expanded(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CircleAvatar(
                       radius: 6,
                     ),
+                    Gap(4),
                     CircleAvatar(
                       radius: 6,
                     ),
+                    Gap(4),
                     Container(
                       height: 24,
                       width: 24,
-                    ),
+                    ),Gap(4),
                     CircleAvatar(
                       radius: 6,
                     ),
-
+                    Gap(4),
                     CircleAvatar(
                       radius: 6,
                     ),
