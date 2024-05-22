@@ -17,11 +17,24 @@ class _MusicMainPageState extends State<MusicMainPage> {
             Row(
               children: [
                 Container(
-                  height: 32,
-                  width: 32,
+                  height: 26,
+                  width: 26,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all()
+                    border: Border.all(
+                      color: Colors.red,
+                    ),
+                  ),
+                  padding: EdgeInsets.all(4),
+                  child: Container(
+                    height: 32,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.red,
+                      ),
+                    ),
                   ),
                 )
               ],
