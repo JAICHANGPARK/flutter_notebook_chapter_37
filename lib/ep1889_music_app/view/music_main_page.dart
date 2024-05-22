@@ -107,11 +107,18 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Positioned(
+                    bottom: 0,
+                      left: 0,
+                      right: 0,
+                      child: Container(
+                    height: 82,
+                    color: Colors.blue,
+                  ))
                 ],
               ),
             ),
-
           ],
         ),
       ),
