@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(MusicApp());''
+  runApp(MusicApp());
 }
 
 class MusicApp extends StatelessWidget {
