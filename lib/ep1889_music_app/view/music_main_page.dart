@@ -36,7 +36,28 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       ),
                     ),
                   ),
-                )
+                ),
+                Expanded(child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 6,
+                    ),
+                    CircleAvatar(
+                      radius: 6,
+                    ),
+                    Container(
+                      height: 24,
+                      width: 24,
+                    ),
+                    CircleAvatar(
+                      radius: 6,
+                    ),
+
+                    CircleAvatar(
+                      radius: 6,
+                    ),
+                  ],
+                )),
               ],
             )
           ],
