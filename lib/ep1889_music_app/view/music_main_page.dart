@@ -19,13 +19,13 @@ class _MusicMainPageState extends State<MusicMainPage> {
               children: [
                 Gap(20),
                 Container(
-
                   height: 26,
                   width: 26,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: Colors.red,
+                      width: 1.5,
                     ),
                   ),
                   padding: EdgeInsets.all(4),
@@ -34,9 +34,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     width: 32,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.red,
-                      ),
+                      border: Border.all(color: Colors.red, width: 1.5),
                     ),
                   ),
                 ),
@@ -53,12 +51,12 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       ),
                       Gap(8),
                       Container(
-                          height: 24,
-                          width: 24,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
+                        height: 24,
+                        width: 24,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
                       ),
                       Gap(8),
                       CircleAvatar(
