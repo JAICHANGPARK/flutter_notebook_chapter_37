@@ -76,7 +76,42 @@ class _MusicMainPageState extends State<MusicMainPage> {
                   ),
                 )
               ],
-            )
+            ),
+            Expanded(
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 63,
+                          child: Placeholder(),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "Playlist",
+                            ),
+                          ],
+                        ),
+                        Container(
+                          height: 240,
+                          child: Placeholder(),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "Playlist",
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
