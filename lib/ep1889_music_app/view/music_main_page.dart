@@ -17,7 +17,9 @@ class _MusicMainPageState extends State<MusicMainPage> {
           children: [
             Row(
               children: [
+                Gap(20),
                 Container(
+
                   height: 26,
                   width: 26,
                   decoration: BoxDecoration(
@@ -38,30 +40,43 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     ),
                   ),
                 ),
-                Expanded(child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircleAvatar(
-                      radius: 6,
-                    ),
-                    Gap(4),
-                    CircleAvatar(
-                      radius: 6,
-                    ),
-                    Gap(4),
-                    Container(
-                      height: 24,
-                      width: 24,
-                    ),Gap(4),
-                    CircleAvatar(
-                      radius: 6,
-                    ),
-                    Gap(4),
-                    CircleAvatar(
-                      radius: 6,
-                    ),
-                  ],
-                )),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 4,
+                      ),
+                      Gap(8),
+                      CircleAvatar(
+                        radius: 6,
+                      ),
+                      Gap(8),
+                      Container(
+                          height: 24,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                      ),
+                      Gap(8),
+                      CircleAvatar(
+                        radius: 6,
+                      ),
+                      Gap(8),
+                      CircleAvatar(
+                        radius: 4,
+                      ),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.settings_outlined,
+                  ),
+                )
               ],
             )
           ],
