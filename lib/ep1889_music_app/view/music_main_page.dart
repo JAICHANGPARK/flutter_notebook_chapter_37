@@ -86,6 +86,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         Container(
                           height: 82,
                           margin: EdgeInsets.all(16),
+                          padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                             color: Colors.grey[200]!,
                           ),
@@ -96,6 +97,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Live..."),
+                                    Gap(4),
                                     Row(
                                       children: [
                                         Container(
@@ -105,6 +107,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                             color: Colors.grey,
                                           ),
                                         ),
+                                        Gap(4),
                                         Text("The Secret.."),
                                       ],
                                     ),
@@ -112,7 +115,13 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 ),
                               ),
                               Expanded(
-                                child: Container(),
+                                child: Container(
+                                  height: 36,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                ),
                               ),
                               IconButton(
                                 onPressed: () {},
@@ -124,7 +133,9 @@ class _MusicMainPageState extends State<MusicMainPage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                          ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -146,7 +157,9 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         ),
                         Container(
                           height: 280,
-                          child: Placeholder(),
+                          child: ListView.builder(
+                            itemBuilder: (context, index) {},
+                          ),
                         ),
                         Row(
                           children: [
