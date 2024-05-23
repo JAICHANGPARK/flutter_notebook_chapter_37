@@ -143,7 +143,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 "Playlist",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20,
+                                  fontSize: 26,
                                 ),
                               ),
                               IconButton(
@@ -157,14 +157,29 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         ),
                         Container(
                           height: 280,
+                          margin: EdgeInsets.only(left: 16),
                           child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 200,
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      "Top Hot Chart",
+                                    ),
+                                    Text(
+                                      "320 Tracks",
+                                    ),
                                   ],
                                 ),
                               );
