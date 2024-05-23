@@ -156,7 +156,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                           ),
                         ),
                         Container(
-                          height: 280,
+                          height: 260,
                           margin: EdgeInsets.only(left: 16),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
@@ -175,9 +175,14 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                         ),
                                       ),
                                     ),
+                                    Gap(6),
                                     Text(
                                       "Top Hot Chart",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    Gap(6),
                                     Text(
                                       "320 Tracks",
                                     ),
@@ -187,12 +192,30 @@ class _MusicMainPageState extends State<MusicMainPage> {
                             },
                           ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "Playlist",
-                            ),
-                          ],
+                        Gap(16),
+                        Padding(
+
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Albums",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 26,
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         Container(
                           height: 280,
