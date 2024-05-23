@@ -164,6 +164,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 200,
+                                margin: EdgeInsets.only(right: 12),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
