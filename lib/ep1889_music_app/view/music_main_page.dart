@@ -158,7 +158,17 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         Container(
                           height: 280,
                           child: ListView.builder(
-                            itemBuilder: (context, index) {},
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 200,
+                                child: Column(
+                                  children: [
+                                    
+                                  ],
+                                ),
+                              );
+                            },
                           ),
                         ),
                         Row(
