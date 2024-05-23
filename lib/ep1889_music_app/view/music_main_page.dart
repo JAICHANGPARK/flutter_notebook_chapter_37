@@ -84,15 +84,65 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     child: Column(
                       children: [
                         Container(
-                          height: 63,
-                          child: Placeholder(),
+                          height: 82,
+                          margin: EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200]!,
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Live..."),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 24,
+                                          width: 24,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Text("The Secret.."),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward_ios_outlined,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "Playlist",
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Playlist",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         Container(
                           height: 280,
@@ -114,12 +164,13 @@ class _MusicMainPageState extends State<MusicMainPage> {
                   ),
                   Positioned(
                     bottom: 0,
-                      left: 0,
-                      right: 0,
-                      child: Container(
-                    height: 82,
-                    color: Colors.blue,
-                  ))
+                    left: 0,
+                    right: 0,
+                    child: Container(
+                      height: 82,
+                      color: Colors.blue,
+                    ),
+                  )
                 ],
               ),
             ),
