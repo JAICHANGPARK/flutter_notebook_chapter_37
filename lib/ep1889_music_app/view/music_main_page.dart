@@ -407,6 +407,8 @@ class _MusicMainPageState extends State<MusicMainPage> {
           backgroundColor: Colors.white,
 
           type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
           items: [
             BottomNavigationBarItem(
               icon: Icon(
