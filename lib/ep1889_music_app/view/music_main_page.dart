@@ -205,6 +205,26 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey,
                                                 ),
+                                                child: Column(
+                                                  children: [
+                                                    Expanded(
+                                                      child: Row(
+                                                        children: [
+                                                          Expanded(
+                                                            child: Container(
+                                                              color: Colors.red,
+                                                            ),
+                                                          ),
+                                                          Expanded(
+                                                            child: Container(
+                                                              color: Colors.blue,
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
                                             Gap(6),
