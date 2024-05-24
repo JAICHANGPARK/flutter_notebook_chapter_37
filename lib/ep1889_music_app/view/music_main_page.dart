@@ -96,7 +96,13 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Live..."),
+                                    Text(
+                                      "Live...",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.red,
+                                      ),
+                                    ),
                                     Gap(4),
                                     Row(
                                       children: [
@@ -108,7 +114,12 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                           ),
                                         ),
                                         Gap(4),
-                                        Text("The Secret.."),
+                                        Text(
+                                          "The Secret..",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ],
@@ -155,6 +166,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                             ],
                           ),
                         ),
+
                         Container(
                           height: 260,
                           margin: EdgeInsets.only(left: 16),
@@ -194,7 +206,6 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         ),
                         Gap(16),
                         Padding(
-
                           padding: const EdgeInsets.symmetric(
                             horizontal: 16,
                           ),
