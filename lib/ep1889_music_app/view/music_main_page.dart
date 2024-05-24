@@ -285,8 +285,56 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  height: 280,
-                                  child: Placeholder(),
+                                  height: 260,
+                                  margin: EdgeInsets.only(left: 16),
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        width: 200,
+                                        margin: EdgeInsets.only(right: 12),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                ),
+                                                child: Column(
+                                                  children: [
+                                                    Expanded(
+                                                      child: Row(
+                                                        children: [
+                                                          Expanded(
+                                                            child: Container(
+                                                              color: Colors.blue,
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            Gap(6),
+                                            Text(
+                                              "Top Hot Chart",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Gap(6),
+                                            Text(
+                                              "320 Tracks",
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ],
                             ),
@@ -301,7 +349,37 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     right: 0,
                     child: Container(
                       height: 82,
-                      color: Colors.blue,
+                      color: Colors.white,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 72,
+                            width: 72,
+                          ),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Text(
+                                "The Secret of Us",
+                              ),
+                              Text("Subtitle Subtitle ")
+                            ],
+                          )),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.flutter_dash,
+                            ),
+                            color: Colors.red,
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.pause,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
