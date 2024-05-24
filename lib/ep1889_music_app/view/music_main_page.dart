@@ -355,7 +355,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                         children: [
                           Container(
                             height: 72,
-                            width: 72,
+                            width: 58,
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(4),
@@ -401,40 +401,45 @@ class _MusicMainPageState extends State<MusicMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          backgroundColor: Colors.white,
+
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.feed_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.feed_outlined,
+              ),
+              label: "Feed",
             ),
-            label: "Feed",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Discover",
             ),
-            label: "Discover",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.headphones,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.headphones,
+              ),
+              label: "My Device",
             ),
-            label: "My Device",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline_outlined,
+              ),
+              label: "Profile",
             ),
-            label: "Profile",
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
