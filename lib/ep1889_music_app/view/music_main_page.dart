@@ -350,18 +350,31 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     child: Container(
                       height: 82,
                       color: Colors.white,
+                      padding: EdgeInsets.all(12),
                       child: Row(
                         children: [
                           Container(
                             height: 72,
                             width: 72,
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                           ),
+                          Gap(16),
                           Expanded(
                               child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
                                 "The Secret of Us",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               ),
+                              Gap(4),
                               Text("Subtitle Subtitle ")
                             ],
                           )),
