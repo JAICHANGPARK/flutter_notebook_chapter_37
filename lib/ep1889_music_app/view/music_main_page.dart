@@ -223,6 +223,22 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                                         ],
                                                       ),
                                                     ),
+                                                    Expanded(
+                                                      child: Row(
+                                                        children: [
+                                                          Expanded(
+                                                            child: Container(
+                                                              color: Colors.orange,
+                                                            ),
+                                                          ),
+                                                          Expanded(
+                                                            child: Container(
+                                                              color: Colors.green,
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
                                                   ],
                                                 ),
                                               ),
