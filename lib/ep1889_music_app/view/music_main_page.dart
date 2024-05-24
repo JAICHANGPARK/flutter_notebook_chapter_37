@@ -128,10 +128,25 @@ class _MusicMainPageState extends State<MusicMainPage> {
                               ),
                               Expanded(
                                 child: Container(
-                                  height: 36,
+                                  height: 32,
+                                  padding: EdgeInsets.symmetric(horizontal: 3),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.emergency_share_rounded,
+                                        color: Colors.red,
+                                      ),
+                                      Text(
+                                        "3.7k User Joined",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
                               ),
@@ -241,7 +256,6 @@ class _MusicMainPageState extends State<MusicMainPage> {
                             ),
                           ),
                         ),
-
                       ],
                     ),
                   ),
