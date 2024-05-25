@@ -19,7 +19,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
           children: [
             Row(
               children: [
-                Gap(20),
+                const Gap(20),
                 Container(
                   height: 26,
                   width: 26,
@@ -30,7 +30,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       width: 1.5,
                     ),
                   ),
-                  padding: EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(4),
                   child: Container(
                     height: 32,
                     width: 32,
@@ -44,14 +44,14 @@ class _MusicMainPageState extends State<MusicMainPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 4,
                       ),
-                      Gap(8),
-                      CircleAvatar(
+                      const Gap(8),
+                      const CircleAvatar(
                         radius: 6,
                       ),
-                      Gap(8),
+                      const Gap(8),
                       Container(
                         height: 24,
                         width: 24,
@@ -60,12 +60,12 @@ class _MusicMainPageState extends State<MusicMainPage> {
                           borderRadius: BorderRadius.circular(4),
                         ),
                       ),
-                      Gap(8),
-                      CircleAvatar(
+                      const Gap(8),
+                      const CircleAvatar(
                         radius: 6,
                       ),
-                      Gap(8),
-                      CircleAvatar(
+                      const Gap(8),
+                      const CircleAvatar(
                         radius: 4,
                       ),
                     ],
@@ -73,7 +73,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.settings_outlined,
                   ),
                 )
@@ -87,8 +87,8 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       children: [
                         Container(
                           height: 82,
-                          margin: EdgeInsets.all(16),
-                          padding: EdgeInsets.all(12),
+                          margin: const EdgeInsets.all(16),
+                          padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
                             color: Colors.grey[200]!,
                           ),
@@ -98,25 +98,25 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Live...",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.red,
                                       ),
                                     ),
-                                    Gap(4),
+                                    const Gap(4),
                                     Row(
                                       children: [
                                         Container(
                                           height: 24,
                                           width: 24,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.grey,
                                           ),
                                         ),
-                                        Gap(4),
-                                        Text(
+                                        const Gap(4),
+                                        const Text(
                                           "The Secret..",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -130,12 +130,12 @@ class _MusicMainPageState extends State<MusicMainPage> {
                               Expanded(
                                 child: Container(
                                   height: 32,
-                                  padding: EdgeInsets.symmetric(horizontal: 3),
+                                  padding: const EdgeInsets.symmetric(horizontal: 3),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     children: [
                                       Icon(
                                         Icons.emergency_share_rounded,
@@ -153,7 +153,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.arrow_forward_ios_outlined,
                                 ),
                               )
@@ -172,7 +172,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Playlist",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                       ),
                                       IconButton(
                                         onPressed: () {},
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.arrow_forward,
                                         ),
                                       ),
@@ -190,20 +190,20 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 ),
                                 Container(
                                   height: 260,
-                                  margin: EdgeInsets.only(left: 16),
+                                  margin: const EdgeInsets.only(left: 16),
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
                                     itemBuilder: (context, index) {
                                       return Container(
                                         width: 200,
-                                        margin: EdgeInsets.only(right: 12),
+                                        margin: const EdgeInsets.only(right: 12),
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Expanded(
                                               child: Container(
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Colors.grey,
                                                 ),
                                                 child: Column(
@@ -244,15 +244,15 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            Gap(6),
-                                            Text(
+                                            const Gap(6),
+                                            const Text(
                                               "Top Hot Chart",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            Gap(6),
-                                            Text(
+                                            const Gap(6),
+                                            const Text(
                                               "320 Tracks",
                                             ),
                                           ],
@@ -261,7 +261,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                     },
                                   ),
                                 ),
-                                Gap(16),
+                                const Gap(16),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 16,
@@ -269,7 +269,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Albums",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -278,7 +278,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                       ),
                                       IconButton(
                                         onPressed: () {},
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.arrow_forward,
                                         ),
                                       ),
@@ -287,20 +287,20 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 ),
                                 Container(
                                   height: 260,
-                                  margin: EdgeInsets.only(left: 16),
+                                  margin: const EdgeInsets.only(left: 16),
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
                                     itemBuilder: (context, index) {
                                       return Container(
                                         width: 200,
-                                        margin: EdgeInsets.only(right: 12),
+                                        margin: const EdgeInsets.only(right: 12),
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Expanded(
                                               child: Container(
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Colors.grey,
                                                 ),
                                                 child: Column(
@@ -320,15 +320,15 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            Gap(6),
-                                            Text(
+                                            const Gap(6),
+                                            const Text(
                                               "Top Hot Chart",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            Gap(6),
-                                            Text(
+                                            const Gap(6),
+                                            const Text(
                                               "320 Tracks",
                                             ),
                                           ],
@@ -350,17 +350,19 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     right: 0,
                     child: GestureDetector(
                       onTap: () {
-                        showModalBottomSheet(context: context,
-                            isDismissible: false,
-                            isScrollControlled: true,
-                            enableDrag: false,
-                            useSafeArea: true,
-                            builder: (context){
-                          return SizedBox(
+                        showModalBottomSheet(
+                          context: context,
+                          isDismissible: false,
+                          isScrollControlled: true,
+                          enableDrag: false,
+                          useSafeArea: true,
+                          builder: (context) {
+                            return SizedBox(
                               height: MediaQuery.sizeOf(context).height,
-
-                              child: MusicPlayerPage());
-                        });
+                              child: const MusicPlayerPage(),
+                            );
+                          },
+                        );
                         // Navigator.of(context).push(
                         //   MaterialPageRoute(
                         //     builder: (context) => MusicPlayerPage(),
@@ -370,7 +372,7 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       child: Container(
                         height: 82,
                         color: Colors.white,
-                        padding: EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(12),
                         child: Row(
                           children: [
                             Container(
@@ -381,8 +383,8 @@ class _MusicMainPageState extends State<MusicMainPage> {
                                 borderRadius: BorderRadius.circular(4),
                               ),
                             ),
-                            Gap(16),
-                            Expanded(
+                            const Gap(16),
+                            const Expanded(
                                 child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -400,14 +402,14 @@ class _MusicMainPageState extends State<MusicMainPage> {
                             )),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.flutter_dash,
                               ),
                               color: Colors.red,
                             ),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.pause,
                               ),
                             )
@@ -430,31 +432,31 @@ class _MusicMainPageState extends State<MusicMainPage> {
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.feed_outlined,
               ),
               label: "Feed",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
               ),
               label: "Discover",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.headphones,
               ),
               label: "My Device",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline_outlined,
               ),
