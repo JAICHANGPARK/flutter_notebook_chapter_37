@@ -13,7 +13,6 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-
       child: Column(
         children: [
           Row(
@@ -46,91 +45,96 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
               ),
             ],
           ),
-
           Expanded(
-            child:  Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
+            child: Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
                   ),
-                ),
-              ],
+                  Gap(24),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [Text("Title Title"), Text("Subtitle Subtitle")],
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Slider(
+                    value: 0,
+                    onChanged: (onChanged) {},
+                  ),
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.shuffle),
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.skip_previous),
+                            ),
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(Icons.pause),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.skip_next),
+                            ),
+                          ],
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.loop),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [
+                            Icon(Icons.headphones),
+                            Text(
+                              "Earbud Pro",
+                            ),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.share),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Gap(24),
-          Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [Text("Title Title"), Text("Subtitle Subtitle")],
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                ),
-              ),
-            ],
-          ),
-          Slider(
-            value: 0,
-            onChanged: (onChanged) {},
-          ),
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.shuffle),
-              ),
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.skip_previous),
-                    ),
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: Colors.black,
-                      foregroundColor: Colors.white,
-                      child: Icon(Icons.pause),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.skip_next),
-                    ),
-                  ],
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.loop),
-              )
-            ],
-          ),
-          Row(
-            children: [
-              Container(
-                child: Row(
-                  children: [
-                    Icon(Icons.headphones),
-                    Text(
-                      "Earbud Pro",
-                    ),
-                  ],
-                ),
-              ),
-              Spacer(),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.share),
-              ),
-            ],
-          )
         ],
       ),
     );
