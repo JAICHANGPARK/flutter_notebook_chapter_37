@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1889_music_app/view/music_player_page.dart';
 import 'package:gap/gap.dart';
 
 class MusicMainPage extends StatefulWidget {
@@ -348,6 +349,13 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     left: 0,
                     right: 0,
                     child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MusicPlayerPage(),
+                          ),
+                        );
+                      },
                       child: Container(
                         height: 82,
                         color: Colors.white,
@@ -407,7 +415,6 @@ class _MusicMainPageState extends State<MusicMainPage> {
         height: 80,
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
-
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
