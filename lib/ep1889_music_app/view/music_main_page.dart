@@ -350,11 +350,14 @@ class _MusicMainPageState extends State<MusicMainPage> {
                     right: 0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => MusicPlayerPage(),
-                          ),
-                        );
+                        showModalBottomSheet(context: context, builder: (context){
+                          return MusicPlayerPage();
+                        });
+                        // Navigator.of(context).push(
+                        //   MaterialPageRoute(
+                        //     builder: (context) => MusicPlayerPage(),
+                        //   ),
+                        // );
                       },
                       child: Container(
                         height: 82,
