@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicPlayerPage extends StatefulWidget {
   const MusicPlayerPage({super.key});
 
@@ -11,6 +10,14 @@ class MusicPlayerPage extends StatefulWidget {
 class _MusicPlayerPageState extends State<MusicPlayerPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container(
+      color: Colors.white,
+      child: Column(
+        children: [
+
+        ],
+
+      ),
+    );
   }
 }
