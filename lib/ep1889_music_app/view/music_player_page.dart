@@ -44,6 +44,26 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                 ),
               ),
             ],
+          ),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+              ),
+            ),
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Title Title"),
+                    Text("Subtitle Subtitle")
+                  ],
+                ),
+              )
+            ],
           )
         ],
       ),
