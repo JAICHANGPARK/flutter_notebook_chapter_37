@@ -14,9 +14,20 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
       color: Colors.white,
       child: Column(
         children: [
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: Icon(
+                  Icons.keyboard_arrow_down,
 
+                ),
+              ),
+            ],
+          )
         ],
-
       ),
     );
   }
