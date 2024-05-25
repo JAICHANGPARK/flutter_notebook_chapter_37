@@ -22,7 +22,15 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                 },
                 icon: Icon(
                   Icons.keyboard_arrow_down,
-
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    Text(
+                      "Broadcast",
+                    ),
+                  ],
                 ),
               ),
             ],
