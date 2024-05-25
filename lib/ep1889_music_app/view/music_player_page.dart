@@ -64,7 +64,15 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("Title Title"), Text("Subtitle Subtitle")],
+                          children: [
+                            Text(
+                              "Title Title",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text("Subtitle Subtitle"),
+                          ],
                         ),
                       ),
                       Container(
