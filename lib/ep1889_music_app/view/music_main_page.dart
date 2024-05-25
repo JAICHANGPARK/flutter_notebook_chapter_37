@@ -352,9 +352,14 @@ class _MusicMainPageState extends State<MusicMainPage> {
                       onTap: () {
                         showModalBottomSheet(context: context,
                             isDismissible: false,
-                            isScrollControlled: false,
+                            isScrollControlled: true,
+                            enableDrag: false,
+                            useSafeArea: true,
                             builder: (context){
-                          return MusicPlayerPage();
+                          return SizedBox(
+                              height: MediaQuery.sizeOf(context).height,
+
+                              child: MusicPlayerPage());
                         });
                         // Navigator.of(context).push(
                         //   MaterialPageRoute(
