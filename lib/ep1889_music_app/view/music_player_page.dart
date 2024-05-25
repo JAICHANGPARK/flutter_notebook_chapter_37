@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicPlayerPage extends StatefulWidget {
   const MusicPlayerPage({super.key});
@@ -20,17 +21,26 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.keyboard_arrow_down,
                 ),
               ),
-              Expanded(
+              const Expanded(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Icon(Icons.podcasts),
+                    Gap(4),
                     Text(
                       "Broadcast",
                     ),
                   ],
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.more_vert,
                 ),
               ),
             ],
