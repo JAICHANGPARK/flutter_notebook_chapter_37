@@ -26,6 +26,21 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 Icons.chat,
               ),
               label: "Chat"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.add_box,
+              ),
+              label: "Chat"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.radar,
+              ),
+              label: "Chat"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_outline_outlined,
+              ),
+              label: "Chat"),
         ],
       ),
     );
