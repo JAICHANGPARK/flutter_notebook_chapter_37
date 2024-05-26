@@ -15,6 +15,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.blueAccent,
         items: [
           BottomNavigationBarItem(
               icon: Icon(
