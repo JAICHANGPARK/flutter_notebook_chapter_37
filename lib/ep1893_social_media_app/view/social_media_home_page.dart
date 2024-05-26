@@ -9,6 +9,7 @@ class SocialMediaHomePage extends StatefulWidget {
 
 class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +29,12 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.blueAccent,
+        currentIndex: pageIndex,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
