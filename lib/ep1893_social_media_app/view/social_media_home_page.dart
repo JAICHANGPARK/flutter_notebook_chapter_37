@@ -12,6 +12,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: IndexedStack(
           index: pageIndex,
@@ -21,6 +22,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
