@@ -12,7 +12,8 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: IndexedStack(
+        index: pageIndex,
         children: [
           Container(),
         ],
