@@ -8,10 +8,15 @@ class SocialMediaHomePage extends StatefulWidget {
 }
 
 class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: Stack(
+        children: [
+          Container(),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
