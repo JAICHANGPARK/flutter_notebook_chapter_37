@@ -12,11 +12,13 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: pageIndex,
-        children: [
-          Container(),
-        ],
+      body: SafeArea(
+        child: IndexedStack(
+          index: pageIndex,
+          children: [
+            Container(),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
