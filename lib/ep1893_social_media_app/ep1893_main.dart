@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(SocialMediaApp());
-
 }
-
 
 class SocialMediaApp extends StatelessWidget {
   const SocialMediaApp({super.key});
