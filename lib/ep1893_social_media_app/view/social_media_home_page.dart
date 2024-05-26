@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1893_social_media_app/view/social_media_message_page.dart';
 
 class SocialMediaHomePage extends StatefulWidget {
   const SocialMediaHomePage({super.key});
@@ -18,6 +19,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         child: IndexedStack(
           index: pageIndex,
           children: [
+            Container(),
+            SocialMediaMessagePage(),
+            Container(),
+            Container(),
             Container(),
           ],
         ),
