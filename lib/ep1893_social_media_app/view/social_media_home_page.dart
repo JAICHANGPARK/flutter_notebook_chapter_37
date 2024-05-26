@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SocialMediaHomePage extends StatefulWidget {
   const SocialMediaHomePage({super.key});
 
@@ -14,11 +13,21 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
     return Scaffold(
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: [
-          
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.chat,
+              ),
+              label: "Chat"),
         ],
       ),
     );
-
   }
 }
