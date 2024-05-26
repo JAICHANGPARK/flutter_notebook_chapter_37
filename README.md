@@ -3,7 +3,7 @@
 ## EP1893
 
 - ConnectWorld - Social Media App (Message)
-- By DStudio®
+- By ConnectWorld - Social Media App (Message)
 - https://dribbble.com/shots/24172505-ConnectWorld-Social-Media-App-Message
 
 ## EP1889-1892
