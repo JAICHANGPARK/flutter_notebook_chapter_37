@@ -17,7 +17,12 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
           decoration: BoxDecoration(
             color: Colors.white,
           ),
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.only(
+            left: 16,
+            top: 16,
+            right: 16,
+            bottom: 16,
+          ),
           child: Column(
             children: [
               Row(
@@ -71,7 +76,11 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
             child: Container(
           color: Colors.grey[100],
           width: double.infinity,
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.only(
+            left: 16,
+            top: 16,
+            right: 16,
+          ),
           child: Column(
             children: [
               Container(
@@ -108,11 +117,12 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  padding: ,
+                  padding: EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Messages"),
+                      Gap(12),
                       Expanded(
                         child: ListView.builder(
                           itemBuilder: (context, index) {},
