@@ -10,6 +10,36 @@ class SocialMediaMessagePage extends StatefulWidget {
 class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Text(
+                    "Messages",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
+        )
+      ],
+    );
   }
 }
