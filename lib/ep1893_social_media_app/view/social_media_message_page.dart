@@ -46,9 +46,15 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(24),
                 ),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Search",
+                child: Center(
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    textAlignVertical: TextAlignVertical.center,
+                    decoration: InputDecoration(
+                      hintText: "Search",
+                      border: InputBorder.none,
+                      prefixIcon: Icon(Icons.search),
+                    ),
                   ),
                 ),
               )
