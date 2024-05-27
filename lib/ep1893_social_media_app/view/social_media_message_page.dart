@@ -33,6 +33,10 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                       ),
                       shape: BoxShape.circle,
                     ),
+                    child: IconButton(
+                      icon: Icon(Icons.chat_outlined),
+                      onPressed: () {},
+                    ),
                   )
                 ],
               )
