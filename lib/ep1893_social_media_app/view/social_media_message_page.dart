@@ -19,6 +19,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Messages",
@@ -39,10 +40,19 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                     ),
                   )
                 ],
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: TextField(
+                  decoration: InputDecoration(),
+                ),
               )
             ],
           ),
-        )
+        ),
       ],
     );
   }
