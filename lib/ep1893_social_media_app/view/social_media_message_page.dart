@@ -47,13 +47,15 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Center(
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    textAlignVertical: TextAlignVertical.center,
-                    decoration: InputDecoration(
-                      hintText: "Search",
-                      border: InputBorder.none,
-                      prefixIcon: Icon(Icons.search),
+                  child: IntrinsicWidth(
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      textAlignVertical: TextAlignVertical.center,
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        border: InputBorder.none,
+                        prefixIcon: Icon(Icons.search),
+                      ),
                     ),
                   ),
                 ),
