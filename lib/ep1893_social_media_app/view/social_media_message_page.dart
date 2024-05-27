@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SocialMediaMessagePage extends StatefulWidget {
   const SocialMediaMessagePage({super.key});
@@ -16,6 +17,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
           decoration: BoxDecoration(
             color: Colors.white,
           ),
+          padding: EdgeInsets.all(16),
           child: Column(
             children: [
               Row(
@@ -25,6 +27,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                     "Messages",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 24,
                     ),
                   ),
                   Container(
@@ -41,6 +44,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   )
                 ],
               ),
+              Gap(12),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
@@ -63,6 +67,29 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
             ],
           ),
         ),
+        Expanded(
+            child: Container(
+          color: Colors.grey[100],
+          width: double.infinity,
+          padding: EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Container(
+                height: 180,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Outline friends",
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ))
       ],
     );
   }
