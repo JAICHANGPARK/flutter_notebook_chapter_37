@@ -43,11 +43,13 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: TextField(
-                  decoration: InputDecoration(),
+                  decoration: InputDecoration(
+                    hintText: "Search",
+                  ),
                 ),
               )
             ],
