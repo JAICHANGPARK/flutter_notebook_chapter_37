@@ -76,17 +76,52 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
             children: [
               Container(
                 height: 180,
+                width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.only(
+                  left: 16,
+                  top: 16,
+                  bottom: 16,
+                ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Outline friends",
                     ),
+                    Expanded(
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {},
+                      ),
+                    )
                   ],
                 ),
-              )
+              ),
+              Gap(16),
+              Expanded(
+                child: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  padding: ,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Messages"),
+                      Expanded(
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {},
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ))
