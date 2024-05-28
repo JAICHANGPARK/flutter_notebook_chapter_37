@@ -194,13 +194,26 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                               size: 16,
                                               color: Colors.blueAccent,
                                             ),
+                                          Spacer(),
                                           Text(
                                             "9:41PM",
                                           ),
-
                                         ],
                                       ),
-                                      Text("Hi there"),
+                                      Row(
+                                        children: [
+                                          Text("Hi there"),
+                                          CircleAvatar(
+                                            radius: 10,
+                                            child: Text(
+                                              "2",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      )
                                     ],
                                   ),
                                 )
