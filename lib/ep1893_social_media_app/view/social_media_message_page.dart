@@ -99,7 +99,12 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   children: [
                     Text(
                       "Online friends",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
+                    Gap(12),
                     Expanded(
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
@@ -118,15 +123,17 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                         child: CircleAvatar(),
                                       ),
                                       Positioned(
-                                        right: 0,
-                                        bottom: 0,
+                                        right: 8,
+                                        bottom: 4,
                                         child: CircleAvatar(
                                           radius: 8,
+                                          backgroundColor: Colors.green,
                                         ),
                                       )
                                     ],
                                   ),
                                 ),
+                                Gap(4),
                                 Text("Dreamwalker"),
                               ],
                             ),
