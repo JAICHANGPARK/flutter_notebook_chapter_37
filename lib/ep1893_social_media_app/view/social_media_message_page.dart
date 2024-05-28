@@ -202,7 +202,8 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                       ),
                                       Row(
                                         children: [
-                                          Text("Hi there"),
+                                          Expanded(child: Text("Hi there")),
+                                          if (index % 4 == 1)
                                           CircleAvatar(
                                             radius: 10,
                                             child: Text(
