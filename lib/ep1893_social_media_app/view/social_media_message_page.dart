@@ -173,52 +173,67 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         child: ListView.builder(
                           itemCount: 100,
                           itemBuilder: (context, index) {
-                            return Row(
-                              children: [
-                                Container(
-                                  height: 64,
-                                  width: 64,
-                                  color: Colors.blue,
-                                ),
-                                Expanded(
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            "Dream",
-                                          ),
-                                          if (index % 3 == 0)
-                                            Icon(
-                                              Icons.check_circle_outline,
-                                              size: 16,
-                                              color: Colors.blueAccent,
-                                            ),
-                                          Spacer(),
-                                          Text(
-                                            "9:41PM",
-                                          ),
-                                        ],
-                                      ),
-                                      Row(
-                                        children: [
-                                          Expanded(child: Text("Hi there")),
-                                          if (index % 4 == 1)
-                                          CircleAvatar(
-                                            radius: 10,
-                                            child: Text(
-                                              "2",
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 12),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    color: Colors.blue,
+                                  ),
+                                  Gap(12),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Dream",
                                               style: TextStyle(
-                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          )
-                                        ],
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
+                                            Gap(6),
+                                            if (index % 3 == 0)
+                                              Icon(
+                                                Icons.check_circle_outline,
+                                                size: 16,
+                                                color: Colors.blueAccent,
+                                              ),
+                                            Spacer(),
+                                            Text(
+                                              "9:41PM",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Gap(8),
+                                        Row(
+                                          children: [
+                                            Expanded(child: Text("Hi there")),
+                                            if (index % 4 == 1)
+                                              CircleAvatar(
+                                                radius: 10,
+                                                backgroundColor: Colors.blueAccent,
+                                                foregroundColor: Colors.white,
+                                                child: Text(
+                                                  "2",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                              )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             );
                           },
                         ),
