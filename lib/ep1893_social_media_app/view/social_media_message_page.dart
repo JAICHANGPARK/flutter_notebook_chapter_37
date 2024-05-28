@@ -174,7 +174,37 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                           itemCount: 100,
                           itemBuilder: (context, index) {
                             return Row(
-                              children: [],
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  color: Colors.blue,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Dream",
+                                          ),
+                                          if (index % 3 == 0)
+                                            Icon(
+                                              Icons.check_circle_outline,
+                                              size: 16,
+                                              color: Colors.blueAccent,
+                                            ),
+                                          Text(
+                                            "9:41PM",
+                                          ),
+
+                                        ],
+                                      ),
+                                      Text("Hi there"),
+                                    ],
+                                  ),
+                                )
+                              ],
                             );
                           },
                         ),
