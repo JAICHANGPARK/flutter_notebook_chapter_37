@@ -98,13 +98,32 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Outline friends",
+                      "Online friends",
                     ),
                     Expanded(
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
-                        itemBuilder: (context, index) {},
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 140,
+                            color: Colors.blue,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Positioned.fill(
+                                        child: CircleAvatar(),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Text("Dreamwalker"),
+                              ],
+                            ),
+                          );
+                        },
                       ),
                     )
                   ],
