@@ -84,7 +84,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
           child: Column(
             children: [
               Container(
-                height: 180,
+                height: 160,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -106,8 +106,9 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 82,
+                            width: 92,
                             color: Colors.blue,
+                            margin: EdgeInsets.only(right: 12),
                             child: Column(
                               children: [
                                 Expanded(
