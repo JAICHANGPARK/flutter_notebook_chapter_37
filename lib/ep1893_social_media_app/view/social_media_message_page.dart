@@ -88,6 +88,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
                 ),
                 padding: EdgeInsets.only(
                   left: 16,
@@ -112,7 +113,6 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 92,
-                            color: Colors.blue,
                             margin: EdgeInsets.only(right: 12),
                             child: Column(
                               children: [
@@ -134,7 +134,12 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                   ),
                                 ),
                                 Gap(4),
-                                Text("Dreamwalker"),
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           );
