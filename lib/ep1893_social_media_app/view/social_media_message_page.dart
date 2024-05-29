@@ -112,7 +112,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 72,
+                            width: 68,
                             margin: EdgeInsets.only(right: 12),
                             child: Column(
                               children: [
@@ -128,17 +128,17 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                         child: CircleAvatar(
                                           radius: 8,
                                           backgroundColor: Colors.green,
-                                          
                                         ),
                                       )
                                     ],
                                   ),
                                 ),
-                                Gap(4),
+                                Gap(8),
                                 Text(
                                   "Dreamwalker",
+                                  maxLines: 1,
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
                                   ),
                                 ),
                               ],
