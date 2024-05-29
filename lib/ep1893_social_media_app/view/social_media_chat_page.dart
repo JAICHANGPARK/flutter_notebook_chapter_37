@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SocialMediaChatPage extends StatefulWidget {
   const SocialMediaChatPage({super.key});
@@ -30,11 +31,13 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                     padding: EdgeInsets.all(8),
                     child: Icon(Icons.arrow_back_ios_new),
                   ),
+                  Gap(6),
                   Container(
                     width: 42,
                     height: 42,
                     color: Colors.blueAccent,
                   ),
+                  Gap(6),
                   Expanded(
                     child: Text(
                       "Dreamwalker",
@@ -53,6 +56,7 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                     padding: EdgeInsets.all(8),
                     child: Icon(Icons.videocam_outlined),
                   ),
+                  Gap(6),
                   Container(
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -63,6 +67,7 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                     padding: EdgeInsets.all(8),
                     child: Icon(Icons.call),
                   ),
+                  Gap(6),
                   Container(
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
