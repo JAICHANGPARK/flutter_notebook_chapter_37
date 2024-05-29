@@ -14,16 +14,25 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Container(
-                  width: 32,
-                  height: 32,
-                  color: Colors.blueAccent,
-
-                )
-              ],
+            Container(
+              height: 64,
+              color: Colors.white,
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Container(
+                    width: 32,
+                    height: 32,
+                    color: Colors.blueAccent,
+                  ),
+                  Text(
+                    "Dreamwalker",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
