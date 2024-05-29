@@ -16,7 +16,7 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
         child: Column(
           children: [
             Container(
-              height: 64,
+              height: 72,
               color: Colors.white,
               padding: EdgeInsets.symmetric(horizontal: 12),
               child: Row(
@@ -80,6 +80,14 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                   )
                 ],
               ),
+            ),
+            Expanded(
+                child: Container(
+              color: Colors.grey[200]!,
+            )),
+            Container(
+              height: 72,
+              color: Colors.white,
             )
           ],
         ),
