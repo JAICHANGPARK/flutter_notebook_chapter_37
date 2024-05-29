@@ -21,16 +21,19 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                 children: [
                   CircleAvatar(),
                   Container(
-                    width: 32,
-                    height: 32,
+                    width: 42,
+                    height: 42,
                     color: Colors.blueAccent,
                   ),
-                  Text(
-                    "Dreamwalker",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  Expanded(
+                    child: Text(
+                      "Dreamwalker",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  )
+                  ),
+                  
                 ],
               ),
             )
