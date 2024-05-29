@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1893_social_media_app/view/social_media_chat_page.dart';
 import 'package:gap/gap.dart';
 
 class SocialMediaMessagePage extends StatefulWidget {
@@ -174,82 +175,91 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         child: ListView.builder(
                           itemCount: 100,
                           itemBuilder: (context, index) {
-                            return Padding(
-                              padding: const EdgeInsets.only(bottom: 12),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 64,
-                                    width: 64,
-                                    child: Stack(
-                                      children: [
-                                        Positioned.fill(
-                                          child: CircleAvatar(
-                                            backgroundColor: Colors.orange,
-                                          ),
-                                        ),
-                                        Positioned(
-                                          bottom: 0,
-                                          right: 0,
-                                          child: CircleAvatar(
-                                            radius: 8,
-                                            backgroundColor: Colors.green,
-                                          ),
-                                        )
-                                      ],
-                                    ),
+                            return GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => SocialMediaChatPage(),
                                   ),
-                                  Gap(12),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Text(
-                                              "Dream",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                              ),
+                                );
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 12),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 64,
+                                      width: 64,
+                                      child: Stack(
+                                        children: [
+                                          Positioned.fill(
+                                            child: CircleAvatar(
+                                              backgroundColor: Colors.orange,
                                             ),
-                                            Gap(6),
-                                            if (index % 3 == 0)
-                                              Icon(
-                                                Icons.check_circle_outline,
-                                                size: 16,
-                                                color: Colors.blueAccent,
-                                              ),
-                                            Spacer(),
-                                            Text(
-                                              "9:41PM",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.grey,
-                                              ),
+                                          ),
+                                          Positioned(
+                                            bottom: 0,
+                                            right: 0,
+                                            child: CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.green,
                                             ),
-                                          ],
-                                        ),
-                                        Gap(8),
-                                        Row(
-                                          children: [
-                                            Expanded(child: Text("Hi there")),
-                                            if (index % 4 == 1)
-                                              CircleAvatar(
-                                                radius: 10,
-                                                backgroundColor: Colors.blueAccent,
-                                                foregroundColor: Colors.white,
-                                                child: Text(
-                                                  "2",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                  ),
-                                                ),
-                                              )
-                                          ],
-                                        )
-                                      ],
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  )
-                                ],
+                                    Gap(12),
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text(
+                                                "Dream",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Gap(6),
+                                              if (index % 3 == 0)
+                                                Icon(
+                                                  Icons.check_circle_outline,
+                                                  size: 16,
+                                                  color: Colors.blueAccent,
+                                                ),
+                                              Spacer(),
+                                              Text(
+                                                "9:41PM",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Gap(8),
+                                          Row(
+                                            children: [
+                                              Expanded(child: Text("Hi there")),
+                                              if (index % 4 == 1)
+                                                CircleAvatar(
+                                                  radius: 10,
+                                                  backgroundColor: Colors.blueAccent,
+                                                  foregroundColor: Colors.white,
+                                                  child: Text(
+                                                    "2",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             );
                           },
