@@ -20,7 +20,8 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                 Container(
                   width: 32,
                   height: 32,
-                  
+                  color: Colors.blueAccent,
+
                 )
               ],
             )
