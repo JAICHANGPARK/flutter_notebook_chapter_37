@@ -88,6 +88,33 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
             Container(
               height: 72,
               color: Colors.white,
+              padding: EdgeInsets.symmetric(horizontal: 12),
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        )),
+                    padding: EdgeInsets.all(8),
+                    child: Icon(Icons.more_horiz),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300]!,
+                      ),
+                      child: TextField(),
+                    ),
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.blueAccent,
+                    child: Icon(Icons.send),
+                  )
+                ],
+              ),
             )
           ],
         ),
