@@ -33,7 +33,14 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                       ),
                     ),
                   ),
-                  
+                  Container(
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        )),
+                  )
                 ],
               ),
             )
