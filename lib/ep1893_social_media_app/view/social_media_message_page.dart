@@ -181,6 +181,21 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                     height: 64,
                                     width: 64,
                                     color: Colors.blue,
+                                    child: Stack(
+                                      children: [
+                                        Positioned.fill(
+                                          child: CircleAvatar(),
+                                        ),
+                                        Positioned(
+                                          bottom: 0,
+                                          right: 0,
+                                          child: CircleAvatar(
+                                            radius: 8,
+                                            backgroundColor: Colors.green,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                   Gap(12),
                                   Expanded(
