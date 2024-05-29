@@ -101,6 +101,7 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                     padding: EdgeInsets.all(8),
                     child: Icon(Icons.more_horiz),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
@@ -109,6 +110,7 @@ class _SocialMediaChatPageState extends State<SocialMediaChatPage> {
                       child: TextField(),
                     ),
                   ),
+                  Gap(12),
                   CircleAvatar(
                     backgroundColor: Colors.blueAccent,
                     child: Icon(Icons.send),
