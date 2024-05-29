@@ -112,7 +112,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 88,
+                            width: 72,
                             margin: EdgeInsets.only(right: 12),
                             child: Column(
                               children: [
@@ -128,6 +128,7 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                         child: CircleAvatar(
                                           radius: 8,
                                           backgroundColor: Colors.green,
+                                          
                                         ),
                                       )
                                     ],
@@ -180,11 +181,12 @@ class _SocialMediaMessagePageState extends State<SocialMediaMessagePage> {
                                   Container(
                                     height: 64,
                                     width: 64,
-                                    color: Colors.blue,
                                     child: Stack(
                                       children: [
                                         Positioned.fill(
-                                          child: CircleAvatar(),
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.orange,
+                                          ),
                                         ),
                                         Positioned(
                                           bottom: 0,
