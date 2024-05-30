@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class EducationStartPage extends StatefulWidget {
   const EducationStartPage({super.key});
 
@@ -11,6 +10,15 @@ class EducationStartPage extends StatefulWidget {
 class _EducationStartPageState extends State<EducationStartPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Stack(
+      children: [
+        Positioned.fill(
+          child: Image.network(
+            "",
+            fit: BoxFit.cover,
+          ),
+        )
+      ],
+    );
   }
 }
