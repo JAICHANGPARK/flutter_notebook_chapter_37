@@ -54,15 +54,21 @@ class _EducationStartPageState extends State<EducationStartPage> {
                   TextSpan(
                     children: [
                       TextSpan(
-                        text: "University admission is in the",
+                        text: "University admission\nis in the",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 28,
+                        ),
                       ),
                       TextSpan(
-                        text: "near future",
+                        text: " near future",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Color(
                             0xff7d69f9,
                           ),
+                          fontSize: 28,
                         ),
                       )
                     ],
