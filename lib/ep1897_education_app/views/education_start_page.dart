@@ -42,7 +42,15 @@ class _EducationStartPageState extends State<EducationStartPage> {
           child: Column(
             children: [
               Text("Be better"),
-              Text.rich(),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "University admission is in the",
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
