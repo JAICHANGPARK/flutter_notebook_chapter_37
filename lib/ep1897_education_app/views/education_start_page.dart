@@ -81,7 +81,7 @@ class _EducationStartPageState extends State<EducationStartPage> {
                 DotsIndicator(dotsCount: 3),
                 Gap(16),
                 Container(
-                  height: 58,
+                  height: 54,
                   decoration: BoxDecoration(
                     color: Color(0xff7d69f9),
                     borderRadius: BorderRadius.circular(12),
