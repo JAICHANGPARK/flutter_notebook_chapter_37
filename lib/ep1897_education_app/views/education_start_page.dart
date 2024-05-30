@@ -31,11 +31,15 @@ class _EducationStartPageState extends State<EducationStartPage> {
                   Colors.black.withOpacity(.4),
                 ],
                 begin: Alignment.bottomCenter,
-               
               ),
             ),
           ),
-        )
+        ),
+        Positioned(
+          child: Column(
+            children: [],
+          ),
+        ),
       ],
     );
   }
