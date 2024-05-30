@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class EducationStartPage extends StatefulWidget {
@@ -50,6 +51,7 @@ class _EducationStartPageState extends State<EducationStartPage> {
                     color: Colors.grey,
                   ),
                 ),
+                Gap(16),
                 Text.rich(
                   TextSpan(
                     children: [
@@ -74,6 +76,7 @@ class _EducationStartPageState extends State<EducationStartPage> {
                     ],
                   ),
                 ),
+                Gap(16),
               ],
             ),
           ),
