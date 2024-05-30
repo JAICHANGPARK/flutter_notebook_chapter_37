@@ -52,7 +52,7 @@ class _EducationStartPageState extends State<EducationStartPage> {
                     color: Colors.grey,
                   ),
                 ),
-                Gap(16),
+                Gap(8),
                 Text.rich(
                   TextSpan(
                     children: [
@@ -81,9 +81,10 @@ class _EducationStartPageState extends State<EducationStartPage> {
                 DotsIndicator(dotsCount: 3),
                 Gap(16),
                 Container(
-                  height: 52,
+                  height: 58,
                   decoration: BoxDecoration(
                     color: Color(0xff7d69f9),
+                    borderRadius: BorderRadius.circular(12),
                   ),
                   child: Center(
                     child: Text(
