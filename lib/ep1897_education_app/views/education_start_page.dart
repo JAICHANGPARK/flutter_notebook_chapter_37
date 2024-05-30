@@ -14,10 +14,11 @@ class _EducationStartPageState extends State<EducationStartPage> {
       children: [
         Positioned.fill(
           child: Image.network(
-            "",
+            "https://cdn.pixabay.com/photo/2020/04/11/11/59/graduation-5030172_1280.jpg",
             fit: BoxFit.cover,
           ),
-        )
+        ),
+        
       ],
     );
   }
