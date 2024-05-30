@@ -25,10 +25,14 @@ class _EducationStartPageState extends State<EducationStartPage> {
           top: 0,
           child: Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [
-                Colors.black,
-                Colors.black.withOpacity(.4),
-              ]),
+              gradient: LinearGradient(
+                colors: [
+                  Colors.black,
+                  Colors.black.withOpacity(.4),
+                ],
+                begin: Alignment.bottomCenter,
+               
+              ),
             ),
           ),
         )
