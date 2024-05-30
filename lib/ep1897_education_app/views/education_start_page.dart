@@ -40,7 +40,10 @@ class _EducationStartPageState extends State<EducationStartPage> {
           right: 16,
           bottom: 24,
           child: Column(
-            children: [],
+            children: [
+              Text("Be better"),
+              Text.rich(),
+            ],
           ),
         ),
       ],
