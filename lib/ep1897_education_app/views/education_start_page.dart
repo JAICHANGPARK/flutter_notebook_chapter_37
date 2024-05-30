@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -60,7 +61,7 @@ class _EducationStartPageState extends State<EducationStartPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 28,
+                          fontSize: 30,
                         ),
                       ),
                       TextSpan(
@@ -70,13 +71,30 @@ class _EducationStartPageState extends State<EducationStartPage> {
                           color: Color(
                             0xff7d69f9,
                           ),
-                          fontSize: 28,
+                          fontSize: 30,
                         ),
                       )
                     ],
                   ),
                 ),
                 Gap(16),
+                DotsIndicator(dotsCount: 3),
+                Gap(16),
+                Container(
+                  height: 52,
+                  decoration: BoxDecoration(
+                    color: Color(0xff7d69f9),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Get started",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
