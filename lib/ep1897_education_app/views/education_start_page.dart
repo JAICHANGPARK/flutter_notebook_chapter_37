@@ -36,6 +36,9 @@ class _EducationStartPageState extends State<EducationStartPage> {
           ),
         ),
         Positioned(
+          left: 16,
+          right: 16,
+          bottom: 24,
           child: Column(
             children: [],
           ),
