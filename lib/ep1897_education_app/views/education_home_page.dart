@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class EducationHomePage extends StatefulWidget {
   const EducationHomePage({super.key});
@@ -24,31 +25,35 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       CircleAvatar(
                         radius: 28,
                       ),
+                      Gap(16),
                       Expanded(
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Dreamwalker",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                "Unknown",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
-                              )
-                            ],
-                          )),
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Gap(8),
+                          Text(
+                            "Unknown",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      )),
                       IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.search,
                         ),
                       ),
+                      Gap(16),
                       Badge(
                         child: Icon(
                           Icons.notifications_active_outlined,
@@ -60,7 +65,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                 ],
               ),
             ),
-
           ],
         ),
       ),
