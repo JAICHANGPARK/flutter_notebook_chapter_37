@@ -20,8 +20,22 @@ class _EducationHomePageState extends State<EducationHomePage> {
                 CircleAvatar(),
                 Expanded(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Dreamwalker",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "Unknown",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    )
+                  ],
                 )),
                 IconButton(
                   onPressed: () {},
@@ -30,9 +44,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   ),
                 ),
                 Badge(
-                  child: Icon(Icons.notifications_active_outlined,
-                  color: Colors.white,),
-
+                  child: Icon(
+                    Icons.notifications_active_outlined,
+                    color: Colors.white,
+                  ),
                 )
               ],
             )
