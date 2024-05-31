@@ -38,7 +38,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                               fontSize: 16,
                             ),
                           ),
-                          Gap(8),
+                          Gap(4),
                           Text(
                             "Unknown",
                             style: TextStyle(
@@ -61,6 +61,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         ),
                       )
                     ],
+                  ),
+                  Container(
+                    height: 62,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.grey[700],
+                    ),
                   )
                 ],
               ),
