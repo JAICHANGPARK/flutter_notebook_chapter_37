@@ -126,8 +126,8 @@ class _EducationHomePageState extends State<EducationHomePage> {
                           label: "Favorite",
                         ),
                         BottomNavigationBarItem(
-                          icon: Icon(Icons.featured_play_list_outlined),
-                          label: "Documents",
+                          icon: Icon(Icons.settings_outlined),
+                          label: "Settings",
                         ),
                       ],
                     )
