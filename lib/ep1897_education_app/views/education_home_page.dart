@@ -12,8 +12,32 @@ class _EducationHomePageState extends State<EducationHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(27, 27, 27, 1),
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [],
+                )),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.search,
+                  ),
+                ),
+                Badge(
+                  child: Icon(Icons.notifications_active_outlined,
+                  color: Colors.white,),
+
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
