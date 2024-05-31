@@ -62,7 +62,9 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       )
                     ],
                   ),
+
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 24),
                     height: 62,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
