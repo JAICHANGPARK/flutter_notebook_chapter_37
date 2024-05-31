@@ -110,7 +110,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                 ),
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [],
+                        ),
+                      ),
+                    ),
                     BottomNavigationBar(
                       backgroundColor: Colors.blueGrey[50],
                       type: BottomNavigationBarType.fixed,
