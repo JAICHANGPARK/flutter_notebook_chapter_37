@@ -112,6 +112,8 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   children: [
                     Expanded(child: Placeholder()),
                     BottomNavigationBar(
+                      backgroundColor: Colors.blueGrey[50],
+                      type: BottomNavigationBarType.fixed,
                       items: [
                         BottomNavigationBarItem(
                           icon: Icon(Icons.home_filled),
