@@ -10,6 +10,13 @@ class EducationHomePage extends StatefulWidget {
 class _EducationHomePageState extends State<EducationHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+
+
+        ],
+      ),
+    );
   }
 }
