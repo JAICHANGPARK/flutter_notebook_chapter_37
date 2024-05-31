@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_37/ep1897_education_app/views/education_home_page.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -80,18 +81,27 @@ class _EducationStartPageState extends State<EducationStartPage> {
                 const Gap(16),
                 DotsIndicator(dotsCount: 3),
                 const Gap(16),
-                Container(
-                  height: 54,
-                  decoration: BoxDecoration(
-                    color: const Color(0xff7d69f9),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: const Center(
-                    child: Text(
-                      "Get started",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => EducationHomePage(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 54,
+                    decoration: BoxDecoration(
+                      color: const Color(0xff7d69f9),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Get started",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
