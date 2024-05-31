@@ -62,8 +62,9 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       )
                     ],
                   ),
+                  Gap(12),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 24),
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     height: 62,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
@@ -100,7 +101,38 @@ class _EducationHomePageState extends State<EducationHomePage> {
             ),
             Expanded(
               child: Container(
-                color: Colors.blueGrey[50],
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[50],
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(32),
+                    topLeft: Radius.circular(32),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    BottomNavigationBar(
+                      items: [
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.home_filled),
+                          label: "Home",
+                        ),
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.featured_play_list_outlined),
+                          label: "Documents",
+                        ),
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.bookmark_border),
+                          label: "Favorite",
+                        ),
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.featured_play_list_outlined),
+                          label: "Documents",
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],
