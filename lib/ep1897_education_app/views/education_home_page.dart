@@ -62,7 +62,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       )
                     ],
                   ),
-
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 24),
                     height: 62,
@@ -93,13 +92,17 @@ class _EducationHomePageState extends State<EducationHomePage> {
                             ),
                           ),
                         ),
-
                       ],
                     ),
                   )
                 ],
               ),
             ),
+            Expanded(
+              child: Container(
+                color: Colors.blueGrey[50],
+              ),
+            )
           ],
         ),
       ),
