@@ -46,14 +46,14 @@ class _EducationStartPageState extends State<EducationStartPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Be better",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
                 ),
-                Gap(8),
-                Text.rich(
+                const Gap(8),
+                const Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
@@ -77,16 +77,16 @@ class _EducationStartPageState extends State<EducationStartPage> {
                     ],
                   ),
                 ),
-                Gap(16),
+                const Gap(16),
                 DotsIndicator(dotsCount: 3),
-                Gap(16),
+                const Gap(16),
                 Container(
                   height: 54,
                   decoration: BoxDecoration(
-                    color: Color(0xff7d69f9),
+                    color: const Color(0xff7d69f9),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Get started",
                       style: TextStyle(
