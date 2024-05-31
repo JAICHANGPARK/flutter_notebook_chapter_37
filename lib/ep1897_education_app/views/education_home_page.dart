@@ -68,6 +68,32 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.grey[700],
                     ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Center(
+                              child: Text("Popular"),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Center(
+                              child: Text("Competition"),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Center(
+                              child: Text("Scholarship"),
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
                   )
                 ],
               ),
