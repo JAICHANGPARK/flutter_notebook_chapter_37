@@ -142,9 +142,16 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                       fontSize: 20
                                     ),
                                   ),
+                                  Gap(8),
                                   Container(
-                                    height: 54,
+                                    height: 64,
                                     color: Colors.blue,
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Container()),
+                                        Expanded(child: Container()),
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
