@@ -65,17 +65,19 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   Gap(12),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
+                    padding: EdgeInsets.all(8),
                     height: 62,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.grey[700],
                     ),
+
                     child: Row(
                       children: [
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                                color: const Color(0xff7d69f9),
+                              color: const Color(0xff7d69f9),
                             ),
                             child: Center(
                               child: Text("Popular"),
