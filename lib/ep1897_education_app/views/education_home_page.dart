@@ -137,10 +137,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                 children: [
                                   Text(
                                     "Filing",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                   ),
                                   Gap(8),
                                   Container(
@@ -156,22 +153,31 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                 ],
                               ),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Filing",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 20,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "University",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                   ),
-                                ),
-                                Gap(8),
-                                Container(
-                                  height: 200,
-                                  color: Colors.orange,
-                                )
-                              ],
+                                  Gap(8),
+                                  Container(
+                                    height: 200,
+                                    color: Colors.orange,
+                                  )
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [],
+                              ),
                             )
                           ],
                         ),
