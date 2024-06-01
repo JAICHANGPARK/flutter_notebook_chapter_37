@@ -162,7 +162,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                 children: [
                                   Text(
                                     "University",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
                                   ),
                                   Gap(8),
                                   Container(
@@ -182,7 +185,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     children: [
                                       Text(
                                         "University",
-                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
                                       ),
                                       TextButton(
                                         onPressed: () {},
