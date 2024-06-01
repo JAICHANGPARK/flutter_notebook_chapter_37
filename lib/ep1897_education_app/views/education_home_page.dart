@@ -127,11 +127,18 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Filing"),
-                            Container(height: 54,
-                              color: Colors.blue,
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Filing"),
+                                Container(height: 54,
+                                  color: Colors.blue,
+                                )
+                              ],
                             )
+
                           ],
                         ),
                       ),
