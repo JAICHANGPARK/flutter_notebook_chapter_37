@@ -132,13 +132,19 @@ class _EducationHomePageState extends State<EducationHomePage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Filing"),
-                                Container(height: 54,
+                                Text(
+                                  "Filing",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20
+                                  ),
+                                ),
+                                Container(
+                                  height: 54,
                                   color: Colors.blue,
                                 )
                               ],
                             )
-
                           ],
                         ),
                       ),
