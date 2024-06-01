@@ -204,6 +204,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                     ),
+                                  ),
+                                  Gap(8),
+                                  Container(
+                                    height: 100,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
                                   )
                                 ],
                               ),
