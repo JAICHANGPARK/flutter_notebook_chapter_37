@@ -71,14 +71,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.grey[700],
                     ),
-
                     child: Row(
                       children: [
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: const Color(0xff7d69f9),
-                              borderRadius: BorderRadius.circular(8)
+                              color: const Color.fromRGBO(125, 105, 249, 1),
+                              borderRadius: BorderRadius.circular(8),
                             ),
                             child: Center(
                               child: Text("Popular"),
