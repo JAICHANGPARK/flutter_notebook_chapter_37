@@ -120,6 +120,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                     BottomNavigationBar(
                       backgroundColor: Colors.blueGrey[50],
                       type: BottomNavigationBarType.fixed,
+                      selectedItemColor: Colors.black,
                       items: [
                         BottomNavigationBarItem(
                           icon: Icon(Icons.home_filled),
