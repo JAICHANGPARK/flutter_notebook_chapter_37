@@ -176,7 +176,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -197,6 +197,12 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                         ),
                                       )
                                     ],
+                                  ),
+                                  Container(
+                                    height: 72,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
                                   )
                                 ],
                               ),
