@@ -129,21 +129,25 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Filing",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
+                            Gap(8),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Filing",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20
+                                    ),
                                   ),
-                                ),
-                                Container(
-                                  height: 54,
-                                  color: Colors.blue,
-                                )
-                              ],
+                                  Container(
+                                    height: 54,
+                                    color: Colors.blue,
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
