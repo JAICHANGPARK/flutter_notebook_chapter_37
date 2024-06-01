@@ -74,6 +74,9 @@ class _EducationHomePageState extends State<EducationHomePage> {
                       children: [
                         Expanded(
                           child: Container(
+                            decoration: BoxDecoration(
+                                color: const Color(0xff7d69f9),
+                            ),
                             child: Center(
                               child: Text("Popular"),
                             ),
