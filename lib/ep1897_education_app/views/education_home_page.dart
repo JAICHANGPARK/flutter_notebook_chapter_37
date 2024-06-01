@@ -178,11 +178,18 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
                                         "University",
                                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                       ),
+                                      TextButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          "See more",
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
