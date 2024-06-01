@@ -77,10 +77,15 @@ class _EducationHomePageState extends State<EducationHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: const Color.fromRGBO(125, 105, 249, 1),
-                              borderRadius: BorderRadius.circular(8),
+                              borderRadius: BorderRadius.circular(16),
                             ),
                             child: Center(
-                              child: Text("Popular"),
+                              child: Text(
+                                "Popular",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ),
