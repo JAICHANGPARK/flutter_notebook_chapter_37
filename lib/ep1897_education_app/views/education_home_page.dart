@@ -51,6 +51,8 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.search,
+                          color: Colors.white,
+                          size: 32,
                         ),
                       ),
                       Gap(16),
@@ -58,13 +60,14 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         child: Icon(
                           Icons.notifications_active_outlined,
                           color: Colors.white,
+                          size: 32,
                         ),
                       )
                     ],
                   ),
                   Gap(12),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: EdgeInsets.symmetric(vertical: 12),
                     padding: EdgeInsets.all(6),
                     height: 54,
                     decoration: BoxDecoration(
@@ -119,11 +122,17 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   ),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
-                          children: [],
+                          children: [
+                            Text("Filing"),
+                            Container(height: 54,
+                              color: Colors.blue,
+                            )
+                          ],
                         ),
                       ),
                     ),
