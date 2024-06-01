@@ -155,6 +155,23 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   )
                                 ],
                               ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Filing",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20
+                                  ),
+                                ),
+                                Gap(8),
+                                Container(
+                                  height: 200,
+                                  color: Colors.orange,
+                                )
+                              ],
                             )
                           ],
                         ),
