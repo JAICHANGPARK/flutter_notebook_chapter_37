@@ -65,7 +65,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   Gap(12),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    padding: EdgeInsets.all(8),
+                    padding: EdgeInsets.all(6),
                     height: 54,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
@@ -77,7 +77,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: const Color.fromRGBO(125, 105, 249, 1),
-                              borderRadius: BorderRadius.circular(16),
+                              borderRadius: BorderRadius.circular(12),
                             ),
                             child: Center(
                               child: Text(
