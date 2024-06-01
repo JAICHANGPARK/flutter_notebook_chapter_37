@@ -66,7 +66,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
                     padding: EdgeInsets.all(8),
-                    height: 62,
+                    height: 54,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.grey[700],
@@ -78,6 +78,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: const Color(0xff7d69f9),
+                              borderRadius: BorderRadius.circular(8)
                             ),
                             child: Center(
                               child: Text("Popular"),
