@@ -176,7 +176,16 @@ class _EducationHomePageState extends State<EducationHomePage> {
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [],
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "University",
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                      ),
+                                    ],
+                                  )
+                                ],
                               ),
                             )
                           ],
