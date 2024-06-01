@@ -95,14 +95,24 @@ class _EducationHomePageState extends State<EducationHomePage> {
                         Expanded(
                           child: Container(
                             child: Center(
-                              child: Text("Competition"),
+                              child: Text(
+                                "Competition",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ),
                         Expanded(
                           child: Container(
                             child: Center(
-                              child: Text("Scholarship"),
+                              child: Text(
+                                "Scholarship",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ),
