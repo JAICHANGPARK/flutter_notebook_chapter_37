@@ -161,15 +161,17 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                               color: Colors.white,
                                               borderRadius: BorderRadius.circular(4),
                                             ),
+                                            
                                             child: Row(
                                               children: [
                                                 Text("Review"),
                                                 Container(
+                                                  width: 42,
                                                   decoration: BoxDecoration(
                                                     color: Colors.orange,
                                                     borderRadius: BorderRadius.circular(4),
                                                   ),
-                                                  child: Text("2"),
+                                                  child: Center(child: Text("2")),
                                                 )
                                               ],
                                             ),
