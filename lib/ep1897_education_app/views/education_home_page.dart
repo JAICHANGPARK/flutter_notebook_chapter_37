@@ -161,14 +161,14 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                               color: Colors.white,
                                               borderRadius: BorderRadius.circular(4),
                                             ),
-                                            margin: EdgeInsets.all(4),
-                                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                            margin: EdgeInsets.all(8),
+                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 Text("Review"),
                                                 Container(
-                                                  width: 42,
+                                                  width: 36,
                                                   decoration: BoxDecoration(
                                                     color: Colors.orange,
                                                     borderRadius: BorderRadius.circular(4),
