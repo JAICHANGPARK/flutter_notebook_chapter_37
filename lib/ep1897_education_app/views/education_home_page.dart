@@ -252,7 +252,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   Gap(8),
                                   Container(
                                     height: 160,
-                                    color: Colors.orange,
                                     child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
                                       itemBuilder: (context, index) {
@@ -298,7 +297,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "University",
+                                        "Directions",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20,
@@ -316,6 +315,30 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     height: 100,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 16,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 32,
+                                        ),
+                                        Expanded(
+                                          child: Column(
+                                            children: [
+                                              Text("Economics and finance"),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[100]!,
+                                                  borderRadius: BorderRadius.circular(6),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                                      ],
                                     ),
                                   ),
                                   Gap(8),
