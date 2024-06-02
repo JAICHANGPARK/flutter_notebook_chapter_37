@@ -188,7 +188,37 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             ),
                                           ),
                                         ),
-                                        Expanded(child: Container()),
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.black.withOpacity(.1),
+                                                  spreadRadius: 4,
+                                                  blurRadius: 6,
+                                                )
+                                              ],
+                                            ),
+                                            margin: EdgeInsets.all(8),
+                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text("Accepted"),
+                                                Container(
+                                                  width: 36,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.green,
+                                                    borderRadius: BorderRadius.circular(4),
+                                                  ),
+                                                  child: Center(child: Text("5")),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   )
