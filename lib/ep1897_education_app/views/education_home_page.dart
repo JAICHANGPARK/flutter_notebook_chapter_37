@@ -251,7 +251,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   ),
                                   Gap(8),
                                   Container(
-                                    height: 180,
+                                    height: 160,
                                     color: Colors.orange,
                                     child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
@@ -259,6 +259,22 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                         return Container(
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          child: Column(
+                                            children: [
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.star,
+                                                    ),
+                                                    Text("4.9"),
+                                                  ],
+                                                ),
+                                              ),
+                                              Text("University")
+                                            ],
                                           ),
                                         );
                                       },
