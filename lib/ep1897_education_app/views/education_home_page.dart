@@ -318,9 +318,9 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                         borderRadius: BorderRadius.circular(16),
                                         boxShadow: [
                                           BoxShadow(
-                                            color: Colors.black.withOpacity(.1),
+                                            color: Colors.black.withOpacity(.05),
                                             blurRadius: 8,
-                                            spreadRadius: 4,
+                                            spreadRadius: 3,
                                           )
                                         ]),
                                     padding: EdgeInsets.symmetric(
@@ -398,9 +398,86 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   Container(
                                     height: 100,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(16),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.black.withOpacity(.05),
+                                            blurRadius: 8,
+                                            spreadRadius: 3,
+                                          )
+                                        ]),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 16,
                                     ),
-                                  )
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 32,
+                                        ),
+                                        Gap(16),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                "Economics and finance",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
+                                                ),
+                                              ),
+                                              Gap(6),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Gap(8),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Gap(8),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
