@@ -265,6 +265,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                           margin: EdgeInsets.only(right: 12),
                                           padding: EdgeInsets.all(12),
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
