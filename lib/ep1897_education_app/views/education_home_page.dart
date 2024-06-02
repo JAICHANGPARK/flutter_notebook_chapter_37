@@ -152,14 +152,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   Gap(8),
                                   Container(
                                     height: 64,
-                                    color: Colors.blue,
                                     child: Row(
                                       children: [
                                         Expanded(
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.white,
-                                              borderRadius: BorderRadius.circular(4),
+                                              borderRadius: BorderRadius.circular(6),
                                               boxShadow: [
                                                 BoxShadow(
                                                   color: Colors.black.withOpacity(.1),
