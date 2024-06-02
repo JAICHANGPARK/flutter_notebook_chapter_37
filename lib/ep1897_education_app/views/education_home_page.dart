@@ -319,7 +319,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     padding: EdgeInsets.symmetric(
                                       horizontal: 16,
                                     ),
-
                                     child: Row(
                                       children: [
                                         CircleAvatar(
@@ -331,7 +330,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Text("Economics and finance"),
+                                              Text(
+                                                "Economics and finance",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
+                                                ),
+                                              ),
                                               Gap(6),
                                               Row(
                                                 children: [
@@ -340,7 +345,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                       color: Colors.grey[100]!,
                                                       borderRadius: BorderRadius.circular(6),
                                                     ),
-
                                                     child: Row(
                                                       children: [
                                                         Icon(Icons.trending_up),
@@ -354,7 +358,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                       color: Colors.grey[100]!,
                                                       borderRadius: BorderRadius.circular(6),
                                                     ),
-
                                                     child: Row(
                                                       children: [
                                                         Icon(Icons.trending_up),
@@ -368,7 +371,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                       color: Colors.grey[100]!,
                                                       borderRadius: BorderRadius.circular(6),
                                                     ),
-
                                                     child: Row(
                                                       children: [
                                                         Icon(Icons.trending_up),
@@ -378,7 +380,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                   )
                                                 ],
                                               ),
-
                                             ],
                                           ),
                                         ),
