@@ -175,10 +175,12 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                Text("Review",
+                                                Text(
+                                                  "Review",
                                                   style: TextStyle(
                                                     fontWeight: FontWeight.bold,
-                                                  ),),
+                                                  ),
+                                                ),
                                                 Container(
                                                   width: 36,
                                                   decoration: BoxDecoration(
@@ -249,8 +251,18 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   ),
                                   Gap(8),
                                   Container(
-                                    height: 200,
+                                    height: 180,
                                     color: Colors.orange,
+                                    child: ListView.builder(
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (context, index) {
+                                        return Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                          ),
+                                        );
+                                      },
+                                    ),
                                   )
                                 ],
                               ),
