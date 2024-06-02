@@ -160,6 +160,13 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             decoration: BoxDecoration(
                                               color: Colors.white,
                                               borderRadius: BorderRadius.circular(4),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.black.withOpacity(.1),
+                                                  spreadRadius: 4,
+                                                  blurRadius: 3,
+                                                )
+                                              ],
                                             ),
                                             margin: EdgeInsets.all(8),
                                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
