@@ -175,7 +175,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                Text("Review"),
+                                                Text("Review",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),),
                                                 Container(
                                                   width: 36,
                                                   decoration: BoxDecoration(
@@ -206,7 +209,12 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                Text("Accepted"),
+                                                Text(
+                                                  "Accepted",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
                                                 Container(
                                                   width: 36,
                                                   decoration: BoxDecoration(
