@@ -319,16 +319,20 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                     padding: EdgeInsets.symmetric(
                                       horizontal: 16,
                                     ),
+
                                     child: Row(
                                       children: [
                                         CircleAvatar(
                                           radius: 32,
                                         ),
+                                        Gap(16),
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text("Economics and finance"),
+                                              Gap(6),
                                               Row(
                                                 children: [
                                                   Container(
@@ -344,6 +348,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                       ],
                                                     ),
                                                   ),
+                                                  Gap(8),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[100]!,
@@ -357,6 +362,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                       ],
                                                     ),
                                                   ),
+                                                  Gap(8),
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.grey[100]!,
