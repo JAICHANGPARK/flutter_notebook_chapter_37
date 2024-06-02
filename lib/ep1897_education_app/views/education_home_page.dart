@@ -257,11 +257,15 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                       scrollDirection: Axis.horizontal,
                                       itemBuilder: (context, index) {
                                         return Container(
+                                          width: 160,
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.circular(16),
                                           ),
+                                          margin: EdgeInsets.only(right: 12),
+                                          padding: EdgeInsets.all(12),
                                           child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
                                               Container(
                                                 child: Row(
