@@ -147,7 +147,10 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                 children: [
                                   Text(
                                     "Filing",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
                                   ),
                                   Gap(8),
                                   Container(
@@ -163,7 +166,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                                 BoxShadow(
                                                   color: Colors.black.withOpacity(.1),
                                                   spreadRadius: 4,
-                                                  blurRadius: 3,
+                                                  blurRadius: 6,
                                                 )
                                               ],
                                             ),
