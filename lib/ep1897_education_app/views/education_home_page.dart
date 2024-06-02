@@ -314,8 +314,15 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                   Container(
                                     height: 100,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
-                                    ),
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(16),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.black.withOpacity(.1),
+                                            blurRadius: 8,
+                                            spreadRadius: 4,
+                                          )
+                                        ]),
                                     padding: EdgeInsets.symmetric(
                                       horizontal: 16,
                                     ),
