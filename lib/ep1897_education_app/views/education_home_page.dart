@@ -331,22 +331,48 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                               Text("Economics and finance"),
                                               Row(
                                                 children: [
-                                                  
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[100]!,
+                                                      borderRadius: BorderRadius.circular(6),
+                                                    ),
+
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.trending_up),
+                                                        Text("442"),
+                                                      ],
+                                                    ),
+                                                  )
                                                 ],
                                               ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey[100]!,
-                                                  borderRadius: BorderRadius.circular(6),
-                                                ),
 
-                                                child: Row(
-                                                  children: [
-                                                    Icon(Icons.trending_up),
-                                                    Text("442"),
-                                                  ],
-                                                ),
-                                              )
                                             ],
                                           ),
                                         ),
