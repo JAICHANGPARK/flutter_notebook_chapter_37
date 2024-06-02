@@ -326,12 +326,18 @@ class _EducationHomePageState extends State<EducationHomePage> {
                                         ),
                                         Expanded(
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text("Economics and finance"),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[100]!,
                                                   borderRadius: BorderRadius.circular(6),
+                                                ),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(Icons.trending_up),
+                                                  ],
                                                 ),
                                               )
                                             ],
