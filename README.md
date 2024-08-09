@@ -72,7 +72,6 @@
 - By Conceptzilla
 - https://dribbble.com/shots/23951080-Finance-Management-Mobile-App-Design
 
-A new Flutter project.
 
 ## Getting Started
 
